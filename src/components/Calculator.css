@@ -20,3 +20,17 @@
     justify-content: center;
     margin: 0 auto;
 }
+
+#frm-loan h1{
+    color: #1942DF;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 50px 0 50px 130px;
+}
+.row{
+    width: 1160px;
+    height: 511px;
+    margin-left: 115px !important ;
+    background: #5C7AE7;
+    border-radius: 25px;
+}
