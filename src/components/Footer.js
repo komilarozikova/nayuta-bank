@@ -37,8 +37,9 @@ function Footer() {
           </div>
           <div class='footer-link-items'>
             <Link to='/'>Адрес:</Link>
-            <Link to='/'>Республика Узбекистан, Ташкент,
-            Мирабадский район, Нукусская улица,
+            <Link to='/' className='address'>Республика Узбекистан, Ташкент, 
+              <br/>
+            Мирабадский район, Нукусская улица, <br/>
             дом 29, 100015</Link>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../components/Calculator.css'
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 
 const Calculator = () => {
