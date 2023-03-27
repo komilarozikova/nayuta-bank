@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.calc{
+    height: 100vh;
+}
+.calc h1{
+    color: #1942DF;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 50px 0 50px 130px;
+}
+.calc-container{
+    width: 1160px;
+    height: 511px;
+    background: #5C7AE7;
+    border-radius: 25px;
+    justify-content: center;
+    margin: 0 auto;
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-import logo from '../img/nayuta.png'
+import logo from '../img/nayuta.png';
 import { Button } from './Button'; 
 import { Link } from 'react-router-dom'; 
 import './Navbar.css'; 
@@ -77,7 +77,7 @@ function Navbar() {
             </li> 
           </ul> 
           {button && <Button buttonStyle='btn--outline'>Контакты</Button>} 
-          
+
           <p className='lang'>Ру/Uz</p>
         </div> 
 

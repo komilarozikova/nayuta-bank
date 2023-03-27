@@ -10,21 +10,21 @@ function Navbar() {
   return ( 
     <div className='currency'>
         <div className='currencyContainer'> 
-           <div className='usa'>
+           <div className='flags'>
                <img src={usa} />
-            1 USD = 11 340 UZS
+             <p>  1 USD = 11 340 UZS </p>
            </div>
-           <div className='europe'>
+           <div className='flags'>
                <img src={europe} />
-               1 EUR = 12 186 UZS
+             <p>  1 EUR = 12 186 UZS </p>
            </div>
-           <div className='russia'>
+           <div className='flags'>
                <img src={russia} />
-               1 RUB = 151 UZS
+              <p> 1 RUB = 151 UZS </p>
            </div>
-           <div className='japan'>
+           <div className='flags'>
                <img src={japan} />
-               1 RUB = 151 UZS
+              <p> 1 YEN = 151 UZS </p>
            </div>
         </div> 
     </div>
