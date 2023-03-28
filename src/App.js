@@ -6,6 +6,7 @@ import Currency from './components/Currency.js';
 import HomePage from './components/HomePage/HomePage.js';
 import Calculator from './components/Calculator';
 import Footer from './components/Footer';
+import Products from './components/Products/Products';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Currency />
       <HomePage />
       <Calculator />
+      <Products />
       <Footer />
       <Routes>
         <Route path='/' exact />
