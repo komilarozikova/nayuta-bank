@@ -10,7 +10,7 @@ const HomePage = () => {
             <h1>Быстрые кредиты по
                 низким процентам </h1>
             <h5>Cамые низкие процентные ставки cреди микрофинансовых организаций Узбекистана.</h5>
-            <a href='#'>Подробнее</a>
+            <a className='btn' href='#'>Подробнее</a>
         </div>
         <div className="hero-img">
            <img src={creditcards} />
