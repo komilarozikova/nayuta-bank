@@ -1,8 +1,8 @@
 import React from 'react'; 
-import usa from '../img/flagusa.png'
-import europe from '../img/flageurope.png'
-import russia from '../img/flagrussia.png'
-import japan from '../img/flagjapan.png'
+import usa from '../img/flagusa.svg'
+import europe from '../img/flageurope.svg'
+import russia from '../img/flagrussia.svg'
+import japan from '../img/flagjapan.svg'
 import './Currency.css'; 
  
 function Navbar() { 

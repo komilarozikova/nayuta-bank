@@ -1,6 +1,6 @@
 import React from 'react'
 import '../HomePage/HomePage.css';
-import creditcards from '../HomePage/creditcards.png'
+import creditcards from '../HomePage/creditcards.svg'
 
 const HomePage = () => {
   return (

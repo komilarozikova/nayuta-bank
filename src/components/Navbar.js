@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-import logo from '../img/nayuta.png';
+import logo from '../img/nayuta.svg';
 import { Button } from './Button'; 
 import { Link } from 'react-router-dom'; 
 import './Navbar.css'; 

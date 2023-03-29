@@ -8,6 +8,7 @@ import Calculator from './components/Calculator';
 import Footer from './components/Footer';
 import Products from './components/Products/Products';
 import About from './components/About/About';
+import Trust from './components/Trust/Trust';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Calculator />
       <Products />
       <About />
+      <Trust />
       <Footer />
       <Routes>
         <Route path='/' exact />

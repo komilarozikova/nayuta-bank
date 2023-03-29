@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../img/nayuta.png';
+import logo from '../img/nayuta.svg';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
@@ -46,7 +46,7 @@ function Footer() {
       </div>
       <section class='social-media'>
         <div class='social-media-wrap'>
-          <small class='website-rights'>© Все права защищены 2023</small>
+          <small className='website-rights'>© Все права защищены 2023</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
