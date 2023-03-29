@@ -1,5 +1,5 @@
 import React from 'react';
-import microzaymi from '../Products/microzaymi.png';
+import microzaymi from '../Products/microzaymi2.svg';
 import  microkredit from '../Products/microkredit.png'
 import  microlizing from '../Products/microlizing.png'
 import  factoring from '../Products/factoring.png'
