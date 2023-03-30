@@ -45,7 +45,12 @@
     display: flex;
     margin-right: 30px;
   }
-  
+  #child2{
+    width: 170px;
+  }
+  #child3{
+    width: 190px;
+  }
   .footer-link-items {
     display: flex;
     flex-direction: column;

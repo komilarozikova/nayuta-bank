@@ -21,7 +21,7 @@ function Footer() {
             <Link to='/'>Юридическим лицам</Link>
             <Link to='/'>Консультация</Link>
           </div>
-          <div class='footer-link-items'>
+          <div id='child2' class='footer-link-items'>
             <Link to='/'>Контакты:</Link>
             <Link to='/'>+998 78 150 33 32</Link>
             <Link to='/'>instagram</Link>
@@ -29,7 +29,7 @@ function Footer() {
           </div>
         </div>
         <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
+          <div id='child3' class='footer-link-items'>
             <Link to='/'>Режим работы:</Link>
             <Link to='/'>Пн-Пт: 9:00 – 18:00</Link>
             <Link to='/'>Сб: 10:00 – 17:00</Link>
