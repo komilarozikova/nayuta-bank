@@ -10,6 +10,8 @@ import Products from './components/Products/Products';
 import About from './components/About/About';
 import Trust from './components/Trust/Trust';
 import Accordion from './components/Accordion.jsx';
+import Consultaion from './components/Consultation/Consultaion';
+
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
       <About />
       <Trust />
       <Accordion />
+      <Consultaion />
       <Footer />
       <Routes>
         <Route path='/' exact />

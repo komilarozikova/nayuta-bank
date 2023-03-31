@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.consultation{
+    max-width: 100%;
+    height: 100vh;
+}
+.consultation-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.consultation-btn{
+    color: white;
+    background: #0ABE3B;
+    background: #0ABE3B;
+    box-shadow: -3px 4px 8px rgba(78, 169, 43, 0.4);
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    width: 152px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 50px;
+}
