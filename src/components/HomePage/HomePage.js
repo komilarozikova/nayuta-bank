@@ -7,8 +7,7 @@ const HomePage = () => {
     <section className='hero'>
       <div className='hero-container'>
       <div className='hero-text'>
-            <h1>Быстрые кредиты по
-                низким процентам </h1>
+            <h1>У нас выгоднее</h1>
             <h5>Cамые низкие процентные ставки cреди микрофинансовых организаций Узбекистана.</h5>
             <a className='btn' href='#'>Подробнее</a>
         </div>

@@ -1,5 +1,5 @@
 .productspage{
-    height: 700px;
+    height: 100%;
 }
 .productspage h1{
     color: #1942DF;
@@ -43,4 +43,21 @@
 .products p{
     text-align: center;
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 900px){
+    .products-container{
+        display: flex;
+        width: 450px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 505px){
+    .productspage h1{
+        font-size: 35px;
+        margin-left: 100px;
+  }
 }

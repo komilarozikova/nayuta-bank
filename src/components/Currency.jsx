@@ -22,7 +22,7 @@ function Navbar() {
                <img src={russia} />
               <p> 1 RUB = 151 UZS </p>
            </div>
-           <div className='flags'>
+           <div className='flags' id='japan'>
                <img src={japan} />
               <p> 1 YEN = 151 UZS </p>
            </div>
