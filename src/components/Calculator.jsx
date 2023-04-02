@@ -5,8 +5,11 @@ import "react-input-range/lib/css/index.css"
 import Imagebg from '../assets/images/bg.png'
 const Calculator = () => {
     const [state, setState] = useState({
-        value: 10
+        value: 0
     })
+    const [state2, setState2] = useState({
+      value: 0
+  })
   return (
     <div className="calc-wrapper">
       <form id="">
@@ -50,12 +53,12 @@ const Calculator = () => {
             <div className="form-input">
               <label htmlFor="">Срок</label>
               <div className="range">
-                <div className="value">{state.value}</div>
+                <div className="value">{state2.value}</div>
                 <InputRange
-                  maxValue={10}
+                  maxValue={5}
                   minValue={0}
-                  value={state.value}
-                  onChange={(value) => setState({ value })}
+                  value={state2.value}
+                  onChange={(value) => setState2({ value })}
                   onChangeComplete={(value) => console.log(value)}
                 />
               </div>
