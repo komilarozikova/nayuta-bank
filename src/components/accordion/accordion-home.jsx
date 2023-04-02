@@ -5,9 +5,9 @@ const AccordionHome = () => {
     return (
         <div className="dasldkmaslk" style={{marginTop: '220px'}}>
             <h1>Часто задаваемые вопросы</h1>
-            <Accordion defaultActiveKey="0">
-                <Accordion.Item eventKey="0">
-                    <Accordion.Header>1. Какие документы необходимы для оформления кредита?</Accordion.Header>
+            <Accordion id="acc" defaultActiveKey="0">
+                <Accordion.Item id="accitem" eventKey="0">
+                    <Accordion.Header id="accheader">1. Какие документы необходимы для оформления кредита?</Accordion.Header>
                     <Accordion.Body>
                         <p>
                             Для оформления кредита требуются паспорт или иной документ, удостоверяющий личность заемщика;

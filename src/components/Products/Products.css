@@ -1,14 +1,16 @@
-.productspage{
+.productspage {
     height: 100%;
 }
-.productspage h1{
+
+.productspage h1 {
     color: #1942DF;
-    margin-left: 150px;
+    /* margin-left: 150px; */
     font-size: 40px;
     line-height: 49px;
 }
-.products-container{
-    width: 85%;
+
+.products-container {
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -16,17 +18,19 @@
     align-items: center;
     padding-bottom: 150px;
 }
-.products{
+
+.products {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     padding: 30px;
 }
-.btn-products{
+
+.btn-products {
     color: white;
     width: 144px;
-    height: 32px;    
+    height: 32px;
     background: #FF5A3A;
     box-shadow: -3px 4px 8px rgba(255, 90, 58, 0.4);
     border-radius: 50px;
@@ -34,30 +38,37 @@
     font-size: 14px;
     line-height: 17px;
     border: none;
-   
+
 }
-.products h4{
+
+.products h4 {
     text-align: center;
     margin: 20px 0;
 }
-.products p{
+
+.products p {
     text-align: center;
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 900px){
-    .products-container{
+@media screen and (max-width: 900px) {
+    .products-container {
         display: flex;
-        width: 450px;
+        /* width: 450px; */
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        padding: 30px;
+        /* padding: 30px; */
     }
 }
-@media screen and (max-width: 505px){
-    .productspage h1{
-        font-size: 35px;
-        margin-left: 100px;
-  }
+
+@media screen and (max-width: 600px) {
+    .productspage h1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #1942DF;
+    }
 }

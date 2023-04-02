@@ -1,124 +1,60 @@
-import React, {Component,  useState, useEffect } from 'react'; 
-import logo from '../img/nayuta.svg';
-import { Button } from './Button'; 
-import { Link } from 'react-router-dom'; 
-import './Navbar.css'; 
-import { MenuItems } from './MenuItems';
+import { Link } from 'react-router-dom'
+import Logo from '../assets/images/logo.svg'
+import './Navbar.scss'
+import { useState } from 'react'
+import Hamburger from '../assets/images/Menu.svg'
+const Navbar = () => {
+  const [active, setActive] = useState(true)
+  const [show, setShow] = useState(false)
 
-class Navbar extends Component {
-  state = { clicked: false }
-
-  handleClick = () => {
-    this.setState({clicked: !this.state.clicked })
-  }
-
-  render() {
-    return(
-      <nav className='NavbarItems'>
-        <img className='navbar-logo' src={logo} />
-        <div className="menu-icon" onClick={this.handleClick
-        }>
-          <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+  return (
+    <>
+      <div className="navbar">
+        <div className="navbar-inner container">
+          <div className="hamburger">
+            <button style={{
+              background: "transparent",
+              border: "none",
+              outline: "none"
+            }}
+              onClick={() => setActive(!active)}
+            >
+              <img src={Hamburger} alt="" />
+            </button>
+          </div>
+          <div className="logo">
+            <Link><img src={Logo} alt="" /></Link>
+          </div>
+          <div className={active ? "links" : "links hide"}>
+            <Link to='/'>Главная</Link>
+            <Link to='/'>Услуги</Link>
+            <Link to='/'>Компания</Link>
+            <Link to='/'>Консультация</Link>
+            <Link to='/'>Контакты</Link>
+            <select>
+              <option value="ru/uz">Ру / Uz</option>
+            </select>
+          </div>
+          <div className={active ? "links-hide" : "links-hide active"}>
+            <Link className='navbar-link' to='/'>Главная</Link>
+            <button style={{
+              borderBottom: show ? "none" : "1px solid #628fd8"
+            }} onClick={() => setShow(!show)} className='navbar-link'>Услуги</button>
+            <Link style={{
+              display: show ? "block" : "none",
+              borderBottom: !show ? "none" : "1px solid #628fd8"
+            }} className='navbar-link active' to='/'>Юридическим лицам</Link>
+            <Link className='navbar-link' to='/'>Компания</Link>
+            <Link className='navbar-link' to='/'>Консультация</Link>
+            <Link className='navbar-link' to='/'>Контакты</Link>
+          </div>
+          <select>
+            <option value="ru/uz">Ру / Uz</option>
+          </select>
         </div>
-        <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-          {MenuItems.map((item, index) => {
-            return (
-              <li key={index}>
-                <a className={item.cName} href={item.url}>
-                  {item.title}
-                </a>
-              </li>
-            )
-          })}
-        </ul>
-      </nav>
-    )
-  }
+      </div>
+
+    </>
+  )
 }
-
-export default Navbar;
-
-
- 
-// function Navbar() { 
-//   const [click, setClick] = useState(false); 
-//   const [button, setButton] = useState(true); 
- 
-//   const handleClick = () => setClick(!click); 
-//   const closeMobileMenu = () => setClick(false); 
- 
-//   const showButton = () => { 
-//     if (window.innerWidth <= 960) { 
-//       setButton(false); 
-//     } else { 
-//       setButton(true); 
-//     } 
-//   }; 
- 
-//   useEffect(() => { 
-//     showButton(); 
-//   }, []); 
- 
-//   window.addEventListener('resize', showButton); 
- 
-//   return ( 
-//     <> 
-//       <nav className='navbar'> 
-//         <div className='navbar-container'> 
-//           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}  > 
-//           <img src={logo} />
-//           </Link> 
-//           <ul className={click ? 'nav-menu active' : 'nav-menu'}> 
-//             <li className='nav-item'> 
-//               <Link to='/' className='nav-links' onClick={closeMobileMenu}> 
-//                 Главная 
-//               </Link> 
-//             </li> 
-//             <li className='nav-item'> 
-//               <Link 
-//                 to='/services' 
-//                 className='nav-links' 
-//                 onClick={closeMobileMenu} 
-//               > 
-//                 Услуги 
-//               </Link> 
-//             </li> 
-//             <li className='nav-item'> 
-//               <Link 
-//                 to='/products' 
-//                 className='nav-links' 
-//                 onClick={closeMobileMenu} 
-//               > 
-//                 Компания 
-//               </Link> 
-//             </li> 
-//             <li className='nav-item'> 
-//               <Link 
-//                 to='/products' 
-//                 className='nav-links' 
-//                 onClick={closeMobileMenu} 
-//               > 
-//                 Консультация 
-//               </Link> 
-//             </li> 
- 
-//             <li> 
-//               <Link 
-//                 to='/sign-up' 
-//                 className='nav-links-mobile' 
-//                 onClick={closeMobileMenu} 
-//               > 
-//                 Контакты 
-//               </Link> 
-//             </li> 
-//           </ul> 
-//           {button && <Button buttonStyle='btn--outline'>Контакты</Button>} 
-
-//           <p className='lang'>Ру/Uz</p>
-//         </div> 
-
-//       </nav> 
-//     </> 
-//   ); 
-// } 
- 
+export default Navbar
