@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #1942df 0%, #3ec878 100%);
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  // opacity: 0.71;
+  padding: 21px;
+}
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  position: relative;
+  line-height: 23px;
+  .hamburger {
+    display: none;
+  }
+  .links {
+    &.hide {
+      display: none;
+    }
+    a,
+    button {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 19px;
+      line-height: 23px;
+      margin-right: 35px;
+      color: #ffffff;
+    }
+  }
+  select {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-weight: bold;
+  }
+}
+.links-hide {
+  display: none;
+  &.active {
+    display: block;
+    position: absolute;
+    top: 90px;
+    // left: 30px;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    z-index: 10;
+    .navbar-link {
+      &.active {
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        display: block;
+        margin-bottom: 27px;
+        text-align: center;
+        padding: 26px 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #231f20;
+      }
+      font-weight: bold;
+      border: none;
+      background-color: transparent;
+      width: 100%;
+      color: #1942df;
+      display: block;
+      margin-bottom: 27px;
+      text-align: center;
+      border-bottom: 1px solid #628fd8;
+      padding: 26px 0;
+      // box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.34);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-inner {
+    padding: 0;
+    .links {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+    .logo{
+      img{
+        width: 155px;
+        height: 43px;
+      }
+    }
+    select{
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}
