@@ -3,8 +3,8 @@ import './according.scss'
 
 const AccordionHome = () => {
     return (
-        <div className="dasldkmaslk" style={{marginTop: '220px'}}>
-            <h1>Часто задаваемые вопросы</h1>
+        <div className="dasldkmaslk" >
+            <h1 className="accordionh">Часто задаваемые вопросы</h1>
             <Accordion id="acc" defaultActiveKey="0">
                 <Accordion.Item id="accitem" eventKey="0">
                     <Accordion.Header id="accheader">1. Какие документы необходимы для оформления кредита?</Accordion.Header>
