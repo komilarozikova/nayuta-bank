@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Consultation/Consultation.css'
+import '../Consultation/Consultation.scss'
 import consultation from '../Consultation/consultation.svg'
 
 const Consultaion = () => {
@@ -12,11 +12,12 @@ const Consultaion = () => {
 · Вы ищете профессиональное решение ваших финансовых вопросов;
 · Вы не можете определиться, какая конкретно услуга или продукт вам нужны;
 · Вы сомневаетесь, к кому лучше обратиться.</p>
-<p>Получите бесплатную консультацию от наших специалистов</p>
+<p >Получите бесплатную консультацию от наших специалистов</p>
 <a className='consultation-btn' href='#'>Позвонить</a>
             </div>
             <div className="consulatation-right">
-<img src={consultation} alt="" />
+            <img className='consultation-img' src={consultation}
+            alt="consultation" />
             </div>
         </div>
     </div>

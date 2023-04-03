@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Logo from '../assets/images/logo.svg'
 import './Navbar.scss'
 import { useState } from 'react'
+import Consultaion from './Consultation/Consultaion'
 import Hamburger from '../assets/images/Menu.svg'
 const Navbar = () => {
   const [active, setActive] = useState(true)
@@ -28,8 +29,8 @@ const Navbar = () => {
           <div className={active ? "links" : "links hide"}>
             <Link to='/'>Главная</Link>
             <Link to='/'>Услуги</Link>
-            <Link to='/'>Компания</Link>
-            <Link to='/'>Консультация</Link>
+            <Link to='/' target="_blank">Компания</Link>
+            <Link to='/consultation'>Консультация</Link>
             <Link to='/'>Контакты</Link>
             <select>
               <option value="ru/uz">Ру / Uz</option>
@@ -45,7 +46,7 @@ const Navbar = () => {
               borderBottom: !show ? "none" : "1px solid #628fd8"
             }} className='navbar-link active' to='/'>Юридическим лицам</Link>
             <Link className='navbar-link' to='/'>Компания</Link>
-            <Link className='navbar-link' to='/'>Консультация</Link>
+            <Link className='navbar-link' to='/consultation'>Консультация</Link>
             <Link className='navbar-link' to='/'>Контакты</Link>
           </div>
           <select>
