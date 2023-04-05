@@ -1,10 +1,10 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.currency {
+.currency{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -15,7 +15,7 @@
     box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.07);
     border-width: 1px;
     border-style: solid;
-    border-image: linear-gradient(to right, #1942DF, #3EC878) 1;
+    border-image: linear-gradient(to right, #1942DF, #3EC878 ) 1;
     width: 100%;
     height: 60px;
     left: 0px;
@@ -23,56 +23,55 @@
 
 
 
-
 }
-
-.currencyContainer {
+.currencyContainer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    padding: 0 25px;
-    width: 80%;
+    width:75%;
     margin: 0 auto;
 }
-
-.flags {
+.flags{
     display: flex;
 }
-
-.flags img {
-
+.flags img{
+    
     position: relative;
     top: -1px;
     left: -5px;
 }
 
 @media screen and (max-width: 960px) {
-    #japan {
+    #japan{
         display: none;
     }
 }
-
 @media screen and (max-width: 755px) {
-    .flags p {
+    .flags p{
         font-size: 12px;
     }
 }
-
 @media screen and (max-width: 630px) {
-    .flags {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        height: -40px;
-    }
-
-    .flags img {
-        position: absolute;
-        top: -15px;
-        left: 42px;
-        width: 25px;
-        height: 13px;
-    }
-
+   .flags{
+    display: flex;
+    flex-direction: column;
+   }
+   .flags img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 117px;
+    height: 19px;
+   }
+   .currencyContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width:100%;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 23px;
+}
 }

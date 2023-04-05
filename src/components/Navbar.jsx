@@ -45,6 +45,10 @@ const Navbar = () => {
               display: show ? "block" : "none",
               borderBottom: !show ? "none" : "1px solid #628fd8"
             }} className='navbar-link active' to='/'>Юридическим лицам</Link>
+             <Link style={{
+              display: show ? "block" : "none",
+              borderBottom: !show ? "none" : "1px solid #628fd8"
+            }} className='navbar-link active' to='/physical' target='_blank'>Физическим лицам</Link>
             <Link className='navbar-link' to='/'>Компания</Link>
             <Link className='navbar-link' to='/consultation'>Консультация</Link>
             <Link className='navbar-link' to='/'>Контакты</Link>
