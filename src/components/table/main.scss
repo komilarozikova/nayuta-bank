@@ -33,7 +33,7 @@ th {
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
-  line-height: 23px;
+  line-height: 44px;
   border-width: 80%;
   color: #ffffff;
 }
@@ -114,20 +114,20 @@ td:first-child {
       margin-top: 0;
       margin-right: 0;
 
-      h1 {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 157%;
-        /* or 39px */
-
-
-        color: #1942DF;
-        margin-bottom: 30px;
-      }
+    
     }
+    h1.tableh {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 157%;
+      /* or 39px */
 
+
+      color: #1942DF;
+      margin-bottom: 30px;
+    }
     td,
     th {
       border: 1px solid #dddddd !important;

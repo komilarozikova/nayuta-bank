@@ -52,8 +52,21 @@
     width: 649px;;
  
 }
+ul {
+    list-style: none; /* Remove default bullets */
+  }
 ul li::before{
-    
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    content: "•";
+    color: #1942DF;
+    font-weight: bold;
+    display: inline-block;
+    width: 15px;
+    height: 47px;
+    margin-left: -1rem;
+    /* font-weight: 500; */
+    font-size: 16px;
+    line-height: 151.9%;
 }
 
 
@@ -92,12 +105,13 @@ ul li::before{
     .physical-right{
         position: relative ;
         display: flex;
-        right: 56px;
-        top: -212px;
+        right: -29px;
+        top: -203px;
+    
     }
      .physical-img{
-        width: 543px;
-        height: 395px
+        width: 533px;
+         height: 513px;
 }
     a:-webkit-any-link {
         text-decoration: none;
@@ -106,10 +120,85 @@ ul li::before{
     
 }
 @media screen and (max-width: 470px){
-    .consultation-img{
-        width: 375px;
-         height: 300px;
-           
-        
+
+.physical-right {
+    position: relative;
+    display: flex;
+    right: -17px;
+    top: -203px;
 }
 }
+@media screen and (max-width: 410px){
+    .physical-right{
+        right: -17px;
+        top: -209px;
+    }
+    .physical-img{
+        width: 535px;
+        height: 364px;
+}
+}
+@media screen and (max-width: 380px){
+    .physical-right{
+right: 12px;
+top: -203px;
+    }
+    .physical-img{
+        width: 535px;
+        height: 340px;
+}
+}
+
+
+.physical-container2{
+    width: 85%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.box-container{
+    width: 85%;
+    margin: 0 auto;
+}
+.box{
+   width: 590px;
+   height: 360px;
+   border-radius: 15px;
+   background: #FFFFFF;
+   box-shadow: 0px 0px 20px rgba(51, 96, 
+   231, 0.2);
+
+   margin-right:15px;
+}
+.box-container h3{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.box-container p{
+font-style: normal;
+font-weight: 500;
+font-size: 19px;
+line-height: 23px;
+}
+
+ .box img{
+    width: 157px;
+    height: 164px;
+ }
+ .sale{
+    position: absolute;
+    display: flex;
+ }
+ .sale p{
+    position: relative;
+    top: 100px;
+ }
+ 
+ .box:hover{
+    background: linear-gradient(110.42deg, #5D7EE5 0%, #73CEA7 100%);
+box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.2);
+color: #fff;
+ }

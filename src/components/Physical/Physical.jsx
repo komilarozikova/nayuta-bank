@@ -1,5 +1,9 @@
 import React from 'react'
 import hand from '../Physical/hand.svg'
+import twentytwo from '../Physical/twentytwo.svg'
+import thirtyeight from '../Physical/thirtyeight.svg'
+import fourtyseven from '../Physical/fourtyseven.svg'
+import fourtynine from '../Physical/fourtynine.svg'
 import '../Physical/Physical.scss'
 
 const Physical = () => {
@@ -26,6 +30,49 @@ const Physical = () => {
 <div className="physical-right">
 <img className='physical-img' src={hand} alt="" />
 </div>
+       </div>
+       <div className="physical-container2">
+        <div className="box">
+     <div className="box-container">
+     <h3>Автокредит до 50 млн сум на 36 
+         месяцев</h3>
+         <p>Вам не обязательно откладывать «до завтра» то, что с нами можно приобрести уже сейчас</p>
+         <div className="sale">
+         <p>от</p>
+         <img src={twentytwo} alt="" />
+         <p>до</p>
+         <img src={thirtyeight} alt="" />
+         <p>в год</p>
+         </div>
+     </div>
+        </div>
+        <div className="box">
+    <div className="box-container">
+    <h3>Микрозайм нецелевой до 5 млн сум 12 месяцев</h3>
+         <p>Для решения неотложных финансовых вопросов</p>
+        <div className="sale">
+        <p>от</p>
+         <img src={fourtyseven} alt="" />
+         <p>до</p>
+         <img src={fourtynine} alt="" />
+         <p>в год</p>
+        </div>
+    </div>
+        </div>
+      
+    </div>
+    <div className="box3">
+        <div className="box-container2">
+    <h3>Микрозайм нецелевой до 5 млн сум 12 месяцев</h3>
+         <p>Для решения неотложных финансовых вопросов</p>
+        <div className="sale">
+        <p>от</p>
+         <img src={fourtyseven} alt="" />
+         <p>до</p>
+         <img src={fourtynine} alt="" />
+         <p>в год</p>
+        </div>
+        </div>
        </div>
     </div>
   )
