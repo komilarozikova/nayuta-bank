@@ -201,8 +201,59 @@
 /// 
 
 
-.modal-content{
-  width: 1277px;
-  margin-left: -380px;
-  margin-top: 180px;
+.modal-dialog {
+  max-width: 1300px;
+}
+
+.table-modal {
+  button {
+    border: none;
+    position: absolute;
+    right: -30px;
+    top: -25px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .modal-header {
+    border: none;
+  }
+  th,
+  td {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    padding: 24px;
+    color: #000000;
+  }
+  th {
+    background-color: transparent;
+  }
+  tr {
+    &:nth-child(even) {
+      background: rgba(51, 96, 231, 0.21);
+    }
+    &:nth-child(odd) {
+      background: #fffcfc;
+    }
+  }
+}
+
+.modal-body {
+  overflow: scroll;
+}
+
+@media screen and (max-width: 600px) {
+  td {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    padding: 24px;
+    color: #000000;
+  }
+  th {
+    font-size: 13;
+  }
 }
