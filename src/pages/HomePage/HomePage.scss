@@ -5,6 +5,7 @@
 }
 section {
   font-family: "Montserrat";
+  margin-top: -130px;
 }
 .hero-container {
   height: 100%;
@@ -63,7 +64,7 @@ section {
   }
   .hero-container {
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 130px;
     text-align: center;
     .hero-text {
       text-align: left;
