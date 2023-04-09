@@ -13,31 +13,43 @@ p {
   margin: 0;
   padding: 0;
 }
+.load-anim {
+  animation: loadAnim 1s 1;
+}
 
+@keyframes loadAnim {
+  from {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 
 .accordion-button:not(.collapsed) {
-  color: #FFF  !important;
-  background: linear-gradient(90deg, #5C7AE8 0%, #76D7A1 100%)  !important;
+  color: #fff !important;
+  background: linear-gradient(90deg, #5c7ae8 0%, #76d7a1 100%) !important;
   font-style: normal;
   font-weight: 600;
   font-size: 19px;
   line-height: 23px;
   text-align: center;
-
 }
 
+.accordion-button:link,
+.accordion-button:visited,
+.accordion-button:active {
+  background-color: linear-gradient(90deg, #5c7ae8 0%, #76d7a1 100%) !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  border: hidden !important;
+  border-color: #fff !important;
+  box-shadow: 0px !important;
 
-
-.accordion-button:link, .accordion-button:visited, .accordion-button:active  {
-  background-color: linear-gradient(90deg, #5C7AE8 0%, #76D7A1 100%) !important;
-    color:#FFF !important;
-    text-decoration: none !important;
-     border: hidden !important;
-       border-color: #FFF !important;
-    box-shadow: 0px !important;
-
-   
-    color: #FFFFFF;
+  color: #ffffff;
 }
 a {
   text-decoration: none;
@@ -58,16 +70,15 @@ input {
 }
 
 .accordion-button {
-  background: #FFFFFF;
-box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.38);
-border-radius: 15px; 
-  color: #231F20 !important;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.38);
+  border-radius: 15px;
+  color: #231f20 !important;
   text-align: center !important;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
-  
 }
 
 .accordion-header {
@@ -85,7 +96,7 @@ border-radius: 15px;
 }
 
 .accordion-body p {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -93,4 +104,3 @@ border-radius: 15px;
 
   color: #231f20;
 }
-

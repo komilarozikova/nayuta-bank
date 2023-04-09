@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <>
       <Currency />
-      <div className="container">
+      <div className="container load-anim">
         <section className='hero'>
           <div className='hero-container'>
             <div className='hero-text'>
