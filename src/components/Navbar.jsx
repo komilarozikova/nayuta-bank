@@ -53,7 +53,7 @@ const Navbar = () => {
             <Link style={{
               display: show ? "block" : "none",
               borderBottom: !show ? "none" : "1px solid #628fd8"
-            }} className='navbar-link active' to='/physical' target='_blank'>Физическим лицам</Link>
+            }} className='navbar-link active' onClick={() => setActive(!active)} to='/physical' >Физическим лицам</Link>
             <Link className='navbar-link' onClick={() => setActive(!active)} to='/company'>Компания</Link>
             <Link className='navbar-link' onClick={() => setActive(!active)} to='/consultation'>Консультация</Link>
             <Link className='navbar-link' onClick={() => setActive(!active)} to='/'>Контакты</Link>

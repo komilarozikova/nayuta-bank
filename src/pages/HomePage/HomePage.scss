@@ -25,7 +25,7 @@ section {
   line-height: 73px;
   color: #1942df;
   margin: 0 0 60px;
-  width: 700px;
+  width: 509px;
   height: 146px;
 }
 .hero-text h5 {
@@ -33,9 +33,11 @@ section {
   line-height: 23px;
   margin-top: -30px;
   color: #231f20;
+  width: 572px;
 }
-.hero-img {
-  width: 495px;
+.hero-img img{
+  width: 680px;
+  height: 780px;
 }
 .hero-text .btn {
   display: inline-block;
@@ -57,6 +59,7 @@ section {
 @media screen and (max-width: 600px) {
   .see-more{
     display: block;
+
   }
   .hero-container {
     flex-direction: column;
@@ -69,27 +72,30 @@ section {
         height: 100%;
         font-size: 30px;
         line-height: 37px;
-        margin-bottom: 49px;
+        margin-top: 30px;
       }
       h5 {
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
+        width: 330px;
       }
     }
     .hero-img{
       width: 100%;
-      img{
-        width: 292px;
-        height: 297px;
-        object-fit: contain;
-      }
+      
+    }
+    .hero-img img{
+      width: 330px;
+      height: 550px;
+      object-fit: contain;
+      margin-top: -150px;
     }
     .see-more{
       display: flex;
       justify-content: center;
-      margin: 70px 0 90px;
+      margin: -70px 0 55px;
       button{
         border: none;
         background: #FF5A3A;
@@ -104,5 +110,19 @@ section {
         padding: 20px 45px;
       }
     }
+  }
+}
+@media screen and (max-width: 396px) {
+  .hero-img{
+    width: 100%;
+    
+  }
+  .hero-img img{
+    width: 330px;
+    height: 550px;
+    object-fit: contain;
+  }
+  .hero-text{
+    margin-left: -23px;
   }
 }

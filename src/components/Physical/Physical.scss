@@ -112,6 +112,31 @@ ul li::before {
     box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.2);
   }
 }
+.box3 {
+  //   transition: all ease 0.5s;
+  &:hover {
+    color: white;
+    // transition: all ease 0.5s;
+    background: linear-gradient(110.42deg, #5d7ee5 0%, #73cea7 100%);
+    box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.2);
+  }
+}
+.box3 {
+  //   transition: all ease 0.5s;
+  &:hover {
+    color: white;
+    // transition: all ease 0.5s;
+   
+  }
+}
+.box-container{
+  //   transition: all ease 0.5s;
+  &:hover {
+    color: white;
+    // transition: all ease 0.5s;
+   
+  }
+}
 .box-container h3 {
   margin-top: 35px;
   font-style: normal;
