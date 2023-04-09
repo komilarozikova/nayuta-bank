@@ -9,6 +9,7 @@ import TableHome from '../../components/table';
 import Trust from '../../components/Trust/Trust';
 import AccordionHome from '../../components/accordion/accordion-home';
 
+
 const HomePage = () => {
   return (
     <>

@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 import InputRange from "react-input-range";
 import "./Calculator.scss";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import "react-input-range/lib/css/index.css"
 import Imagebg from '../assets/images/bg.png'
 const Calculator = () => {
+
+  const [show, setShow] = useState(false);
+
+  
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
     const [state, setState] = useState({
         value: 0
     })
@@ -65,7 +74,52 @@ const Calculator = () => {
             </div>
           </div>
           <div className="btns">
-          <button>Рассчитать</button>
+          <Button variant="primary" onClick={handleShow} >Рассчитать</Button>
+          <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+
+        <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Тип кредита</th>
+      <th scope="col">Месяц</th>
+      <th scope="col">Остаток по кредиту</th>
+      <th scope="col">Основной долг</th>
+      <th scope="col">Проценты</th>
+      <th scope="col">Сумма выплаты</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
         </div>
         </div>
         
