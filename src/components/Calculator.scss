@@ -128,10 +128,18 @@
           padding: 16px 48px;
         }
       }
+    
     }
   }
 }
 
+.title{
+  margin-top: 30px;
+  font-size: 17px;
+}
+.title span{
+  color: #1942DF;
+}
 @media screen and (max-width: 600px) {
   .calc-wrapper{
     form{
