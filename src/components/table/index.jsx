@@ -14,29 +14,29 @@ const TableHome = () => {
                     <tr>
                         <th></th>
                         <th><img src={TableImg} alt="" /></th>
-                        <th>Банк</th>
+                        <th className='bankth'>Банк</th>
                     </tr>
                     <tr>
                         <th>Скоринг</th>
-                        <th>1 день</th>
-                        <th>2-3 рабочих дня</th>
+                        <th className='fs'>1 день</th>
+                        <th className='fs'>2-3 рабочих дня</th>
                     </tr>
                     <tr>
                         <td>Выдача</td>
-                        <td>На второй день после
+                        <td className='fs'>На второй день после
                             оформления заявки</td>
-                        <td>Зависит от товара/услуги</td>
+                        <td className='fs'>Зависит от товара/услуги</td>
                     </tr>
                     <tr>
                         <td>Условия</td>
-                        <td>Наличие
+                        <td className='fs'>Наличие
                             паспорта или ID</td>
-                        <td>Пакет документов</td>
+                        <td className='fs'>Пакет документов</td>
                     </tr>
                     <tr>
-                        <td className='border-none'>Бесплатная
+                        <td id='border-none'>Бесплатная
                             консультация</td>
-                        <td className='border-none'>Есть</td>
+                        <td  className='border-none'>Есть</td>
                         <td className='border-none'>Не везде</td>
                     </tr>
                 </table>
