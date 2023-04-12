@@ -26,6 +26,18 @@ function Navbar() {
                <img src={japan} />
               <p> 1 YEN = 151 UZS </p>
            </div>
+           <div className='flags' id='desktopflags'>
+               <img src={usa}  />
+             <p>  1 USD = 11 340 UZS </p>
+           </div>
+           <div className='flags' id='desktopflags'>
+               <img src={europe}  />
+             <p>  1 EUR = 12 186 UZS </p>
+           </div>
+           <div className='flags' id='desktopflags'>
+               <img src={japan} className='desktopflags' />
+              <p> 1 YEN = 151 UZS </p>
+           </div>
         </div> 
     </div>
     

@@ -28,7 +28,7 @@ p {
     transform: translateY(0) scale(1);
   }
 }
-
+// --bs-accordion-border-color: #ffffff;
 .accordion-button:not(.collapsed) {
   color: #fff !important;
   background: linear-gradient(90deg, #5c7ae8 0%, #76d7a1 100%) !important;
@@ -81,7 +81,9 @@ input {
   line-height: 18px;
 }
 
-.accordion-header {
+.accordion {
+  background-color: #fff;
+  border-top: 44px !important;
 }
 .accordion-button {
   border-radius: 15px !important;
@@ -103,4 +105,13 @@ input {
   line-height: 23px;
 
   color: #231f20;
+}
+
+.accordion-item:first-of-type {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.accordion-item:last-of-type {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }

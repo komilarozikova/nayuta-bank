@@ -17,15 +17,26 @@ function Footer() {
           <div className='footer-link-items'>
             <Link to='/'>О компании</Link>
             <Link to='/'>Услуги:</Link>
-            <Link to='/'>Физическим лицам</Link>
-            <Link to='/'>Юридическим лицам</Link>
+            <Link to='/' className='greylink'>Физическим лицам</Link>
+            <Link to='/' className='greylink'>Юридическим лицам</Link>
             <Link to='/'>Консультация</Link>
           </div>
           <div id='child2' className='footer-link-items'>
-            <Link to='/'>Контакты:</Link>
-            <Link to='/'>+998 78 150 33 32</Link>
-            <Link to='/'>instagram</Link>
-            <Link to='/'>info@nayuta.uz</Link>
+            <Link to='/'>
+            Контакты:
+            </Link>
+            <Link to='/'>
+            <i class="fa-solid fa-phone" id='icons'></i>
+            +998 78 150 33 32
+            </Link>
+            <Link to='/'>
+             <i class="fab fa-instagram" id='icons' />
+             instagram
+             </Link>
+            <Link to='/'>
+            <i class="fa-regular fa-envelope" id='icons'></i>
+            info@nayuta.uz
+            </Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
@@ -47,48 +58,6 @@ function Footer() {
       <section className='social-media'>
         <div className='social-media-wrap'>
           <small className='website-rights'>© Все права защищены 2023</small>
-          <div className='social-icons'>
-            <Link
-              className='social-icon-link facebook'
-              to='/'
-              target='_blank'
-              aria-label='Facebook'
-            >
-              <i className='fab fa-facebook-f' />
-            </Link>
-            <Link
-              className='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i className='fab fa-instagram' />
-            </Link>
-            <Link
-              className='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i className='fab fa-youtube' />
-            </Link>
-            <Link
-              className='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i className='fab fa-twitter' />
-            </Link>
-            <Link
-              className='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i className='fab fa-linkedin' />
-            </Link>
-          </div>
         </div>
       </section>
     </div>

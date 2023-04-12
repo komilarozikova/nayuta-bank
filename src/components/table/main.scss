@@ -5,7 +5,25 @@ table {
 }
 .tableh{
   color: #1942DF;
-  margin-bottom: 20px;
+  margin-bottom: 55px;
+  width: 926px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+}
+.tableimg{
+  width: 125px;
+  height: 35px;
+  margin-bottom: 3px;
+}
+.fs{
+  font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 17px;
+   line-height: 21px;
 }
 .tables {
   width: 100%;
@@ -20,10 +38,21 @@ table {
     right: -48px;
     top: -44px;
 
+
     &.last {
-      left: -56px;
+      left: -75px;
       top: auto;
-      bottom: -44px;
+      bottom: -49px;
+    }
+    &.keyfirst {
+      left: 593px;
+      top: auto;
+      bottom: -65px;
+    }
+    &.keylast{
+      left: -81px;
+      top: auto;
+      bottom: 378px;
     }
   }
 }
@@ -32,7 +61,7 @@ td,
 th {
   border: 1px solid #dddddd !important;
   text-align: left;
-  padding: 4px;
+  padding: 15px;
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
@@ -96,13 +125,40 @@ td:first-child {
     color: white;
   }
 }
-
+#border-none{
+  border-bottom: none !important;
+}
 @media screen and (max-width: 600px) {
   table{
     margin-left: -17px;
   }
-  .first{
+  img.img.first{
     display: none;
+  }
+ 
+  .img.img.last{
+    left: -36px;
+    top: auto;
+    bottom: -83px;
+  }
+    .img {  
+      &.keyfirst {
+        display: none;
+      }
+      &.keylast{
+      display: none;
+      }
+    }
+  .tableh{
+    
+height: 117px;
+width: 245px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 157%;
   }
   .tables-section {
     flex-direction: column;
@@ -119,21 +175,11 @@ td:first-child {
       margin-bottom: 20px;
       margin-top: 0;
       margin-right: 0;
+      width: 353px;
 
     
     }
-    h1.tableh {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 25px;
-      line-height: 157%;
-      /* or 39px */
-
-
-      color: #1942DF;
-      margin-bottom: 30px;
-    }
+  
     td,
     th {
       border: 1px solid #dddddd !important;

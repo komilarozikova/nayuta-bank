@@ -9,7 +9,6 @@ import TableHome from '../../components/table';
 import Trust from '../../components/Trust/Trust';
 import AccordionHome from '../../components/accordion/accordion-home';
 
-
 const HomePage = () => {
   return (
     <>
@@ -20,7 +19,7 @@ const HomePage = () => {
             <div className='hero-text'>
               <h1>У нас выгоднее</h1>
               <h5>Cамые низкие процентные ставки cреди микрофинансовых организаций Узбекистана.</h5>
-              <a href='#'>Подробнее</a>
+
             </div>
             <div className="hero-img">
               <img src={bank} />
@@ -35,6 +34,7 @@ const HomePage = () => {
         <TableHome />
         <Trust />
         <AccordionHome />
+
       </div>
     </>
   )
