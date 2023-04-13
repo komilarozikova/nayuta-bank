@@ -39,9 +39,10 @@
 .physical-left h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 33px;
+  font-size: 30px;
   line-height: 40px;
   margin: 20px 0;
+  width: 324px;
 
   color: #1942df;
 }
@@ -110,9 +111,36 @@ ul li::before {
     // transition: all ease 0.5s;
     background: linear-gradient(110.42deg, #5d7ee5 0%, #73cea7 100%);
     box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.2);
-    h3 {
-      color: white;
+    h3{
+      color: #fff;
     }
+  }
+}
+.box3 {
+  //   transition: all ease 0.5s;
+  &:hover {
+    color: white;
+    // transition: all ease 0.5s;
+    background: linear-gradient(110.42deg, #5d7ee5 0%, #73cea7 100%);
+    box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.2);
+    h3{
+      color: #fff;
+    }
+  }
+}
+.box3 {
+  //   transition: all ease 0.5s;
+  &:hover {
+    color: white;
+    // transition: all ease 0.5s;
+  }
+}
+.box-container{
+  //   transition: all ease 0.5s;
+  &:hover {
+    color: white;
+    // transition: all ease 0.5s;
+   
   }
 }
 .box-container h3 {
@@ -159,3 +187,12 @@ ul li::before {
 .sale p {
   position: relative;
 }
+h1.physicalh {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 73px;
+width: 645px;
+}
+

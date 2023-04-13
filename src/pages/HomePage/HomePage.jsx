@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import './HomePage.scss';
-import creditcards from '../../assets/images/creditcards.png'
+import bank from '../HomePage/bank.svg'
 import Currency from '../../components/Currency';
 import Products from '../../components/Products/Products';
 import Calculator from '../../components/Calculator';
@@ -17,13 +17,12 @@ const HomePage = () => {
         <section className='hero'>
           <div className='hero-container'>
             <div className='hero-text'>
-              <h1>Быстрые кредиты по
-                низким процентам </h1>
+              <h1>У нас выгоднее</h1>
               <h5>Cамые низкие процентные ставки cреди микрофинансовых организаций Узбекистана.</h5>
-              <a href='#'>Подробнее</a>
+
             </div>
             <div className="hero-img">
-              <img src={creditcards} />
+              <img src={bank} />
             </div>
             <div className='see-more'>
               <button>Подробнее</button>
@@ -35,6 +34,7 @@ const HomePage = () => {
         <TableHome />
         <Trust />
         <AccordionHome />
+
       </div>
     </>
   )

@@ -34,7 +34,7 @@ const Products = () => {
             до 600 миллионов сум  </p>
           <button className='btn-products'>Подробнее</button>
         </div>
-        <div className='products'>
+        <div className='products' >
           <img src={factoring} />
           <h4>Факторинг</h4>
           <p>Субъктам

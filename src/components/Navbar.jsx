@@ -37,7 +37,7 @@ const Navbar = () => {
             </Link>
             <Link to='/company'>Компания</Link>
             <Link to='/consultation'>Консультация</Link>
-            <Link to='/'>Контакты</Link>
+            <Link to='/contact'>Контакты</Link>
             <select>
               <option value="ru/uz">Ру / Uz</option>
             </select>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <Link style={{
               display: show ? "block" : "none",
               borderBottom: !show ? "none" : "1px solid #628fd8"
-            }} className='navbar-link active' to='/physical' target='_blank'>Физическим лицам</Link>
+            }} className='navbar-link active' onClick={() => setActive(!active)} to='/physical' >Физическим лицам</Link>
             <Link className='navbar-link' onClick={() => setActive(!active)} to='/company'>Компания</Link>
             <Link className='navbar-link' onClick={() => setActive(!active)} to='/consultation'>Консультация</Link>
             <Link className='navbar-link' onClick={() => setActive(!active)} to='/'>Контакты</Link>

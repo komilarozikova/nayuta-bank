@@ -1,3 +1,4 @@
+
 .company-banner {
   margin-top: 60px;
   display: flex;
@@ -6,6 +7,7 @@
   @media screen and (max-width: 426px) {
     flex-direction: column;
   }
+  
   .banner-title {
     h2 {
       font-style: normal;
@@ -152,4 +154,8 @@
       }
     }
   }
+}
+.pdf-item a {
+  text-decoration-line: underline;
+  color: #231F20;
 }
