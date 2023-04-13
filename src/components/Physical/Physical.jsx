@@ -8,9 +8,9 @@ import '../Physical/Physical.scss'
 
 const Physical = () => {
   return (
-    <div className='physical container load-anim'>
+    <div className='physical  load-anim'>
       <div className="physical-container">
-        <div className="physical-left">
+        <div className="physical-left container">
           <h1>Физическим лицам</h1>
           <p>Потребительский кредит – это кредит наличными, который выдаютфизическим лицам для крупных покупок, оплаты услуг или путешествий.</p>
           <h1>Кто может получить кредит ?</h1>
@@ -31,7 +31,7 @@ const Physical = () => {
           <img className='physical-img' src={hand} alt="" />
         </div>
       </div>
-      <div className="physical-container2">
+      <div className="physical-container2 container">
         <div className="box">
           <div className="box-container">
             <h3>Автокредит до 50 млн сум на 36
@@ -46,7 +46,7 @@ const Physical = () => {
             </div>
           </div>
         </div>
-        <div className="box">
+        <div className="box container">
           <div className="box-container">
             <h3>Микрозайм нецелевой до 5 млн сум 12 месяцев</h3>
             <p>Для решения неотложных финансовых вопросов</p>

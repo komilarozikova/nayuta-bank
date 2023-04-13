@@ -4,6 +4,7 @@ import './Navbar.scss'
 import { useState } from 'react'
 import Consultaion from './Consultation/Consultaion'
 import Hamburger from '../assets/images/Menu.svg'
+import { useUserContext } from '../context/home-context'
 const Navbar = () => {
   const [active, setActive] = useState(true)
   const [show, setShow] = useState(false)

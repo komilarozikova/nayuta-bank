@@ -110,6 +110,9 @@ ul li::before {
     // transition: all ease 0.5s;
     background: linear-gradient(110.42deg, #5d7ee5 0%, #73cea7 100%);
     box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.2);
+    h3 {
+      color: white;
+    }
   }
 }
 .box-container h3 {
