@@ -35,7 +35,7 @@ const Products = () => {
           <button className='btn-products'>Подробнее</button>
         </div>
         <div className='products' >
-          <img src={factoring} />
+          <img src={factoring} className='factoring' />
           <h4>Факторинг</h4>
           <p>Субъктам
             предпринимательства

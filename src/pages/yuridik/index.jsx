@@ -1,5 +1,5 @@
 import './yuridik.scss'
-import YuridikImg from '../../assets/images/yuridik.png'
+import YuridikImg from '../../assets/images/yuridik.svg'
 import { Accordion } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import fourtyseven from '../../components/Physical/fourtyseven.svg'

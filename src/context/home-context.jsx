@@ -6,7 +6,7 @@ const UserContext = createContext()
 export const UserContextProvider = ({ children }) => {
     const [rates, setRates] = useState()
     useEffect(() => {
-        GetData(`/api/v1/exchange-rates/`)
+        GetData(`exchange-rates/`)
             .then(data => {
                 setRates(data)
             })
