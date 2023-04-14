@@ -83,6 +83,7 @@ section {
         font-size: 16px;
         line-height: 20px;
         width: 330px;
+        margin-top: 40px;
       }
     }
     .hero-img{
@@ -93,7 +94,7 @@ section {
       width: 330px;
       height: 550px;
       object-fit: contain;
-      margin-top: -150px;
+      margin-top: -125px;
     }
     .see-more{
       display: flex;
@@ -111,11 +112,13 @@ section {
         line-height: 24px;
         color: #FFFFFF;
         padding: 20px 45px;
+        margin-top: 450px;
+
       }
     }
   }
 }
-@media screen and (max-width: 396px) {
+@media screen and (max-width: 380px) {
   .hero-img{
     width: 100%;
     
@@ -124,6 +127,8 @@ section {
     width: 330px;
     height: 550px;
     object-fit: contain;
+    margin-top: -80px;
+
   }
   .hero-text{
     margin-left: -23px;
