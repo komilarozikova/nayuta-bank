@@ -64,7 +64,7 @@ const Navbar = () => {
          <input  type="checkbox" checked />
                <label id='langs' className='langru' for="coding">RU</label>
               <input type="checkbox" />
-              <label id='langs' for="music">/ UZ</label>
+              <label id='langs' className='languz'  for="music">/ UZ</label>
          </div>
         </div>
       </div>
