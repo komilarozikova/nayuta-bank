@@ -232,7 +232,8 @@ font-style: normal;
 font-weight: 700;
 font-size: 60px;
 line-height: 73px;
-width: 645px;
+width: 930px;
+
 @media screen and (max-width: 426px) {
   width: 323px;
   font-style: normal;
@@ -241,9 +242,12 @@ width: 645px;
   line-height: 37px;
 }
 }
+#mainh{
+  margin-top: 90px;
+}
 
-p.physicalp{
-  width: 649px;
+.physicalp{
+  width: 449px;
   @media screen and (max-width: 426px) {
     width: 352px;
     font-style: normal;

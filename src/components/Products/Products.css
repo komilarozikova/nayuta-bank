@@ -28,14 +28,19 @@
     margin: 0 auto;
     padding: 30px;
     background: #FFFFFF;
-box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.2);
-border-radius: 15px;
-margin: 10px;
+    box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.2);
+    border-radius: 15px;
+    margin: 10px;
+    width: 100%;
+    max-width: 275px;
+
 }
-.btn-products{
+
+.btn-products {
     display: none;
 }
-.products:hover .btn-products{
+
+.products:hover .btn-products {
     display: block;
     color: white;
     width: 144px;
@@ -48,6 +53,7 @@ margin: 10px;
     line-height: 17px;
     border: none;
 }
+
 .btn-products {
     color: white;
     width: 144px;
@@ -93,6 +99,7 @@ margin: 10px;
         color: #1942DF;
     }
 }
+
 .img.factoring {
     width: 145px;
     height: 300px;
