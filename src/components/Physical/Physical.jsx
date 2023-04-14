@@ -47,7 +47,7 @@ const Physical = () => {
             </div>
           </div>
         </div>
-        <div className="box">
+        <div className="box container">
           <div className="box-container">
             <h3>Микрозайм нецелевой до 5 млн сум 12 месяцев</h3>
             <p>Для решения неотложных финансовых вопросов</p>
