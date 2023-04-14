@@ -19,14 +19,14 @@ const HomePage = () => {
             <div className='hero-text'>
               <h1>У нас выгоднее</h1>
               <h5>Cамые низкие процентные ставки cреди микрофинансовых организаций Узбекистана.</h5>
-
+              <div className='see-more'>
+              <button>Подробнее</button>
+            </div>
             </div>
             <div className="hero-img">
               <img src={bank} />
             </div>
-            <div className='see-more'>
-              <button>Подробнее</button>
-            </div>
+          
           </div>
         </section>
         <Calculator />
