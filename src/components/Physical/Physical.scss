@@ -202,8 +202,27 @@ ul li::before {
     @media screen and (max-width: 426px) {
       width: 100px;
     }
+    
   }
+  
 }
+
+.sale2 {
+  // position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  
+  img {
+    @media screen and (max-width: 426px) {
+      width: 100px;
+    }
+    
+  }
+  
+}
+
 .sale p {
   position: relative;
 }

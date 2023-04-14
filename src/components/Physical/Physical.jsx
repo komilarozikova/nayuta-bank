@@ -66,7 +66,7 @@ const Physical = () => {
         <div className="box-container2">
           <h3>Микрозайм целевой до 30 млн сум на 36 месяцев</h3>
           <p > Поможем осуществить ваши цели. Микрозайм для путешествий, оплаты учёбы или на приобретение техники</p>
-          <div className="sale">
+          <div className="sale2">
             <p>от</p>
             <img src={fourtyfive} alt="" />
             <p>до</p>
