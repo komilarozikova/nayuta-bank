@@ -37,11 +37,13 @@
 }
 
 .btn-products {
-    display: none;
+    transition: opacity 0.1s ease-out;
+    opacity: 0;
 }
 
 .products:hover .btn-products {
     display: block;
+    opacity: 1;
     color: white;
     width: 144px;
     height: 32px;
@@ -52,6 +54,7 @@
     font-size: 14px;
     line-height: 17px;
     border: none;
+    transition: 2s ease-out 100ms
 }
 
 .btn-products {
