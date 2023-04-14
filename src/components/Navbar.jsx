@@ -37,10 +37,11 @@ const Navbar = () => {
             </Link>
             <Link to='/company'>Компания</Link>
             <Link to='/consultation'>Консультация</Link>
-            <Link to='/contact'>Контакты</Link>
-           
-              <p>Ру / <span>Uz</span> </p>
-          
+           <a href='#contact' className='contacts'>Контакты</a>
+               <input  type="checkbox" checked />
+               <label id='langs' for="coding">RU</label>
+              <input type="checkbox" />
+              <label id='langs' for="music">/ UZ</label>
           </div>
           <div className={active ? "links-hide" : "links-hide active"}>
             <Link onClick={() => setActive(!active)} className='navbar-link' to='/'>Главная</Link>
@@ -57,7 +58,7 @@ const Navbar = () => {
             }} className='navbar-link active' onClick={() => setActive(!active)} to='/physical' >Физическим лицам</Link>
             <Link className='navbar-link' onClick={() => setActive(!active)} to='/company'>Компания</Link>
             <Link className='navbar-link' onClick={() => setActive(!active)} to='/consultation'>Консультация</Link>
-            <Link className='navbar-link' onClick={() => setActive(!active)} to='/'>Контакты</Link>
+            <a href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>Контакты</a>
           </div>
           <select className='lang-hide'>
             <option value="ru/uz">Ру / Uz</option>
