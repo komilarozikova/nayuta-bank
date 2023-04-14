@@ -7,7 +7,9 @@ import './Currency.css';
 import { useUserContext } from '../context/home-context';
 
 function Navbar() {
+
   const { rates } = useUserContext()
+  
   return (
     <div className='currency'>
       <div className='currencyContainer'>

@@ -37,7 +37,7 @@ const Navbar = () => {
             </Link>
             <Link to='/company'>Компания</Link>
             <Link to='/consultation'>Консультация</Link>
-            <Link to='/contact'>Контакты</Link>
+            <a href="#contact"> Контакты</a>
             <select>
               <option value="ru/uz">Ру / Uz</option>
             </select>

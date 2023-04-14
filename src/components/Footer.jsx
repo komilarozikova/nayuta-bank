@@ -6,10 +6,11 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div className='footer-container'>
+    <div id='contact' className='footer-container'>
       <section className='footer-subscription'>
         <img className='footer-subscription-heading'
           src={logo}
+          alt=''
         />
       </section>
       <div className='footer-links'>
@@ -23,19 +24,19 @@ function Footer() {
           </div>
           <div id='child2' className='footer-link-items'>
             <Link to='/'>
-            Контакты:
+              Контакты:
             </Link>
             <Link to='/'>
-            <i class="fa-solid fa-phone" id='icons'></i>
-            +998 78 150 33 32
+              <i class="fa-solid fa-phone" id='icons'></i>
+              +998 78 150 33 32
             </Link>
             <Link to='/'>
-             <i class="fab fa-instagram" id='icons' />
-             instagram
-             </Link>
+              <i class="fab fa-instagram" id='icons' />
+              instagram
+            </Link>
             <Link to='/'>
-            <i class="fa-regular fa-envelope" id='icons'></i>
-            info@nayuta.uz
+              <i class="fa-regular fa-envelope" id='icons'></i>
+              info@nayuta.uz
             </Link>
           </div>
         </div>
@@ -48,10 +49,10 @@ function Footer() {
           </div>
           <div className='footer-link-items'>
             <Link to='/' className='addresslink'>Адрес:</Link>
-            <Link to='/' className='address'>Республика Узбекистан, Ташкент, 
-              <br/>
-            Мирабадский район, Нукусская улица, <br/>
-            дом 29, 100015</Link>
+            <Link to='/' className='address'>Республика Узбекистан, Ташкент,
+              <br />
+              Мирабадский район, Нукусская улица, <br />
+              дом 29, 100015</Link>
           </div>
         </div>
       </div>
