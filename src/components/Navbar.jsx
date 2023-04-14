@@ -37,9 +37,9 @@ const Navbar = () => {
             <Link to='/company'>Компания</Link>
             <Link to='/consultation'>Консультация</Link>
             <Link to='/contact'>Контакты</Link>
-            <select>
-              <option value="ru/uz">Ру / Uz</option>
-            </select>
+           
+              <p>Ру / <span>Uz</span> </p>
+          
           </div>
           <div className={active ? "links-hide" : "links-hide active"}>
             <Link onClick={() => setActive(!active)} className='navbar-link' to='/'>Главная</Link>
