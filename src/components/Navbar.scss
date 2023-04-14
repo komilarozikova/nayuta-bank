@@ -6,7 +6,9 @@
   box-sizing: border-box;
   font-family: Montserrat sans-serif;
 }
-
+.lang-container{
+  display: none;
+}
 .navbar {
   background: linear-gradient(98.3deg, #5c7ae8 0%, #75d6a1 100%) !important;
   // opacity: 0.71;
@@ -128,6 +130,9 @@
 }
 
 @media screen and (max-width: 426px) {
+  .lang-container{
+    display: block;
+  }
   .lang-hide {
     display: block;
   }
@@ -145,9 +150,17 @@
         height: 43px;
       }
     }
-    .langss {
-      font-size: 16px;
+      #langs {
+        font-size: 16px;
       line-height: 18px;
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+        width: 67px;
+        margin: 0 -17px
+    }
+    .langru{
+      margin-right: -10px;
     }
   }
 }

@@ -60,9 +60,12 @@ const Navbar = () => {
             <Link className='navbar-link' onClick={() => setActive(!active)} to='/consultation'>Консультация</Link>
             <a href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>Контакты</a>
           </div>
-          <select className='lang-hide'>
-            <option value="ru/uz">Ру / Uz</option>
-          </select>
+         <div className="lang-container">
+         <input  type="checkbox" checked />
+               <label id='langs' className='langru' for="coding">RU</label>
+              <input type="checkbox" />
+              <label id='langs' for="music">/ UZ</label>
+         </div>
         </div>
       </div>
 
