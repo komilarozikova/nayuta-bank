@@ -26,7 +26,7 @@ const Yuridik = () => {
                 <Accordion defaultActiveKey="0">
                     <div className="grid-accordion">
                         <Accordion.Item eventKey="0">
-                            <Accordion.Header>
+                            <Accordion.Header >
                                 <h2>Автокредит до 300 млн сум
                                     на 36 месяцев</h2>
                                 <p>Вы – субъект предпринимательства или самозанятое лицо? Действуйте увереннее с нашей поддержкой!</p>
