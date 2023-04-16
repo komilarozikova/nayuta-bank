@@ -10,7 +10,7 @@ section {
 .hero-container {
   height: 100%;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 50px;
   position: relative;
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@ section {
   font-size: 60px;
   line-height: 73px;
   color: #1942df;
-  margin: 0 0 60px;
+  margin: 0 0 70px;
   width: 509px;
   height: 146px;
 }
@@ -83,6 +83,7 @@ section {
         font-size: 16px;
         line-height: 20px;
         width: 330px;
+        margin-top: 40px;
       }
     }
     .hero-img {
@@ -92,7 +93,7 @@ section {
       width: 330px;
       height: 550px;
       object-fit: contain;
-      margin-top: -150px;
+      margin-top: -125px;
     }
     .see-more {
       display: flex;
@@ -110,18 +111,22 @@ section {
         line-height: 24px;
         color: #ffffff;
         padding: 20px 45px;
+        margin-top: 450px;
+
       }
     }
   }
 }
-@media screen and (max-width: 396px) {
-  .hero-img {
+@media screen and (max-width: 380px) {
+  .hero-img{
     width: 100%;
   }
   .hero-img img {
     width: 330px;
     height: 550px;
     object-fit: contain;
+    margin-top: -80px;
+
   }
   .hero-text {
     margin-left: -23px;

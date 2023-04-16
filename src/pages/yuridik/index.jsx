@@ -11,6 +11,7 @@ import parse from 'html-react-parser';
 
 
 
+
 const Yuridik = () => {
     const { legalcredit } = useUserContext()
     return (
