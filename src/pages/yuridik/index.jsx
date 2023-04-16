@@ -9,6 +9,7 @@ import thirtyeight from '../../components/Physical/thirtyeight.svg'
 
 
 
+
 const Yuridik = () => {
     return (
         <div className='container yuridik load-anim'>
@@ -55,7 +56,7 @@ const Yuridik = () => {
                                 <h2>Микролизинг до 600 млн сум
                                     на 60 месяцев</h2>
                                 <p className='mb-4'>Для роста вашего бизнеса</p>
-                                <Link style={{
+                                <Link className='mb-4' style={{
                                     float: "left"
                                 }} href="/">Что мы предлагаем?</Link>
                             </Accordion.Header>
