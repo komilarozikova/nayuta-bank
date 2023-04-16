@@ -4,7 +4,7 @@ import creditcards from '../HomePage/creditcards.svg'
 
 const HomePage = () => {
   return (
-    <section className='hero'>
+    <section className='heroasldnasljd'>
       <div className='hero-container'>
       <div className='hero-text'>
             <h1>У нас выгоднее</h1>

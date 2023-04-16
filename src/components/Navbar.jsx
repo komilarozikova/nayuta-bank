@@ -57,11 +57,14 @@ const Navbar = () => {
             }} className='navbar-link active' onClick={() => setActive(!active)} to='/physical' >Физическим лицам</Link>
             <Link className='navbar-link' onClick={() => setActive(!active)} to='/company'>Компания</Link>
             <Link className='navbar-link' onClick={() => setActive(!active)} to='/consultation'>Консультация</Link>
-            <Link className='navbar-link' onClick={() => setActive(!active)} to='/'>Контакты</Link>
+            <a href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>Контакты</a>
           </div>
-          <select className='lang-hide'>
-            <option value="ru/uz">Ру / Uz</option>
-          </select>
+         <div className="lang-container">
+         <input  type="checkbox" checked />
+               <label id='langs' className='langru' for="coding">RU</label>
+              <input type="checkbox" />
+              <label id='langs' className='languz'  for="music">/ UZ</label>
+         </div>
         </div>
       </div>
 

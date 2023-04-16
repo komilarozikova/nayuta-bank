@@ -6,7 +6,9 @@
   box-sizing: border-box;
   font-family: Montserrat sans-serif;
 }
-
+.lang-container{
+  display: none;
+}
 .navbar {
   background: linear-gradient(98.3deg, #5c7ae8 0%, #75d6a1 100%) !important;
   // opacity: 0.71;
@@ -14,6 +16,7 @@
   width: 100%;
   padding: 21px;
 }
+
 .navbar-inner {
   display: flex;
   justify-content: space-between;
@@ -40,12 +43,15 @@
       color: #ffffff;
     }
   }
-  select {
-    border: none;
+  #langs {
     background-color: transparent;
-    outline: none;
     color: white;
     font-weight: bold;
+    width: 67px;
+    margin: 0 -17px
+  }
+  #langs:hover {
+    cursor: pointer;
   }
 }
 .links-hide {
@@ -99,6 +105,8 @@
   &:hover {
     .uslugi {
       width: 250px;
+      margin-top: 10px;
+      margin-left: 20px;
       position: absolute;
       display: block;
       background-color: #fff;
@@ -124,6 +132,9 @@
 }
 
 @media screen and (max-width: 426px) {
+  .lang-container{
+    display: block;
+  }
   .lang-hide {
     display: block;
   }
@@ -141,9 +152,39 @@
         height: 43px;
       }
     }
-    select {
-      font-size: 16px;
+      #langs {
+        font-size: 16px;
       line-height: 18px;
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+        width: 67px;
+        margin: 0 -17px
+    }
+    .langru{
+      margin-right: -10px;
     }
   }
 }
+
+/* for all inputs of type checkbox */
+input[type="checkbox"]  {
+  display: none;
+}
+
+
+// .contacts{
+//   width: 148px !important;
+// height: 31px;
+// left: 1050px;
+// top: 38px;
+
+// border: 1px solid #FFFFFF;
+// border-radius: 15.5px;
+// font-style: normal;
+// font-weight: 500;
+// font-size: 19px !important; 
+// line-height: 23px;
+
+// color: #FFFFFF;
+// }

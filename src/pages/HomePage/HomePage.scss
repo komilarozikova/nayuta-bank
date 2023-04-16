@@ -22,7 +22,7 @@ section {
   margin-bottom: 40px;
 }
 .hero-text h1 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -38,19 +38,31 @@ section {
   margin-top: -30px;
   color: #231f20;
   width: 572px;
+  margin-bottom: 80px;
 }
-.hero-img img{
+.hero-img img {
   width: 680px;
   height: 780px;
 }
-
-.see-more{
+.carousel-control-prev {
   display: none;
 }
+.carousel-control-next {
+  display: none;
+}
+.see-more {
+  a {
+    padding: 16px 45px;
+    color: white;
+    z-index: 1000;
+    background: #ff5a3a;
+    box-shadow: -3px 4px 7px rgba(255, 90, 58, 0.4);
+    border-radius: 50px;
+  }
+}
 @media screen and (max-width: 600px) {
-  .see-more{
+  .see-more {
     display: block;
-
   }
   .hero-container {
     flex-direction: column;
@@ -73,47 +85,45 @@ section {
         width: 330px;
       }
     }
-    .hero-img{
+    .hero-img {
       width: 100%;
-      
     }
-    .hero-img img{
+    .hero-img img {
       width: 330px;
       height: 550px;
       object-fit: contain;
       margin-top: -150px;
     }
-    .see-more{
+    .see-more {
       display: flex;
       justify-content: center;
       margin: -70px 0 55px;
-      button{
+      button {
         border: none;
-        background: #FF5A3A;
+        background: #ff5a3a;
         box-shadow: -3px 4px 7px rgba(255, 90, 58, 0.4);
         border-radius: 50px;
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
         line-height: 24px;
-        color: #FFFFFF;
+        color: #ffffff;
         padding: 20px 45px;
       }
     }
   }
 }
 @media screen and (max-width: 396px) {
-  .hero-img{
+  .hero-img {
     width: 100%;
-    
   }
-  .hero-img img{
+  .hero-img img {
     width: 330px;
     height: 550px;
     object-fit: contain;
   }
-  .hero-text{
+  .hero-text {
     margin-left: -23px;
   }
 }

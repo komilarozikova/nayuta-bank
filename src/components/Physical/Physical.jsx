@@ -1,72 +1,71 @@
 import React from 'react'
 import hand from '../Physical/hand.svg'
-import twentytwo from '../Physical/twentytwo.svg'
-import thirtyeight from '../Physical/thirtyeight.svg'
-import fourtyseven from '../Physical/fourtyseven.svg'
 import fourtynine from '../Physical/fourtynine.svg'
 import '../Physical/Physical.scss'
 import fourtyfive from '../Physical/fourtyfive.svg'
+import { useUserContext } from '../../context/home-context'
 
 const Physical = () => {
+  const { individualcreditType, individualcredit, whosecredit } = useUserContext()
   return (
     <div className='physicalload-anim'>
       <div className="physical-container  ">
         <div className="physical-left container">
           <h1 className='physicalh'>Физическим лицам</h1>
-          <p style={{width: "649px"}}>Потребительский кредит – это кредит наличными, который выдаютфизическим лицам для крупных покупок, оплаты услуг или путешествий.</p>
-          <h1 className='physicalh' style={{width: "966px"}}>Кто может получить кредит ?</h1>
-          <ul>
-            <li>Лица старше 24-х лет;</li>
-            <li>проживающие в Ташкенте и Ташкентской области;</li>
-            <li>официально трудоустроенные (со справкой о доходах).</li>
-          </ul>
-          <h1 className='physicalh' style={{width: "863px"}}>Какие нужны документы?</h1>
-          <ul>
-            <li>Паспорт или ID-карта;</li>
-            <li>Официальное трудоустройство, справка о доходах;</li>
-            <li>Заявка на получения микрокредита (заполняется в офисе);</li>
-            <li>Для кредитов с залогом – документы на залоговое обеспечение, в т.ч. отчёт об оценке и страховой полис.</li>
-          </ul>
+          <p className='phycicalp' >Потребительский кредит – это кредит наличными, который выдаютфизическим лицам для крупных покупок, оплаты услуг или путешествий.</p>
+          {
+            whosecredit?.map((item, key) => (
+              <div key={key}>
+                <h1 className='physicalh'>{item?.title}</h1>
+                <ul>
+                  <li>{item?.subtitle}</li>
+                </ul>
+              </div>
+            ))
+          }
+
+          {
+            individualcredit?.map((item, key) => (
+              <div key={key}>
+                <h1 className='physicalh' >{item?.title}</h1>
+                <ul>
+                  <li>{item?.subtitle}</li>
+                </ul>
+              </div>
+            ))
+          }
         </div>
         <div className="physical-right">
           <img className='physical-img' src={hand} alt="" />
         </div>
       </div>
       <div className="physical-container2 container">
-        <div className="box">
-          <div className="box-container">
-            <h3>Автокредит до 50 млн сум на 36
-              месяцев</h3>
-            <p>Вам не обязательно откладывать «до завтра» то, что с нами можно приобрести уже сейчас</p>
-            <div className="sale">
-              <p>от</p>
-              <img src={twentytwo} alt="" />
-              <p>до</p>
-              <img src={thirtyeight} alt="" />
-              <p>в год</p>
+        {
+          individualcreditType?.map((item, key) => (
+            <div className="box">
+              <div className="box-container">
+                <h3>{item?.title}</h3>
+                <p>{item?.description}</p>
+                <div className="sale">
+                  <p>от</p>
+                  <img src={item?.first_image} alt="" />
+                  <p>до</p>
+                  <img src={item?.second_image} alt="" />
+                  <p>в год</p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="box container">
-          <div className="box-container">
-            <h3>Микрозайм нецелевой до 5 млн сум 12 месяцев</h3>
-            <p>Для решения неотложных финансовых вопросов</p>
-            <div className="sale">
-              <p>от</p>
-              <img src={fourtyseven} alt="" />
-              <p>до</p>
-              <img src={fourtynine} alt="" />
-              <p>в год</p>
-            </div>
-          </div>
-        </div>
+          ))
+        }
+
+
 
       </div>
-      <div className="box3 container">
+      {/* <div className="box3 container">
         <div className="box-container2">
           <h3>Микрозайм целевой до 30 млн сум на 36 месяцев</h3>
-          <p style={{width: "800px"}}> Поможем осуществить ваши цели. Микрозайм для путешествий, оплаты учёбы или на приобретение техники</p>
-          <div className="sale">
+          <p > Поможем осуществить ваши цели. Микрозайм для путешествий, оплаты учёбы или на приобретение техники</p>
+          <div className="sale2">
             <p>от</p>
             <img src={fourtyfive} alt="" />
             <p>до</p>
@@ -74,7 +73,7 @@ const Physical = () => {
             <p>в год</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

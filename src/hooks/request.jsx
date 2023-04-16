@@ -1,5 +1,5 @@
 
-const URL = "http://185.233.83.60:81/";
+const URL = "https://yruoebgair.tk/api/v1";
 
 export function PostData(endpoint, data, token) {
     return fetch(`${URL + endpoint}`, {
