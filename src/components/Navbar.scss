@@ -41,6 +41,8 @@
 
     a,
     button {
+      
+      color: #1942df;
       font-style: normal;
       font-weight: 600;
       font-size: 19px;
@@ -152,13 +154,18 @@
 .uslugi {
   margin: 20px;
 }
+.uslugulink{
+  color: #FF5A3A;
+}
 
 .physicalh {
   padding: 20px;
+  color: #000000;
 }
 
 .yuridikh {
   padding: 10px;
+  color: #000000;
 }
 
 @media screen and (max-width: 426px) {
@@ -390,3 +397,22 @@ a {
 //   bottom: 24px;
 //   left: 16px;
 // }
+.links {
+  &.hide {
+    display: none;
+  }
+  a,
+  button {
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    margin-right: 35px;
+    color: #ffffff;
+    border: none;
+    &.active {
+      color: #FF5A3A;
+    }
+  }
+}

@@ -2,7 +2,7 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import './HomePage.scss';
-import bank from '../HomePage/bank.svg'
+// import bank from '../HomePage/bank.svg'
 import Currency from '../../components/Currency';
 import Products from '../../components/Products/Products';
 import Calculator from '../../components/Calculator';

@@ -1,11 +1,11 @@
 import './yuridik.scss'
 import YuridikImg from '../../assets/images/yuridik.svg'
 import { Accordion } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import fourtyseven from '../../components/Physical/fourtyseven.svg'
 import fourtynine from '../../components/Physical/fourtynine.svg'
-import twentytwo from '../../components/Physical/twentytwo.svg'
-import thirtyeight from '../../components/Physical/thirtyeight.svg'
+// import twentytwo from '../../components/Physical/twentytwo.svg'
+// import thirtyeight from '../../components/Physical/thirtyeight.svg'
 import { useUserContext } from '../../context/home-context'
 import parse from 'html-react-parser';
 
