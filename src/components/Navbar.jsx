@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Logo from '../assets/images/logo.svg'
 import './Navbar.scss'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Consultaion from './Consultation/Consultaion'
 import Hamburger from '../assets/images/Menu.svg'
 import { useUserContext } from '../context/home-context'
@@ -11,7 +11,10 @@ import uz from '../assets/images/uz.svg'
 const Navbar = () => {
   const [active, setActive] = useState(true)
   const [show, setShow] = useState(false)
+  const [activeclass, setClass] = useState()
 
+  const pathname = window.location.pathname
+  const navigate = useNavigate()
   return (
     <>
       <div className="navbar">
@@ -32,14 +35,14 @@ const Navbar = () => {
           </div>
           <div className={active ? "links" : "links hide"}>
             <Link to='/'>Главная</Link>
-            <Link className='uslugi-hover' to='/'>Услуги
+            <Link className={pathname === '/physical' ? 'uslugi-hover active' : 'uslugi-hover'} to='/'>Услуги
               <div className='uslugi'>
-                <Link to='/physical' className='physicalh'>Физическим лицам</Link>
+                <Link to='/physical' className={pathname === '/physical' ? 'active' : ''}>Физическим лицам</Link>
                 <Link to='/yuridik' className='yuridikh'>Юридическим лицам</Link>
               </div>
             </Link>
-            <Link to='/company'>Компания</Link>
-            <Link to='/consultation'>Консультация</Link>
+            <button onClick={() => navigate('/company')} className={pathname === '/company' ? 'active' : ''} >Компания</button>
+            <button onClick={() => navigate('/consultation')} className={pathname === '/consultation' ? 'active' : ''}>Консультация</button>
             <a href='#contact' className='contacts' >Контакты</a>
             <input type="checkbox" checked />
             <label id='langs' for="coding">RU</label>
@@ -64,12 +67,12 @@ const Navbar = () => {
             <Link className='navbar-link' onClick={() => setActive(!active)} to='/consultation'>Консультация</Link>
             <a href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>Контакты</a>
           </div>
-           <div className="lang-container">
-          <input  type="checkbox" checked />
-               <label id='langs' className='langru' for="coding">RU</label>
-              <input type="checkbox" />
-              <label id='langs' className='languz'  for="music">/ UZ</label> 
-              </div> 
+          <div className="lang-container">
+            <input type="checkbox" checked />
+            <label id='langs' className='langru' for="coding">RU</label>
+            <input type="checkbox" />
+            <label id='langs' className='languz' for="music">/ UZ</label>
+          </div>
           {/* <div className="lang-menu">
                 <div className="selected-lang">
                   RU/UZ
@@ -83,7 +86,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div> */}
-{/* 
+          {/* 
           <ul>
 
             <li class="dropdown">

@@ -37,12 +37,16 @@
     }
     a,
     button {
+      background-color: transparent;
       font-style: normal;
       font-weight: 600;
       font-size: 19px;
       line-height: 23px;
       margin-right: 35px;
       color: #ffffff;
+      &.active {
+        color: red;
+      }
     }
   }
   #langs {
@@ -256,7 +260,6 @@ a {
   display: block;
   color: #1942df;
 }
-
 .lang-menu ul li:hover {
   background-color: #f2f2f2;
 }

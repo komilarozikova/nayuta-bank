@@ -1,8 +1,6 @@
 import React from 'react'
 import hand from '../Physical/hand.svg'
-import fourtynine from '../Physical/fourtynine.svg'
 import '../Physical/Physical.scss'
-import fourtyfive from '../Physical/fourtyfive.svg'
 import { useUserContext } from '../../context/home-context'
 
 const Physical = () => {
