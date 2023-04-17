@@ -10,7 +10,7 @@ const Physical = () => {
       <div className="physical-container  ">
         <div className="physical-left container">
           <h1 className='physicalh'>Физическим лицам</h1>
-          <p className='phycicalp' >Потребительский кредит – это кредит наличными, который выдаютфизическим лицам для крупных покупок, оплаты услуг или путешествий.</p>
+          <p className='physicalp' >Потребительский кредит – это кредит наличными, который выдаютфизическим лицам для крупных покупок, оплаты услуг или путешествий.</p>
           {
             whosecredit?.map((item, key) => (
               <div key={key}>

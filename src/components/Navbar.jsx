@@ -39,8 +39,8 @@ const Navbar = () => {
 
             <button className={pathname === '/uslugi' ? 'uslugi-hover active' : 'uslugi-hover'} to='/uslugi'>Услуги
               <div className='uslugi'>
-                <button to='/physical' onClick={() => navigate('/')} className={pathname === '/physical' ? 'uslugulink active' : 'uslugulink'}>Физическим лицам</button>
-                <button to='/yuridik' onClick={() => navigate('/')} className={pathname === '/yuridik' ? 'uslugulink active' : 'uslugulink'}>Юридическим лицам</button>
+                <button to='/physical' onClick={() => navigate('/physical')} className={pathname === '/physical' ? 'uslugulink active' : 'uslugulink'}>Физическим лицам</button>
+                <button to='/yuridik' onClick={() => navigate('/yuridik')} className={pathname === '/yuridik' ? 'uslugulink active' : 'uslugulink'}>Юридическим лицам</button>
               </div>
             </button>
 
