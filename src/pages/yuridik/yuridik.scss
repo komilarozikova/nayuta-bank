@@ -3,7 +3,9 @@
   box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.2);
   border-radius: 15px;
 }
-
+.yuridik-accordion{
+  margin-top: -60px;
+}
 .yuridik {
   .accordion-body {
     li {
@@ -230,6 +232,7 @@
 
             display: block;
             height: 100%;
+            margin-top: -140px;
 
             h2 {
               font-size: 17px;

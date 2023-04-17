@@ -10,18 +10,19 @@ const AccordionHome = () => {
     const { faq } = useUserContext()
     return (
         <div className="accordion" >
-            <h1 className="accordionh">Часто задаваемые вопросы</h1>
-            <Accordion id="acc" defaultActiveKey="0">
-                {
-                    faq?.map((item, key) => (
-                        <Accordion.Item id="accitem" eventKey={key}>
-                            <Accordion.Header id="accheader">{item?.title}</Accordion.Header>
-                            <Accordion.Body>
-                                <p>{item?.description}</p>
-                            </Accordion.Body>
-                        </Accordion.Item>
-                    ))
-                }
+        <h1 className="accordionh">Часто задаваемые вопросы</h1>
+        <Accordion id="acc" defaultActiveKey="0">
+            {
+                faq?.map((item, key) => (
+                    <Accordion.Item id="accitem" eventKey={key}>
+                        <Accordion.Header id="accheader">{item?.title}</Accordion.Header>
+                        <Accordion.Body>
+                            <p>{item?.description}</p>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                ))
+            }
+
             </Accordion>
             <img className="qleft" src={question1} alt="" />
             <img className="qcenter1" src={question2} alt="" />
