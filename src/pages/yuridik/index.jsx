@@ -1,8 +1,11 @@
 import './yuridik.scss'
 import YuridikImg from '../../assets/images/yuridik.svg'
 import { Accordion } from 'react-bootstrap'
+// import { Link } from 'react-router-dom'
 import fourtyseven from '../../components/Physical/fourtyseven.svg'
 import fourtynine from '../../components/Physical/fourtynine.svg'
+// import twentytwo from '../../components/Physical/twentytwo.svg'
+// import thirtyeight from '../../components/Physical/thirtyeight.svg'
 import { useUserContext } from '../../context/home-context'
 import parse from 'html-react-parser';
 
@@ -61,7 +64,6 @@ const Yuridik = () => {
                         </Accordion.Header>
                         <Accordion.Body>
                             <h1 >Выделяем 1 000 000 000 сум на срок до 36 месяцев</h1>
-
                             <h5>Что для этого нужно?</h5>
                             <ul>
                                 <li>Устав, учредительный договор, Протокол согласия учредителей</li>
@@ -74,18 +76,14 @@ const Yuridik = () => {
                                 <li>Справка с ГНИ об отсутствии задолженности </li>
                                 <li>Договор об открытии счета с банком </li>
                                 <li>Справка с банка о состоянии счетов, наличии картотек и оборотах по расчётным счетам </li>
-
                             </ul>
-
                             <div className="sale">
                                 <p>от</p>
                                 <img src={fourtyseven} alt="" />
                                 <p>до</p>
                                 <img src={fourtynine} alt="" />
                                 <p>в год</p>
-
                             </div>
-
                         </Accordion.Body>
                     </Accordion.Item> */}
 

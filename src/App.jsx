@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage/HomePage';
 import Consultaion from './components/Consultation/Consultaion';
 import Physical from './components/Physical/Physical';
-import Faq from './components/FAQ/Faq';
+// import Faq from './components/FAQ/Faq';
 import Yuridik from './pages/yuridik';
 import Company from './pages/company';
 
@@ -22,6 +22,8 @@ const App = () => {
         <Route path='/yuridik' element={<Yuridik />} />
         <Route path='/company' element={<Company />} />
         <Route path='/contact' element={<Footer />}/>
+        <Route path='/uslugi' element={<Physical />}/>
+        <Route path='/uslugi' element={<Yuridik />}/>
       </Routes>
       <Footer />
     </>
