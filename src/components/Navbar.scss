@@ -9,6 +9,9 @@
 }
 .lang-btn {
   opacity: 0.5;
+  background-color: transparent;
+  border: none;
+  color: white;
   &.active {
     opacity: 1;
     color: white !important;
@@ -28,7 +31,7 @@
   left: 0;
   right: 0;
   top: 0;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .navbar-inner {

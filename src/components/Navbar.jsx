@@ -72,8 +72,10 @@ const Navbar = () => {
             <a href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>Контакты</a>
           </div>
           <div className="lang-container">
-            <button>RU</button>
-            <button>/ UZ</button>
+            <button onClick={() => setLang("ru")} className={lang === 'ru' ? 'lang-btn active' : 'lang-btn'} style={{
+              marginRight: "10px"
+            }}>RU</button>
+            <button onClick={() => setLang("uz")} className={lang === 'uz' ? 'lang-btn active' : 'lang-btn'}>/ UZ</button>
           </div>
           {/* <div className="lang-menu">
                 <div className="selected-lang">
