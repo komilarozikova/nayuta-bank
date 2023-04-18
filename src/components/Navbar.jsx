@@ -1,18 +1,13 @@
 import { Link, useNavigate } from 'react-router-dom'
 import Logo from '../assets/images/logo.svg'
 import './Navbar.scss'
-import { useEffect, useState } from 'react'
-import Consultaion from './Consultation/Consultaion'
+import { useState } from 'react'
 import Hamburger from '../assets/images/Menu.svg'
 import { useUserContext } from './context/home-context'
-import ru from '../assets/images/ru.svg'
-import uz from '../assets/images/uz.svg'
 
 const Navbar = () => {
   const [active, setActive] = useState(true)
   const [show, setShow] = useState(false)
-  const [activeclass, setClass] = useState()
-
   const pathname = window.location.pathname
   const navigate = useNavigate()
   const { lang, setLang } = useUserContext()
