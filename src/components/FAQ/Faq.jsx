@@ -5,8 +5,7 @@ const Faq = () => {
   return (
     <div className='faq-container'>
       <h1 className='heading'>Часто задаваемые вопросы</h1>
-      <div className='faq- 
-wrapper'>
+      <div className='faq-wrapper'>
         <div className="faq">
           <div className="faq-heading">
             <h3>1. Какие документы необходимы для оформления кредита?</h3>
@@ -19,8 +18,7 @@ wrapper'>
           </p>
         </div>
       </div>
-      <div className='faq- 
-wrapper'>
+      <div className='faq-wrapper'>
         <div className="faq">
           <div className="faq-heading">
             <h3>2. Как оформляется онлайн-кредит?</h3>

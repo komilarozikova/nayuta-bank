@@ -1,8 +1,4 @@
 import React from 'react';
-import microzaymi from '../Products/microzaymi.svg';
-import microkredit from '../Products/microkredit.svg'
-import microlizing from '../Products/microlizing.svg'
-import factoring from '../Products/factoring.svg'
 import '../Products/Products.scss';
 import { useUserContext } from '.././context/home-context';
 
@@ -22,10 +18,7 @@ const Products = () => {
             </div>
           ))
         }
-
-
       </div>
-
     </div>
   )
 }
