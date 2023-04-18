@@ -91,6 +91,7 @@ ul li::before {
     @media screen and (max-width: 426px) {
       font-size: 18px;
       line-height: 22px;
+
     }
 
     color: #1942df;
@@ -108,6 +109,7 @@ ul li::before {
     @media screen and (max-width: 426px) {
       font-size: 18px;
       line-height: 22px;
+      margin-right: 0;
     }
 
     color: #1942df;
@@ -145,6 +147,10 @@ ul li::before {
   background: linear-gradient(110.42deg, #fff 0%, #fff 100%);
 
   margin-right: 15px;
+  
+  @media screen and (max-width: 426px) {
+    margin-right: 0;
+  }
 
   &:hover {
     color: white;
