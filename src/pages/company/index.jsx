@@ -3,9 +3,13 @@ import BannerImg from '../../assets/images/banner.png'
 import PdfImg from '../../assets/images/pdf.png'
 import BeforeImg from '../../assets/images/beforeimg.png'
 import InfImg from '../../assets/images/infinity.png'
+<<<<<<< HEAD
 import Pdf1 from '../../assets/documents/document1.pdf'
 import Pdf2 from '../../assets/documents/document2.pdf'
 
+=======
+import MyPdf from '../../98117f01-fc4b-4024-a692-67c35b2a4f50.pdf'
+>>>>>>> cf78aac12cba9cfa7cc1b8eb51366595361d9afe
 const Company = () => {
     return (
         <div className='load-anim'>
@@ -34,7 +38,11 @@ const Company = () => {
                         </div>
                         <div className="pdf-item">
                             <img src={PdfImg} alt="" />
+<<<<<<< HEAD
                             <a href={Pdf2} target="_blank">Свидетельство о регистрации</a>
+=======
+                            <a target='_blank' href={MyPdf}>Свидетельство о регистрации</a>
+>>>>>>> cf78aac12cba9cfa7cc1b8eb51366595361d9afe
                         </div>
                     </div>
                 </div>

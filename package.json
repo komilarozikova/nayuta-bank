@@ -17,8 +17,12 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-input-range": "^1.3.0",
+<<<<<<< HEAD
     "react-native": "^0.71.6",
     "react-native-phone-call": "^1.2.0",
+=======
+    "react-pdf": "^6.2.2",
+>>>>>>> cf78aac12cba9cfa7cc1b8eb51366595361d9afe
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
     "sass": "^1.60.0",

@@ -13,53 +13,64 @@ export const UserContextProvider = ({ children }) => {
     const [legalcredit, setLegalcredit] = useState()
     const [products, setProducts] = useState()
     const [whosecredit, setWhosecredit] = useState()
+    const [lang, setLang] = useState('uz');
+
     useEffect(() => {
-        GetData(`/exchange-rates/`)
+        GetData(`/exchange-rates/`, lang)
             .then(data => {
                 setRates(data)
             })
             .catch(err => console.log(err))
-        GetData(`/FAQ/`)
+        GetData(`/FAQ/`, lang)
             .then(data => {
                 setFaq(data)
             })
             .catch(err => console.log(err))
-        GetData(`/calculate-list/`)
+        GetData(`/calculate-list/`, lang)
             .then(data => {
                 setCalculateList(data)
             })
             .catch(err => console.log(err))
-        GetData(`/carousels/`)
+        GetData(`/carousels/`, lang)
             .then(data => {
                 setCarousels(data)
             })
             .catch(err => console.log(err))
-        GetData(`/individual-credit-type/`)
+        GetData(`/individual-credit-type/`, lang)
             .then(data => {
                 setIndividualcreditType(data)
             })
             .catch(err => console.log(err))
-        GetData(`/individual-credit/`)
+        GetData(`/individual-credit/`, lang)
             .then(data => {
                 setIndividualcredit(data)
             })
             .catch(err => console.log(err))
-        GetData(`/legal-credit/`)
+        GetData(`/legal-credit/`, lang)
             .then(data => {
                 setLegalcredit(data)
             })
             .catch(err => console.log(err))
-        GetData(`/products/`)
+        GetData(`/products/`, lang)
             .then(data => {
                 setProducts(data)
             })
             .catch(err => console.log(err))
-        GetData(`/whose-credit/`)
+        GetData(`/whose-credit/`, lang)
             .then(data => {
                 setWhosecredit(data)
             })
             .catch(err => console.log(err))
-    }, [])
+        if (lang) {
+            sessionStorage.setItem('lang', lang);
+            setLang(lang);
+        }
+        else {
+            sessionStorage.removeItem('lang');
+            setLang(lang);
+        }
+    }, [lang])
+
     const value = {
         rates, setRates,
         faq, setFaq,
@@ -69,7 +80,8 @@ export const UserContextProvider = ({ children }) => {
         individualcredit, setIndividualcredit,
         legalcredit, setLegalcredit,
         products, setProducts,
-        whosecredit, setWhosecredit
+        whosecredit, setWhosecredit,
+        lang, setLang
     }
 
     return (

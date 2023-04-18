@@ -7,7 +7,13 @@
   box-sizing: border-box;
   font-family: Montserrat sans-serif;
 }
-
+.lang-btn {
+  opacity: 0.5;
+  &.active {
+    opacity: 1;
+    color: white !important;
+  }
+}
 .lang-container {
   display: none;
 }
@@ -19,10 +25,17 @@
   width: 100%;
   padding: 21px;
   position: fixed;
+<<<<<<< HEAD
   z-index: 100;
   left: 0;
   right: 0;
   top: 0;
+=======
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+>>>>>>> cf78aac12cba9cfa7cc1b8eb51366595361d9afe
 }
 
 .navbar-inner {

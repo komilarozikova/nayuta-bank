@@ -15,6 +15,7 @@ const Navbar = () => {
 
   const pathname = window.location.pathname
   const navigate = useNavigate()
+  const { lang, setLang } = useUserContext()
   return (
     <>
       <div className="navbar">
@@ -48,10 +49,10 @@ const Navbar = () => {
             <button onClick={() => navigate('/company')} className={pathname === '/company' ? 'active' : ''} >Компания</button>
             <button onClick={() => navigate('/consultation')} className={pathname === '/consultation' ? 'active' : ''}>Консультация</button>
             <a href='#contact' className='contacts' >Контакты</a>
-            <input type="checkbox" checked />
-            <label id='langs' for="coding">RU</label>
-            <input type="checkbox" />
-            <label id='langs' for="music">/ UZ</label>
+            <button onClick={() => setLang("ru")} className={lang === 'ru' ? 'lang-btn active' : 'lang-btn'} style={{
+              marginRight: "10px"
+            }}>RU</button>
+            <button onClick={() => setLang("uz")} className={lang === 'uz' ? 'lang-btn active' : 'lang-btn'}>/ UZ</button>
           </div>
           <div className={active ? "links-hide" : "links-hide active"}>
             <Link onClick={() => setActive(!active)} className='navbar-link' to='/'>Главная</Link>
@@ -71,10 +72,8 @@ const Navbar = () => {
             <a href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>Контакты</a>
           </div>
           <div className="lang-container">
-            <input type="checkbox" checked />
-            <label id='langs' className='langru' for="coding">RU</label>
-            <input type="checkbox" />
-            <label id='langs' className='languz' for="music">/ UZ</label>
+            <button>RU</button>
+            <button>/ UZ</button>
           </div>
           {/* <div className="lang-menu">
                 <div className="selected-lang">
