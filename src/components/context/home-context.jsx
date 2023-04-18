@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import { GetData } from '../hooks/request';
+import { GetData } from '../../hooks/request';
 
 const UserContext = createContext()
 

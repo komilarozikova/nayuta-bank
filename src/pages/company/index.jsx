@@ -28,7 +28,7 @@ const Company = () => {
                     <div className="pdfs">
                         <div className="pdf-item">
                             <img src={PdfImg} alt="" />
-                            <a href="#">Письмо с разрешением деятельности компании от Центрального Банка</a>
+                            <a href={MyPdf} target="_blank">Письмо с разрешением деятельности компании от Центрального Банка</a>
                         </div>
                         <div className="pdf-item">
                             <img src={PdfImg} alt="" />

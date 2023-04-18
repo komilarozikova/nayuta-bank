@@ -6,8 +6,8 @@ import fourtyseven from '../../components/Physical/fourtyseven.svg'
 import fourtynine from '../../components/Physical/fourtynine.svg'
 // import twentytwo from '../../components/Physical/twentytwo.svg'
 // import thirtyeight from '../../components/Physical/thirtyeight.svg'
-import { useUserContext } from '../../context/home-context'
 import parse from 'html-react-parser';
+import { useUserContext } from '../../components/context/home-context'
 
 
 

@@ -4,7 +4,7 @@ import './Navbar.scss'
 import { useEffect, useState } from 'react'
 import Consultaion from './Consultation/Consultaion'
 import Hamburger from '../assets/images/Menu.svg'
-import { useUserContext } from '../context/home-context'
+import { useUserContext } from './context/home-context'
 import ru from '../assets/images/ru.svg'
 import uz from '../assets/images/uz.svg'
 
@@ -128,7 +128,7 @@ export default Navbar
 // import { useState } from 'react'
 // // import Consultaion from './Consultation/Consultaion'
 // import Hamburger from '../assets/images/Menu.svg'
-// // import { useUserContext } from '../context/home-context'
+// // import { useUserContext } from './context/home-context'
 // // import ru from '../assets/images/ru.svg'
 // // import uz from '../assets/images/uz.svg'
 

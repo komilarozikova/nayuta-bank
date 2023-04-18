@@ -9,7 +9,7 @@ import Calculator from '../../components/Calculator';
 import TableHome from '../../components/table';
 import Trust from '../../components/Trust/Trust';
 import AccordionHome from '../../components/accordion/accordion-home';
-import { useUserContext } from '../../context/home-context';
+import { useUserContext } from '../../components/context/home-context';
 
 const HomePage = () => {
   const { carousels } = useUserContext()

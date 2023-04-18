@@ -1,4 +1,3 @@
-import { useUserContext } from "../context/home-context";
 
 const URL = "https://yruoebgair.tk/api/v1";
 
@@ -46,7 +45,7 @@ export function PatchData(endpoint, data, token) {
 }
 
 // const { lang } = useUserContext()
-export function GetData(endpoint,  lang) {
+export function GetData(endpoint, lang) {
     return (
         fetch(`${URL + endpoint}`, {
             method: "GET",

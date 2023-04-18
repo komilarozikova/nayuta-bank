@@ -63,7 +63,10 @@
       margin-right: 35px;
       color: #ffffff;
       &.active {
-        color: red;
+        border: 1px solid #ffffff;
+        border-radius: 15.5px;
+        padding: 3px 26px;
+        color: #fff;
       }
       .uslugulink {
         font-style: normal;

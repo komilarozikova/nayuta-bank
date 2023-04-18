@@ -4,7 +4,7 @@ import microkredit from '../Products/microkredit.svg'
 import microlizing from '../Products/microlizing.svg'
 import factoring from '../Products/factoring.svg'
 import '../Products/Products.scss';
-import { useUserContext } from '../../context/home-context';
+import { useUserContext } from '.././context/home-context';
 
 const Products = () => {
   const { products } = useUserContext()

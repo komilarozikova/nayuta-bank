@@ -1,7 +1,7 @@
 import React from 'react'
 import hand from '../Physical/hand.svg'
 import '../Physical/Physical.scss'
-import { useUserContext } from '../../context/home-context'
+import { useUserContext } from '.././context/home-context'
 
 const Physical = () => {
   const { individualcreditType, individualcredit, whosecredit } = useUserContext()
