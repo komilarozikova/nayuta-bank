@@ -1,5 +1,8 @@
+import { useUserContext } from "../context/home-context";
 
 const URL = "https://yruoebgair.tk/api/v1";
+
+// console.log(lang, 'lang');
 
 export function PostData(endpoint, data, token) {
     return fetch(`${URL + endpoint}`, {
@@ -42,17 +45,20 @@ export function PatchData(endpoint, data, token) {
     }).then(res => res.json())
 }
 
-export function GetData(endpoint, token) {
-    return fetch(`${URL + endpoint}`, {
-        method: "GET",
-        headers: {
-            "Authorization": 'Bearer ' + token,
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-            // "Access-Control-Request-Headers": "*"
-        },
-    })
-        .then((response) => {
-            return response.json();
+// const { lang } = useUserContext()
+export function GetData(endpoint,  lang) {
+    return (
+        fetch(`${URL + endpoint}`, {
+            method: "GET",
+            headers: {
+                // "Authorization": 'Bearer ' + token,
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                // "Access-Control-Request-Headers": "*",
+                "Accept-Language": lang
+            },
         })
+            .then((response) => {
+                return response.json();
+            }))
 }
