@@ -91,7 +91,6 @@ ul li::before {
     @media screen and (max-width: 426px) {
       font-size: 18px;
       line-height: 22px;
-
     }
 
     color: #1942df;
@@ -147,7 +146,7 @@ ul li::before {
   background: linear-gradient(110.42deg, #fff 0%, #fff 100%);
 
   margin-right: 15px;
-  
+
   @media screen and (max-width: 426px) {
     margin-right: 0;
   }
@@ -165,7 +164,6 @@ ul li::before {
 }
 
 .box3 {
-
   //   transition: all ease 0.5s;
   &:hover {
     color: white;
@@ -180,7 +178,6 @@ ul li::before {
 }
 
 .box3 {
-
   //   transition: all ease 0.5s;
   &:hover {
     color: white;
@@ -189,12 +186,10 @@ ul li::before {
 }
 
 .box-container {
-
   //   transition: all ease 0.5s;
   &:hover {
     color: white;
     // transition: all ease 0.5s;
-
   }
 }
 
@@ -245,9 +240,7 @@ ul li::before {
     @media screen and (max-width: 426px) {
       width: 100px;
     }
-
   }
-
 }
 
 .sale2 {
@@ -261,9 +254,7 @@ ul li::before {
     @media screen and (max-width: 426px) {
       width: 100px;
     }
-
   }
-
 }
 
 .sale p {
@@ -279,16 +270,15 @@ ul li::before {
 }
 
 h1.physicalh {
-
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 73px;
 
-  color: #1942DF;
+  color: #1942df;
   width: 968px;
-  margin-top: 50px;
+  margin-top: 30px;
 
   @media screen and (max-width: 426px) {
     width: 357px;
@@ -306,13 +296,13 @@ h1.physicalh {
 .physicalp {
   width: 531px;
   margin-left: 25px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 19px;
   line-height: 23px;
 
-  color: #231F20;
+  color: #231f20;
 
   @media screen and (max-width: 426px) {
     width: 324px;
@@ -324,13 +314,12 @@ h1.physicalh {
 }
 
 .physicali {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 151.9%;
   /* identical to box height, or 29px */
 
-
-  color: #231F20;
+  color: #231f20;
 }

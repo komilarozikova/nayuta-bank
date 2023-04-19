@@ -1,18 +1,18 @@
-.calc-wrapper{
+.calc-wrapper {
   margin-bottom: 60px;
-  form{
-    h1{
-      font-family: 'Montserrat';
+  form {
+    h1 {
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
       font-size: 60px;
       line-height: 73px;
-      color: #1942DF;
+      color: #1942df;
       margin: 88px 0 50px 0;
     }
-    .form-credit{
+    .form-credit {
       width: 1160px;
-      background: #5C7AE7;
+      background: #5c7ae7;
       border-radius: 25px;
       margin: 0 auto;
       padding: 20px 0 85px 80px;
@@ -20,68 +20,72 @@
       background-size: 400px 400px, contain;
       background-repeat: no-repeat;
       background-position: right bottom;
-      .holder{
+      .holder {
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
-        span{
-          font-family: 'Montserrat';
+        span {
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 500;
           font-size: 19px;
           line-height: 23px;
-          color: #FFFFFF;
+          color: #ffffff;
         }
       }
-      .inputs{
+      .inputs {
         width: 70%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        .form-input{
+        .form-input {
           width: 45%;
           margin-bottom: 60px;
-          label{
-            font-family: 'Montserrat';
+          label {
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 500;
             font-size: 17px;
             line-height: 21px;
-            color: #FFFFFF;
+            color: #ffffff;
             margin-bottom: 5px;
-            
           }
-          .range{
-            input, select{
+          .range {
+            input,
+            select {
               width: 270px;
               padding: 12px 8px;
-              font-family: 'Montserrat';
+              font-family: "Montserrat";
               font-style: normal;
               font-weight: 500;
               font-size: 17px;
               line-height: 21px;
               color: #858585;
             }
-            .input-range{
+            .input-range {
               width: 270px;
               height: auto;
-              .input-range__label{
+              .input-range__label {
                 display: none;
               }
-              .input-range__track{
-                background-color: #3EC878;
+              .input-range__track {
+                background-color: #3ec878;
                 border-radius: 0;
               }
-              .input-range__slider{
+              .input-range__slider {
                 width: 15px;
                 border: none;
                 height: 15px;
-                background: linear-gradient(36deg, rgba(25,66,223,1) 0%, rgba(62,200,88,1) 76%);
-                &:active{
+                background: linear-gradient(
+                  36deg,
+                  rgba(25, 66, 223, 1) 0%,
+                  rgba(62, 200, 88, 1) 76%
+                );
+                &:active {
                   transform: scale(1);
                 }
                 position: relative;
-                &::before{
+                &::before {
                   width: 8px;
                   height: 8px;
                   background-color: #fff;
@@ -91,18 +95,18 @@
                   bottom: 0;
                   right: 0;
                   margin: auto;
-                  content: '';
+                  content: "";
                   border-radius: 50%;
                 }
               }
             }
-            .value{
+            .value {
               width: 270px;
               height: 40px;
               background-color: #fff;
               padding: 13px 17px;
               box-sizing: border-box;
-              font-family: 'Montserrat';
+              font-family: "Montserrat";
               font-style: normal;
               font-weight: 500;
               font-size: 17px;
@@ -112,73 +116,73 @@
           }
         }
       }
-      .btns{
+      .btns {
         padding: 0;
-        button{
+        button {
           border: none;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 600;
           font-size: 20px;
           line-height: 24px;
-          color: #FFFFFF;
-          background: #FF5A3A;
+          color: #ffffff;
+          background: #ff5a3a;
           box-shadow: -3px 4px 8px rgba(255, 90, 58, 0.4);
           border-radius: 50px;
           padding: 16px 48px;
         }
       }
-    
     }
   }
 }
 
-.title{
-  margin-top: 30px;
+.title {
+  margin-top: 60px;
   font-size: 17px;
 }
-.title span{
-  color: #1942DF;
+.title span {
+  color: #1942df;
 }
 @media screen and (max-width: 600px) {
-  .calc-wrapper{
-    form{
-      h1{
+  .calc-wrapper {
+    form {
+      h1 {
         font-size: 25px;
         line-height: 30px;
         margin: 15px 0 32px 0;
       }
-      .form-credit{
+      .form-credit {
         width: 100%;
         margin-bottom: 20px;
         padding: 25px;
         background-size: 200px 200px, contain;
-        .holder{
+        .holder {
           margin-bottom: 30px;
         }
-        .inputs{
+        .inputs {
           width: 100%;
-          .form-input{
+          .form-input {
             width: 100%;
             margin-bottom: 20px;
-            .range{
-              input, select{
+            .range {
+              input,
+              select {
                 width: 100%;
               }
-              .input-range{
+              .input-range {
                 width: 100%;
                 height: auto;
               }
-              .value{
+              .value {
                 width: 100%;
               }
             }
           }
         }
-        .btns{
+        .btns {
           padding: 0;
           justify-content: flex-start !important;
-          button{
+          button {
             font-size: 18px;
             line-height: 19px;
             padding: 12px 50px;
@@ -189,17 +193,8 @@
   }
 }
 
-
-
-
-
-
-
-
-
 ///
-/// 
-
+///
 
 .modal-dialog {
   max-width: 1300px;
@@ -257,4 +252,3 @@
     font-size: 13;
   }
 }
-
