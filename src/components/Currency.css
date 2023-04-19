@@ -30,6 +30,7 @@
 
 .flags {
     display: flex;
+    margin-top: 3px;
 }
 
 .currencyContainer {
