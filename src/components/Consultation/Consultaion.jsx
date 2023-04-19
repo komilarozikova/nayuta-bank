@@ -22,7 +22,7 @@ const Consultaion = () => {
             </li>
           </ul>
           <p >Получите бесплатную консультацию от наших специалистов</p>
-          <a className='consultation-btn' href='#'>Позвонить</a>
+          <a className='consultation-btn' href='tel:+998781503332'>Позвонить</a>
         </div>
         <div className="consulatation-right">
           <img className='consultation-img' src={consultation}

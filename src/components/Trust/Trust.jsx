@@ -16,7 +16,7 @@ const Trust = () => {
           <h5>Остались вопросы?</h5>
           <p className='text2'>Позвоните нам и получите бесплатную
             консультацию от наших специалистов.</p>
-          <a className='trust-btn' href='#'>Позвонить</a>
+          <a className='trust-btn' href='tel:+998781503332'>Позвонить</a>
         </div>
         <div className='trust-img'>
 
