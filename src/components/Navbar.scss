@@ -12,14 +12,18 @@
   background-color: transparent;
   border: none;
   color: white;
-  margin: 0 !important;
-
+  margin: 0;
+  padding: 0 !important;
   &.active {
     opacity: 1;
     color: white !important;
     border: none !important;
     margin: 0 !important;
   }
+}
+.links {
+  display: flex;
+  align-items: center;
 }
 .lang-container {
   display: none;
@@ -156,16 +160,16 @@
   display: none;
 }
 
-.uslugi-hover {
+.dropdown {
   position: relative;
-
+  padding: 12px 0;
   &:hover {
     .uslugi {
       width: 250px;
       margin-top: 1px;
       margin-left: -80px;
       position: absolute;
-      top: 22px;
+      top: 55px;
       display: block;
       background-color: #fff;
       box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.34);

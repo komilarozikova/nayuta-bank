@@ -6,11 +6,11 @@ import Hamburger from '../assets/images/Menu.svg'
 import { useUserContext } from './context/home-context'
 
 const Navbar = () => {
-  const [active, setActive] = useState(true)
+
   const [show, setShow] = useState(false)
   const pathname = window.location.pathname
   const navigate = useNavigate()
-  const { lang, setLang } = useUserContext()
+  const { lang, setLang, active, setActive } = useUserContext()
   // useEffect(() => {
   //   window.scrollTo(0, 0)
   // }, [])
@@ -35,12 +35,14 @@ const Navbar = () => {
           </div>
           <div className={active ? "links" : "links hide"}>
             <button to='/' onClick={() => navigate('/')} className={pathname === '/' ? 'active' : ''} >Главная</button>
-            <button className={pathname === '/uslugi' ? 'uslugi-hover active' : 'uslugi-hover'} to='/uslugi'>Услуги
-              <div className='uslugi'>
-                <button to='/physical' onClick={() => navigate('/physical')} className={pathname === '/physical' ? 'uslugulink' : 'uslugulink'}>Физическим лицам</button>
-                <button to='/yuridik' onClick={() => navigate('/yuridik')} className={pathname === '/yuridik' ? 'uslugulink' : 'uslugulink'}>Юридическим лицам</button>
-              </div>
-            </button>
+            <div className='dropdown'>
+              <button className={pathname === '/uslugi' ? 'uslugi-hover active' : 'uslugi-hover'} to='/uslugi'>Услуги
+                <div className='uslugi'>
+                  <button to='/physical' onClick={() => navigate('/physical')} className={pathname === '/physical' ? 'uslugulink' : 'uslugulink'}>Физическим лицам</button>
+                  <button to='/yuridik' onClick={() => navigate('/yuridik')} className={pathname === '/yuridik' ? 'uslugulink' : 'uslugulink'}>Юридическим лицам</button>
+                </div>
+              </button>
+            </div>
             <button onClick={() => {
               navigate('/company')
               window.scrollTo(0, 0)
