@@ -2,6 +2,7 @@ import React from 'react'
 import hand from '../Physical/hand.svg'
 import '../Physical/Physical.scss'
 import { useUserContext } from '.././context/home-context'
+import parse from 'html-react-parser';
 
 const Physical = () => {
   const { individualcreditType, individualcredit, whosecredit } = useUserContext()
@@ -16,7 +17,7 @@ const Physical = () => {
               <div key={key}>
                 <h1 className='physicalh'>{item?.title}</h1>
                 <ul>
-                  <li>{item?.subtitle}</li>
+                  <li>{item?.description}</li>
                 </ul>
               </div>
             ))
@@ -27,7 +28,11 @@ const Physical = () => {
               <div key={key}>
                 <h1 className='physicalh' >{item?.title}</h1>
                 <ul>
-                  <li>{item?.subtitle}</li>
+                  <li>
+                    {
+                      parse(`${item?.description}`)
+                    }
+                  </li>
                 </ul>
               </div>
             ))

@@ -1,8 +1,10 @@
 body {
   margin: 0;
-  padding: 100px 0 0 0;
+  padding: 96px 0 0 0;
   box-sizing: border-box;
-  padding-top: 100px;
+  @media screen and (max-width: 426px) {
+    padding: 84px 0 0 0;
+  }
 }
 h1,
 h2,
@@ -58,10 +60,14 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+  @media screen and (max-width: 426px) {
+    max-width: 353px;
+    padding: 0 10px;
+  }
 }
 
 input {
