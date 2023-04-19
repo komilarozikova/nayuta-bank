@@ -14,6 +14,7 @@ export const UserContextProvider = ({ children }) => {
     const [products, setProducts] = useState()
     const [whosecredit, setWhosecredit] = useState()
     const [lang, setLang] = useState('uz');
+    const [active, setActive] = useState(true)
 
     useEffect(() => {
         GetData(`/exchange-rates/`, lang)
@@ -81,7 +82,8 @@ export const UserContextProvider = ({ children }) => {
         legalcredit, setLegalcredit,
         products, setProducts,
         whosecredit, setWhosecredit,
-        lang, setLang
+        lang, setLang,
+        active, setActive
     }
 
     return (
