@@ -27,11 +27,6 @@ export const UserContextProvider = ({ children }) => {
                 setFaq(data)
             })
             .catch(err => console.log(err))
-        GetData(`/calculate-list/`, lang)
-            .then(data => {
-                setCalculateList(data)
-            })
-            .catch(err => console.log(err))
         GetData(`/carousels/`, lang)
             .then(data => {
                 setCarousels(data)
@@ -57,11 +52,11 @@ export const UserContextProvider = ({ children }) => {
                 setProducts(data)
             })
             .catch(err => console.log(err))
-        GetData(`/whose-credit/`, lang)
-            .then(data => {
-                setWhosecredit(data)
-            })
-            .catch(err => console.log(err))
+        // GetData(`/whose-credit/`, lang)
+        //     .then(data => {
+        //         setWhosecredit(data)
+        //     })
+        //     .catch(err => console.log(err))
         if (lang) {
             sessionStorage.setItem('lang', lang);
             setLang(lang);

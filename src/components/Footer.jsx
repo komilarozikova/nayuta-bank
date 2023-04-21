@@ -3,10 +3,12 @@ import './Footer.scss';
 import logo from '../img/nayuta.svg';
 // import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <div id='contact' className='footer-container'>
       <section className='footer-subscription'>
@@ -18,15 +20,14 @@ function Footer() {
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <Link to='/'>О компании</Link>
-            <Link to='/'>Услуги:</Link>
-            <Link to='/physical' className='greylink'>Физическим лицам</Link>
-            <Link to='/yuridik' className='greylink'>Юридическим лицам</Link>
-            <Link to='/consultation'>Консультация</Link>
+            <Link to='/'>{t("footer.left1")}</Link>
+            <Link to='/'>{t("footer.left2")}</Link>
+            <Link to='/physical' className='greylink'>{t("footer.left3")}</Link>
+            <Link to='/yuridik' className='greylink'>{t("footer.left4")}</Link>
           </div>
           <div id='child2' className='footer-link-items'>
             <Link to='/'>
-              Контакты:
+              {t("footer.left6")}
             </Link>
             <a href='tel:+998781503332'>
               <i class="fa-solid fa-phone" id='icons'></i>
@@ -45,23 +46,26 @@ function Footer() {
         </div>
         <div className='footer-link-wrapper'>
           <div id='child3' className='footer-link-items'>
-            <Link to='/'>Режим работы:</Link>
+            <Link to='/'>{t("footer.left7")}</Link>
             <Link to='/'>Пн-Пт: 9:00 – 18:00</Link>
             <Link to='/'>Сб: 10:00 – 17:00</Link>
             <Link to='/'>Вс – выходной</Link>
           </div>
           <div className='footer-link-items'>
-            <Link to='/' className='addresslink'>Адрес:</Link>
-            <Link to='https://yandex.uz/maps/10335/tashkent/house/YkAYdA9iS0YDQFprfX54cnVjYA==/?ll=69.282234%2C41.293904&z=16' target='_blank' className='address'>Республика Узбекистан, Ташкент,
+            <Link to='/' className='addresslink'>{t("footer.left8")}</Link>
+            <Link to='https://yandex.uz/maps/10335/tashkent/house/YkAYdA9iS0YDQFprfX54cnVjYA==/?ll=69.282234%2C41.293904&z=16' target='_blank' className='address'>
+
+              {t("footer.left9")}
               <br />
-              Мирабадский район, Нукусская улица, <br />
-              дом 29, 100015</Link>
+              {t("footer.left10")}
+            </Link>
+            <br />
           </div>
         </div>
       </div>
       <section className='social-media'>
         <div className='social-media-wrap'>
-          <small className='website-rights'>© Все права защищены 2023</small>
+          <small className='website-rights'>{t("prava.title")}</small>
         </div>
       </section>
     </div>
