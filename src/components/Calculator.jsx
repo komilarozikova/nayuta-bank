@@ -1,16 +1,12 @@
 import Table from 'react-bootstrap/Table';
 import React, { createRef, useState } from "react";
-import InputRange from "react-input-range";
 import "./Calculator.scss";
 import "react-input-range/lib/css/index.css"
-import Imagebg from '../assets/images/bg.png'
 import Cancel from '../assets/images/Cancel.svg'
 import { Button, Form, Modal } from "react-bootstrap";
-import { GetData, PostData } from '../hooks/request';
+import { PostData } from '../hooks/request';
 import Pdf from "react-to-pdf";
 import Pechat from './Vector.svg'
-import { useEffect } from 'react';
-import { useUserContext } from './context/home-context';
 const Calculator = () => {
   const ref = createRef();
 
