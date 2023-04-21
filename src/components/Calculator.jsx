@@ -1,7 +1,6 @@
 import Table from 'react-bootstrap/Table';
 import React, { createRef, useState } from "react";
 import "./Calculator.scss";
-import "react-input-range/lib/css/index.css"
 import Cancel from '../assets/images/Cancel.svg'
 import { Button, Form, Modal } from "react-bootstrap";
 import { PostData } from '../hooks/request';
