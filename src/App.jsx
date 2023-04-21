@@ -11,6 +11,7 @@ import Physical from './components/Physical/Physical';
 import Yuridik from './pages/yuridik';
 import Company from './pages/company';
 import { useUserContext } from './components/context/home-context';
+import './i18next/i18next'
 
 const App = () => {
   const { active } = useUserContext()

@@ -4,6 +4,7 @@ import './Navbar.scss'
 import { useEffect, useState } from 'react'
 import Hamburger from '../assets/images/Menu.svg'
 import { useUserContext } from './context/home-context'
+import { useTranslation } from 'react-i18next'
 
 const Navbar = () => {
 
@@ -14,6 +15,11 @@ const Navbar = () => {
   // useEffect(() => {
   //   window.scrollTo(0, 0)
   // }, [])
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (event) => {
+    //  setAge(event.target.value);
+    i18n.changeLanguage(event);
+  };
   return (
     <>
       <div className="navbar-header">
@@ -54,10 +60,16 @@ const Navbar = () => {
             }
             } className={pathname === '/consultation' ? 'active' : ''}>Консультация</button>
             <a href='#contact' className={window.location.hash === '#contact' ? 'active' : ''} >Контакты</a>
-            <button onClick={() => setLang("ru")} className={lang === 'ru' ? 'lang-btn active' : 'lang-btn'} style={{
-              marginRight: "10px"
-            }}>RU</button>
-            <button onClick={() => setLang("uz")} className={lang === 'uz' ? 'lang-btn active' : 'lang-btn'}>/ UZ</button>
+            <button onClick={() => {
+              setLang("ru")
+              changeLanguage('ru')
+            }
+            } className={lang === 'ru' ? 'lang-btn active' : 'lang-btn'}>RU</button>
+            <button onClick={() => {
+              setLang("uz")
+              changeLanguage('uz')
+            }
+            } className={lang === 'uz' ? 'lang-btn active' : 'lang-btn'}>/ UZ</button>
           </div>
           <div className={active ? "links-hide" : "links-hide active"}>
             <Link onClick={() => {
@@ -97,10 +109,16 @@ const Navbar = () => {
             <a href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>Контакты</a>
           </div>
           <div className="lang-container">
-            <button onClick={() => setLang("ru")} className={lang === 'ru' ? 'lang-btn active' : 'lang-btn'} style={{
-              marginRight: "10px"
-            }}>RU</button>
-            <button onClick={() => setLang("uz")} className={lang === 'uz' ? 'lang-btn active' : 'lang-btn'}>/ UZ</button>
+            <button onClick={() => {
+              setLang("ru")
+              changeLanguage('ru')
+            }
+            } className={lang === 'ru' ? 'lang-btn active' : 'lang-btn'}>RU</button>
+            <button onClick={() => {
+              setLang("uz")
+              changeLanguage('uz')
+            }
+            } className={lang === 'uz' ? 'lang-btn active' : 'lang-btn'}>/ UZ</button>
           </div>
         </div>
       </div>

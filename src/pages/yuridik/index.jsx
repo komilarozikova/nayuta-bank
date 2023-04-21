@@ -8,19 +8,21 @@ import fourtynine from '../../components/Physical/fourtynine.svg'
 // import thirtyeight from '../../components/Physical/thirtyeight.svg'
 import parse from 'html-react-parser';
 import { useUserContext } from '../../components/context/home-context'
+import { useTranslation } from 'react-i18next'
 
 
 
 
 const Yuridik = () => {
     const { legalcredit } = useUserContext()
+    const { t } = useTranslation()
     return (
         <div className='container yuridik load-anim'>
             <div className="yuridik-banner">
                 <div className="banner-title">
-                    <h2>Юридическим лицам</h2>
-                    <p>Кредиты юредических лиц позволяют увелечить финансовые показатели бизнеса или поддержать его в стабильном финансовом положении, продотвращая кассовые разрывы бизнеса.</p>
-                    <p>Узнайте больше о наших предложениях для бизнеса ниже.</p>
+                    <h2>{t("yuridik.title")}</h2>
+                    <p>{t("yuridik.text1")}</p>
+                    <p>{t("yuridik.text2")}</p>
                 </div>
                 <div className="banner-img">
                     <img src={YuridikImg} alt="" />
@@ -31,27 +33,26 @@ const Yuridik = () => {
                     <div className="grid-accordion">
                         {
                             legalcredit?.map((item, key) => (
-                                <Accordion.Item eventKey={key}>
-                                    <Accordion.Header>
-                                        <h2>{item?.title}</h2>
-                                        <p>{item?.short_description}</p>
-                                    </Accordion.Header>
-                                    <Accordion.Body>
-                                        <ul>
+                                <>
+                                    <Accordion.Item eventKey={key}>
+                                        <Accordion.Header>
+                                            <h2>{item?.title}</h2>
+                                            <p>{item?.short_description}</p>
+                                        </Accordion.Header>
+                                        <Accordion.Body>
                                             {
                                                 parse(`${item?.long_description}`)
                                             }
-                                        </ul>
-                                        <div className="sale">
-                                            <p>от</p>
-                                            <img src={fourtyseven} alt="" />
-                                            <p>до</p>
-                                            <img src={fourtynine} alt="" />
-                                            <p>в год</p>
-
-                                        </div>
-                                    </Accordion.Body>
-                                </Accordion.Item>
+                                            <div className="sale">
+                                                <p><p>{t("yuridik.start")}</p></p>
+                                                <img src={item.first_image} alt="" />
+                                                <p><p>{t("yuridik.end")}</p></p>
+                                                <img src={item.second_image} alt="" />
+                                                <p><p>{t("yuridik.year")}</p></p>
+                                            </div>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </>
                             ))
                         }
 

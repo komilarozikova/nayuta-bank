@@ -1,0 +1,213 @@
+{
+    "faq": {
+        "title": "Ko’p beriladigan savollar"
+    },
+    "button": {
+        "title": "Batafsil"
+    },
+    "table": {
+        "title": "Nima uchun bank bilan emas, biz bilan bog'lanish yaxshiroqdir?",
+        "table_title1": "Nayuta",
+        "table_title2": "Bank",
+        "table_title3": "Bepul konsultatsiya",
+        "table_title4": "Mavjud",
+        "table_title5": "Kamdan kam",
+        "table_title6": "Skoring",
+        "table_title7": "1 ish kuni",
+        "table_title8": "2-3 ish kuni",
+        "table_title9": "Berilishi",
+        "table_title10": "Ariza topshirilgan kunning ertasiga",
+        "table_title11": "Mahsulot/xizmatga bog’liq",
+        "table_title12": "Shartlar",
+        "table_title13": "Biometrik passport yoki ID karta kifoya",
+        "table_title14": "Hujjatlar to’plami",
+        "desc": "Sizning vaqtingiz biz uchun ustuvor ahamiyatga ega, shuning uchun bankdan farqli o'laroq, biz so'rovlarni zudlik bilan ko'rib chiqamiz va sizga kerak bo'lgan moliyaviy kalitni taklif qilamiz."
+    },
+    "doveriya": {
+        "title": "Bizga ishonishingiz mumkin",
+        "text": "Biz O‘zbekiston Respublikasining amaldagi qonunchiligi asosida faoliyat yuritamiz. Biz “Ro‘yxatdan o‘tganlik to‘g‘risidagi guvohnoma”ga egamiz  va  O‘zbekiston Respublikasi Markaziy bankining mikromoliya tashkilotlari reestriga kiritilganmiz ",
+        "link": "(97-sonli litsenziya bilan).",
+        "call": "Biz bepul konsultatsiya beramiz va siz uchun mos bo’lhan moliyaviy xizmatimizni taklif etamiz.",
+        "questions": "Savollaringiz bormi?",
+        "callus": "Qo'ng'iroq qilish"
+    },
+    "products": {
+        "title": "Bizning mahsulotlarimiz"
+    },
+    "footer": {
+        "left1": "Kompaniya haqida:",
+        "left2": "Xizmatlar:",
+        "left3": "Jismoniy shaxslar uchun:",
+        "left4": "Yuridik shaxslar uchun:",
+        "left5": "Konsultatsiya:",
+        "left6": "Kontaktlar",
+        "left7": "Ish vaqti:",
+        "left8": "Manzil",
+        "left9": " O‘zbekiston Respublikasi, Toshkent sh.,",
+        "left10": "Mirobod tumani, Nukus ko‘chasi, 29-uy, 100015:"
+    },
+    "physical": {
+        "title": "Yuridiik shaxslar",
+        "text": "Iste'mol krediti - bu jismoniy shaxslarga yirik xaridlar, xizmatlar yoki sayohatlar uchun to'lovlar uchun beriladigan naqd pul krediti.",
+        "start": "dan",
+        "end": "gacha",
+        "year": "yiliga"
+    },
+    "yuridik": {
+        "title": "Yuridik shaxslar",
+        "text1": "Yuridik shaxslarning kreditlari biznesning moliyaviy ko'rsatkichlarini oshirish yoki uni barqaror moliyaviy ahvolda ushlab turish, biznesdagi naqd pul bo'shliqlarining oldini olish imkonini beradi.",
+        "text2": "Quyida bizning biznes takliflarimiz haqida ko'proq bilib oling.",
+        "start": "dan",
+        "end": "gacha",
+        "year": "yiliga"
+    },
+    "company": {
+        "title": "Kompaniya haqida",
+        "text1": "Nayuta mikromoliya tashkiloti o'z faoliyatida yapon modeliga amal qiladi va Yaponiyadagi xodimlarning tajribasi ularga mijozlar bilan tajriba almashish imkonini beradi.",
+        "text2": "Biz moliyaviy muammolaringizga professional yechim topishni maqsad qilganmiz. Yaponiyada biznes shunday quriladi, bu erda mijoz va uning ehtiyojlari birinchi o'rinda turadi.",
+        "text3": "Nayuta MFIda ushbu yondashuvni qo'llash orqali biz turli moliyaviy vaziyatlarda bo'lgan odamlarning hayotini osonlashtiramiz va biznesni rivojlantirishni qo'llab-quvvatlaymiz.",
+        "title2": "Kompaniya hujjatlari",
+        "btn1": "Markaziy bankdan kompaniya faoliyati uchun ruxsatnoma",
+        "btn2": "Ro'yxatdan o'tish guvohnomasi",
+        "mission": "Missiya",
+        "misson1": "Nayuta yapon tilida cheksiz son degan ma'noni anglatadi. Bu bizning kompaniya sifatida nimaga intilayotganimizni aniq aks ettiradi - mijozlarimizning kapitali va ishonchini oshirish.",
+        "misson2": "Biz halollikni boshqaramiz, biz natijaga va birinchi navbatda, insonga e'tibor qaratamiz."
+    },
+    "consul": {
+        "title": "Biz siz uchun eng qulay mikromoliya xizmatini bepul maslahat beramiz va tanlaymiz",
+        "ul": "Sizga maslahat kerak, agar:",
+        "li1": "Professional yechim izlayapsizmi? moliyaviy masalalaringiz;",
+        "li2": "Qaysi birini hal qila olmaysiz muayyan xizmat yoki mahsulot  sizga kerak;",
+        "li3": "Kimga murojaat qilishni bilmayapsizmi?.",
+        "text": "Mutaxassislarimizdan bepul maslahat oling"
+    },
+    "prava": {
+        "title": "Barcha huquqlar himoyalangan 2023"
+    },
+    "bildirishnoma": {
+        "allariza": "Jami arizalar soni",
+        "qabul": "Qabul qilinganlar",
+        "soni": "Soni",
+        "send": "Kimga",
+        "turi": "Bildirishnoma turi",
+        "sana": "Sana",
+        "status": "Status",
+        "harakat": "Harakatlar",
+        "plac": "Arizani qidirish",
+        "add": "Bildirishnoma ochish",
+        "arstatus": {
+            "yangi": "Yangi",
+            "bekor": "Rad etildi",
+            "qabul": "Qabul qilindi",
+            "oqilmadi": "Javob berilmadi"
+        },
+        "single": {
+            "ortga": "Ortga",
+            "status": "Arizaning statusi",
+            "statusinf": "Javob berilmadi",
+            "iddata": "ID va Sana",
+            "id": "ID",
+            "data": "Sana",
+            "kimdan": "Kimdan",
+            "direktor": "Direktor",
+            "muas": "Muassasa nomi",
+            "kimga": "Kimga",
+            "inf": "Qo’shimcha matn",
+            "vosita": "Kerakli vositalar va bolalar soni",
+            "vositainf": "Oilaviy Shifokorlik Punkti  A",
+            "vosi": "Vositalar",
+            "bolalar": "Bolalar soni",
+            "soni": "Soni",
+            "nomi": "Vosita nomi",
+            "seriyasi": "Vositaning seriyasi",
+            "miqdori": "Miqdori",
+            "qoshimcha": "Qo’shimcha ma’lumot",
+            "fayl": "Biriktirilgan fayllar",
+            "qayta": "Qayta korib chiqilsin",
+            "korildi": "Qabul qilish"
+        },
+        "new": {
+            "ortga": "Ortga",
+            "yaratish": "Bildirishnoma yaratish",
+            "kimdankimga": "Kimdan va kimga",
+            "kimdan": "Kimdan (Yuboruvchining ism sharifi)",
+            "muassasa": "Muassasa nomi",
+            "kimga": "Kimga",
+            "boshqa": "Boshqa ma’lumotlar",
+            "turi": "Bildirishnoma turi",
+            "vazifasi": "Vazifani topshirish muddati",
+            "inf": "Qo’shimcha ma’lumot",
+            "infP": "Xabarni kiriting",
+            "bolalar": "Bolalar yoshi toifasini tanlash",
+            "dan": "Dan",
+            "gacha": "Gacha",
+            "fail": "Fayl biriktirish",
+            "failinf": "Faylni bu yerga tashlang yoki biriktiring",
+            "failinf1": "Fayl yuklandi",
+            "del": "Fayl o'chirish"
+        }
+    },
+    "shifokor": {
+        "allshifokor": "Jami shifokorlar soni",
+        "add": "shifokor qo'shish",
+        "placholder": "Shifokorni Qidirish",
+        "number": "Soni",
+        "name": "To 'liq ism sharif",
+        "birthday": "Tug’ ilgan sana",
+        "lavozim": "Lavozimi",
+        "professia": "Mutaxassislik toifasi",
+        "tel": "Telefon raqami",
+        "tasdiq": "Tasdiqlash",
+        "batafsil": "Harakatlar",
+        "alladd": {
+            "name": "Ismi",
+            "surname": "Familiyasi",
+            "otch": "Otasining ismi",
+            "male": "Jinsi",
+            "tashkilot": "Tashkilot",
+            "staj": "Ish staji",
+            "malaka1": "Oxirgi malaka oshirgan joyi va ish staji",
+            "malaka2": "Qayta malaka oshirish vaqti"
+        }
+    },
+    "vosita": {
+        "title": "Bolalar ro'yxati jami:",
+        "plac": "Vosita qidirish",
+        "excel": "Excelga yuklab olish",
+        "muas": "Muassasalar"
+    },
+    "bola": {
+        "add": "Qo'shish",
+        "excel": "Excelga yuklab olish",
+        "qidirish": "Bemor Qidirish",
+        "pfl": "PINFL / Tug’ilganlik haqida guvohnoma raqami",
+        "yosh": "Yoshi",
+        "shifo": "Shifokor",
+        "dan": "Dan",
+        "ga": "Gacha",
+        "ms": "Tibbiy muassasaning nomi",
+        "all": "Barchasi",
+        "g": "Tug'ilganlik guvohnoma raqami",
+        "pass": "Guvohnoma raqami",
+        "ro": "Ro'yxatdan o'tgan manzil",
+        "who": "Qayerdan va kim tomonidan berilgan",
+        "mom": "Onasi haqida",
+        "dad": "Otasi haqida",
+        "qtel": "Qoshimcha telefon raqami",
+        "rxt": "Ro'yxatga olingan sanasi",
+        "guruh": "Qon guruhi",
+        "ball": "Bolalar ro'yxati jami"
+    },
+    "sbola": {
+        "sh": " Bolaning shaxsiy ma'lumotlari",
+        "contact": "Bolaning manzili va kontakti",
+        "manzil": "Yashash manzili",
+        "g1": "Bolaning Guvohnomasi",
+        "g2": "Guvohnoma",
+        "b1": "Biriktilingan shifokor ma’lumotlar",
+        "onot": "Ota onasining ism shariflari",
+        "ot1": "Otasining ism sharifi",
+        "on1": "Onasining ism sharifi",
+        "izoh": "Izoh"
+    }
+}

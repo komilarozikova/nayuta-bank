@@ -10,8 +10,17 @@
 .yuridik {
   margin-top: 70px;
   .accordion-body {
+    @media screen and (max-width: 426px) {
+      overflow: scroll;
+    }
     li {
       margin-bottom: 10px;
+      display: flex;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 23px;
+      // color: #231f20;
     }
   }
   .accordion-button {
@@ -129,8 +138,19 @@
     }
 
     gap: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .accordion-item {
+      @media screen and (max-width: 426px) {
+        width: 100%;
+        margin-bottom: 160px;
+      }
+      width: 48%;
+      &:nth-child(3n) {
+        width: 100%;
+      }
+    }
   }
 
   .accordion-body h1 {
@@ -150,6 +170,10 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 155.9%;
+    &::-webkit-scrollbar {
+      display: block !important;
+    }
+    overflow: scroll;
   }
 
   .accordion {
@@ -163,6 +187,7 @@
       .accordion-header {
         .accordion-button {
           background: #f8f9ff !important;
+          padding-right: 49px;
 
           &.collapsed {
             h2 {

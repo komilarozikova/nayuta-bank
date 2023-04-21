@@ -5,12 +5,14 @@ import question3 from '../../assets/images/question3.svg'
 import question4 from '../../assets/images/question4.svg'
 import './according.scss'
 import { useUserContext } from ".././context/home-context";
+import { useTranslation } from "react-i18next";
 
 const AccordionHome = () => {
     const { faq } = useUserContext()
+    const { t } = useTranslation();
     return (
         <div className="accordion" >
-            <h1 className="accordionh">Часто задаваемые вопросы</h1>
+            <h1 className="accordionh"> {t("faq.title")}</h1>
             <Accordion id="acc" defaultActiveKey="0">
                 {
                     faq?.map((item, key) => (
@@ -22,7 +24,6 @@ const AccordionHome = () => {
                         </Accordion.Item>
                     ))
                 }
-
             </Accordion>
             <img className="qleft" src={question1} alt="" />
             <img className="qcenter1" src={question2} alt="" />

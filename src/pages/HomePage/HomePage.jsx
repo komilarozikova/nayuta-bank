@@ -10,9 +10,11 @@ import TableHome from '../../components/table';
 import Trust from '../../components/Trust/Trust';
 import AccordionHome from '../../components/accordion/accordion-home';
 import { useUserContext } from '../../components/context/home-context';
+import { useTranslation } from 'react-i18next';
 
 const HomePage = () => {
   const { carousels } = useUserContext()
+  const { t } = useTranslation();
   return (
     <>
       <Currency />
@@ -27,7 +29,7 @@ const HomePage = () => {
                       <h1>{item?.title}</h1>
                       <h5>{item?.descriptions}</h5>
                       <div className='see-more'>
-                        <a href={item?.link}>Подробнее</a>
+                        <a href={item?.link}>{t("button.title")}</a>
                       </div>
                     </div>
                     <div className="hero-img">

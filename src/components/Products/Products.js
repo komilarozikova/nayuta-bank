@@ -1,20 +1,27 @@
 import React from 'react';
 import '../Products/Products.scss';
 import { useUserContext } from '.././context/home-context';
+import { useTranslation } from 'react-i18next';
 
 const Products = () => {
   const { products } = useUserContext()
+  const { t } = useTranslation();
+
   return (
     <div className='productspage'>
-      <h1>Наши продукты</h1>
+      <h1>{t("products.title")}</h1>
       <div className='products-container'>
         {
           products?.map((item, key) => (
             <div className='products'>
-              <img src={item?.image} alt='' />
-              <h4>{item?.title}</h4>
-              <p>{item?.description} </p>
-              <a href={item?.link} className='btn-products'>Подробнее</a>
+              <div className="product-img">
+                <img src={item?.image} alt='' />
+              </div>
+              <div className="product-title">
+                <h4>{item?.title}</h4>
+                <p>{item?.description} </p>
+              </div>
+              <a href={item?.link} className='btn-products'>{t("button.title")}</a>
             </div>
           ))
         }
