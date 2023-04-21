@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import Logo from '../assets/images/logo.svg'
 import './Navbar.scss'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Hamburger from '../assets/images/Menu.svg'
 import { useUserContext } from './context/home-context'
 import { useTranslation } from 'react-i18next'
@@ -15,7 +15,7 @@ const Navbar = () => {
   // useEffect(() => {
   //   window.scrollTo(0, 0)
   // }, [])
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const changeLanguage = (event) => {
     //  setAge(event.target.value);
     i18n.changeLanguage(event);

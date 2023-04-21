@@ -2,18 +2,9 @@ import React from 'react'
 import '../Consultation/Consultation.scss'
 import consultation from '../Consultation/consultation.svg'
 import { useTranslation } from "react-i18next";
-import { Document, Page } from 'react-pdf';
-import ReactDOMServer from 'react-dom/server';
-import { Html } from 'react-pdf-html';
-import Pdf from "react-to-pdf";
 
 const Consultaion = () => {
-
   const { t } = useTranslation();
-
-
-
-  // const html = ReactDOMServer.renderToStaticMarkup(element);
   return (
     <div className='consultation load-anim'>
       <div className="consultation-container">
