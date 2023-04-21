@@ -23,8 +23,8 @@ const Calculator = () => {
   const [data, setData] = useState()
 
   const [show, setShow] = useState(false);
-  const [calculateList, setCalculateList] = useState()
-  const { lang } = useUserContext()
+  // const [calculateList, setCalculateList] = useState()
+  // const { lang } = useUserContext()
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -44,15 +44,15 @@ const Calculator = () => {
       })
       .catch(err => console.log(err))
   }
-  useEffect(() => {
-    if (data) {
-      GetData(`/calculate-list/`, lang)
-        .then(data => {
-          setCalculateList(data)
-        })
-        .catch(err => console.log(err))
-    }
-  }, [lang])
+  // useEffect(() => {
+  //   if (data) {
+  //     GetData(`/calculate-list/`, lang)
+  //       .then(data => {
+  //         setCalculateList(data)
+  //       })
+  //       .catch(err => console.log(err))
+  //   }
+  // }, [lang])
   const options = {
     orientation: 'landscape',
     unit: 'in',
