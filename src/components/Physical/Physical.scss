@@ -45,7 +45,11 @@
     width: 100%;
   }
 }
-
+.physical-left{
+  li{
+      display: flex;
+    }
+}
 .physical-left h1 {
   font-style: normal;
   font-weight: 700;
