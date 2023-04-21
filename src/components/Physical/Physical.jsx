@@ -34,7 +34,11 @@ const Physical = () => {
                 <ul>
                   <li>
                     {
-                      parse(`${item?.description}`)
+                      parse(
+                        `${item?.description
+                          .toString()
+                          .replaceAll('&nbsp;', ' ')}`,
+                      )
                     }
                   </li>
                 </ul>

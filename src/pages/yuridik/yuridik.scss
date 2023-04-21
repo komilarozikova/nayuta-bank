@@ -11,10 +11,10 @@
   margin-top: 70px;
   .accordion-body {
     @media screen and (max-width: 426px) {
-      overflow: scroll;
+      // overflow: scroll;
     }
     li {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       display: flex;
       font-style: normal;
       font-weight: 500;
@@ -167,13 +167,14 @@
 
   .accordion-body ul {
     font-style: normal;
+    padding: 0 25px;
     font-weight: 500;
     font-size: 16px;
     line-height: 155.9%;
     &::-webkit-scrollbar {
       display: block !important;
     }
-    overflow: scroll;
+    // overflow: scroll;
   }
 
   .accordion {
@@ -319,3 +320,7 @@
 //   content: "\f107";
 //   background-repeat: no-repeat;
 // }
+
+#text {
+  width: 100px !important;
+}

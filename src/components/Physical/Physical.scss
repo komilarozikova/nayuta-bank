@@ -22,7 +22,7 @@
 
 .physical-left {
   li {
-    display: flex;
+    display: block;
   }
   display: flex;
   flex-direction: column;
@@ -61,9 +61,9 @@ ul {
   list-style: none;
   /* Remove default bullets */
   @media screen and (max-width: 426px) {
-    padding: 0;
+    padding: 0 25px;
     li {
-      font-size: 12px;
+      font-size: 1p7x;
     }
   }
 }
@@ -254,7 +254,8 @@ ul li::before {
 
   img {
     @media screen and (max-width: 426px) {
-      width: 100px;
+      width: 85px;
+      object-fit: contain;
     }
   }
 }

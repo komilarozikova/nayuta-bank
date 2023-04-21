@@ -84,6 +84,15 @@
     "prava": {
         "title": "Barcha huquqlar himoyalangan 2023"
     },
+    "header": {
+        "link1": "Asosiy",
+        "link2": "Xizmatlar",
+        "link3": "Kompaniya",
+        "link4": "Konsultatsiya",
+        "link5": "Kontaktlar",
+        "yur": "Yuridik shaxslar uchun",
+        "fiz": "Jismoniy shaxslar uchun"
+    },
     "bildirishnoma": {
         "allariza": "Jami arizalar soni",
         "qabul": "Qabul qilinganlar",

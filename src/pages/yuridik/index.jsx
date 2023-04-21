@@ -1,4 +1,5 @@
 import './yuridik.scss'
+import React from 'react'
 import YuridikImg from '../../assets/images/yuridik.svg'
 import { Accordion } from 'react-bootstrap'
 // import { Link } from 'react-router-dom'
@@ -7,6 +8,7 @@ import { Accordion } from 'react-bootstrap'
 import parse from 'html-react-parser';
 import { useUserContext } from '../../components/context/home-context'
 import { useTranslation } from 'react-i18next'
+import Parser from 'html-parser-react';
 
 
 
@@ -38,8 +40,13 @@ const Yuridik = () => {
                                             <p>{item?.short_description}</p>
                                         </Accordion.Header>
                                         <Accordion.Body>
+
                                             {
-                                                parse(`${item?.long_description}`)
+                                                parse(
+                                                    `${item?.long_description
+                                                        .toString()
+                                                        .replaceAll('&nbsp;', ' ')}`,
+                                                )
                                             }
                                             <div className="sale">
                                                 <p><p>{t("yuridik.start")}</p></p>

@@ -9,13 +9,13 @@ import { useTranslation } from 'react-i18next'
 const Navbar = () => {
 
   const [show, setShow] = useState(false)
-  const pathname = window.location.pathname
+  const pathname = window.location.hash
   const navigate = useNavigate()
   const { lang, setLang, active, setActive } = useUserContext()
   // useEffect(() => {
-  //   window.scrollTo(0, 0)
+  //   
   // }, [])
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const changeLanguage = (event) => {
     //  setAge(event.target.value);
     i18n.changeLanguage(event);
@@ -37,29 +37,29 @@ const Navbar = () => {
             </button>
           </div>
           <div className="logo">
-            <Link onClick={window.scrollTo(0, 0)} to='/'><img src={Logo} alt="" /></Link>
+            <Link  to='/'><img src={Logo} alt="" /></Link>
           </div>
           <div className={active ? "links" : "links hide"}>
-            <button to='/' onClick={() => navigate('/')} className={pathname === '/' ? 'active' : ''} >Главная</button>
+            <button to='/' onClick={() => navigate('/')} className={pathname === '#/' ? 'active' : ''} >{t("header.link1")}</button>
             <div className='dropdown'>
-              <button className={pathname === '/uslugi' ? 'uslugi-hover active' : 'uslugi-hover'} to='/uslugi'>Услуги
+              <button className={pathname === '#/uslugi' ? 'uslugi-hover active' : 'uslugi-hover'} to='/uslugi'>{t("header.link2")}
                 <div className='uslugi'>
-                  <button to='/physical' onClick={() => navigate('/physical')} className={pathname === '/physical' ? 'uslugulink' : 'uslugulink'}>Физическим лицам</button>
-                  <button to='/yuridik' onClick={() => navigate('/yuridik')} className={pathname === '/yuridik' ? 'uslugulink' : 'uslugulink'}>Юридическим лицам</button>
+                  <button to='/physical' onClick={() => navigate('/physical')} className={pathname === '#/physical' ? 'uslugulink' : 'uslugulink'}>{t("header.fiz")}</button>
+                  <button to='/yuridik' onClick={() => navigate('/yuridik')} className={pathname === '#/yuridik' ? 'uslugulink' : 'uslugulink'}>{t("header.yur")}</button>
                 </div>
               </button>
             </div>
             <button onClick={() => {
               navigate('/company')
-              window.scrollTo(0, 0)
+              
             }
-            } className={pathname === '/company' ? 'active' : ''} >Компания</button>
+            } className={pathname === '/company' ? 'active' : ''} >{t("header.link3")}</button>
             <button onClick={() => {
               navigate('/consultation')
-              window.scrollTo(0, 0)
+              
             }
-            } className={pathname === '/consultation' ? 'active' : ''}>Консультация</button>
-            <a href='#contact' className={window.location.hash === '#contact' ? 'active' : ''} >Контакты</a>
+            } className={pathname === '/consultation' ? 'active' : ''}>{t("header.link4")}</button>
+            <a href='/#contact' className={window.location.hash === '/contact' ? 'active' : ''} >{t("header.link5")}</a>
             <button onClick={() => {
               setLang("ru")
               changeLanguage('ru')
@@ -74,39 +74,39 @@ const Navbar = () => {
           <div className={active ? "links-hide" : "links-hide active"}>
             <Link onClick={() => {
               setActive(!active)
-              window.scrollTo(0, 0)
+              
             }
-            } className='navbar-link' to='/'>Главная</Link>
+            } className='navbar-link' to='/'>{t("header.link1")}</Link>
             <button style={{
               borderBottom: show ? "none" : "1px solid #628fd8"
-            }} onClick={() => setShow(!show)} className='navbar-link'>Услуги</button>
+            }} onClick={() => setShow(!show)} className='navbar-link'>{t("header.link2")}</button>
             <Link style={{
               display: show ? "block" : "none",
               borderBottom: !show ? "none" : "1px solid #628fd8"
             }} className='navbar-link active' onClick={() => {
               setActive(!active)
-              window.scrollTo(0, 0)
+              
             }
-            } to='/yuridik'>Юридическим лицам</Link>
+            } to='/yuridik'>{t("header.yur")}</Link>
             <Link style={{
               display: show ? "block" : "none",
               borderBottom: !show ? "none" : "1px solid #628fd8"
             }} className='navbar-link active' onClick={() => {
               setActive(!active)
-              window.scrollTo(0, 0)
+              
             }
-            } to='/physical' >Физическим лицам</Link>
+            } to='/physical' >{t("header.fiz")}</Link>
             <Link className='navbar-link' onClick={() => {
               setActive(!active)
-              window.scrollTo(0, 0)
+              
             }
-            } to='/company'>Компания</Link>
+            } to='/company'>{t("header.link3")}</Link>
             <Link className='navbar-link' onClick={() => {
               setActive(!active)
-              window.scrollTo(0, 0)
+              
             }
-            } to='/consultation'>Консультация</Link>
-            <a href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>Контакты</a>
+            } to='/consultation'>{t("header.link4")}</Link>
+            <a href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>{t("header.link5")}</a>
           </div>
           <div className="lang-container">
             <button onClick={() => {
