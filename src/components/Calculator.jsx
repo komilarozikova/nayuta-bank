@@ -9,12 +9,12 @@ import Pechat from './Vector.svg'
 const Calculator = () => {
   const ref = createRef();
 
-  const [price, setPrice] = useState(395312000)
-  const [percentage, setPercentage] = useState(30)
-  const [amount, setAmount] = useState()
-  const [interest, setInterest] = useState()
+  const [price, setPrice] = useState(50000000)
+  const [percentage, setPercentage] = useState(16)
+  const [amount, setAmount] = useState(45000000)
+  const [interest, setInterest] = useState(20)
   const [schedule, setSchedule] = useState('annuity')
-  const [period, setPeriod] = useState()
+  const [period, setPeriod] = useState(24)
   const [data, setData] = useState()
 
   const [show, setShow] = useState(false);
@@ -121,17 +121,12 @@ const Calculator = () => {
         <div className="type-credit">
           <Form.Group className="" controlId="formBasicPassword">
             <Form.Label className='disabled'>Кому</Form.Label>
-            <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
+            <Form.Select onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
               <option value="annuity">Физическим лицам</option>
               <option value="3">Юредических лицам</option>
             </Form.Select>
           </Form.Group>
-          <Form.Group className="" controlId="formBasicPassword">
-            <Form.Label className='disabled'> Тип кредита </Form.Label>
-            <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
-              <option value="annuity">Авто</option>
-            </Form.Select>
-          </Form.Group>
+
         </div>
 
         <div className="first-child-form">
@@ -156,7 +151,7 @@ const Calculator = () => {
         <div className="second-child-form">
           <Form.Group className="" controlId="formBasicPassword">
             <Form.Label>Сумма кредита </Form.Label>
-            <Form.Control onChange={(e) => setAmount(e.target.value)} type="text" placeholder="276718400" />
+            <Form.Control value={amount} onChange={(e) => setAmount(e.target.value)} type="text" placeholder="" />
           </Form.Group>
           <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
             <option value="annuity">сум</option>
@@ -167,6 +162,7 @@ const Calculator = () => {
             <Form.Label>Льготный период</Form.Label>
             <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
               <option value="annuity">0</option>
+              <option value="Дифференцированный"></option>
             </Form.Select>
           </Form.Group>
 
@@ -178,7 +174,7 @@ const Calculator = () => {
         <div className="thirt-child-form">
           <Form.Group className="" controlId="formBasicPassword">
             <Form.Label>Процентная ставка </Form.Label>
-            <Form.Control onChange={(e) => setInterest(e.target.value)} type="text" placeholder="29" />
+            <Form.Control value={interest} onChange={(e) => setInterest(e.target.value)} type="text" placeholder="" />
           </Form.Group>
           <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
             <option value="Годовых">Годовых</option>
@@ -194,7 +190,7 @@ const Calculator = () => {
         <div className="fourth-child-form">
           <Form.Group className="w-100" controlId="formBasicPassword">
             <Form.Label>Период кредитования </Form.Label>
-            <Form.Control onChange={(e) => setPeriod(e.target.value)} type="text" placeholder="36" />
+            <Form.Control value={period} onChange={(e) => setPeriod(e.target.value)} type="text" placeholder="" />
           </Form.Group>
           <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
             <option value="Месяц">Месяц</option>

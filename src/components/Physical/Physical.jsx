@@ -31,17 +31,13 @@ const Physical = () => {
             individualcredit?.map((item, key) => (
               <div key={key}>
                 <h1 className='physicalh' >{item?.title}</h1>
-                <ul>
-                  <li>
-                    {
-                      parse(
-                        `${item?.description
-                          .toString()
-                          .replaceAll('&nbsp;', ' ')}`,
-                      )
-                    }
-                  </li>
-                </ul>
+                {
+                  parse(
+                    `${item?.description
+                      .toString()
+                      .replaceAll('&nbsp;', ' ')}`,
+                  )
+                }
               </div>
             ))
           }

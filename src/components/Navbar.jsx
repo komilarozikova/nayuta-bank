@@ -29,7 +29,6 @@ const Navbar = () => {
               background: "transparent",
               border: "none",
               outline: "none"
-
             }}
               onClick={() => setActive(!active)}
             >
@@ -37,7 +36,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className="logo">
-            <Link  to='/'><img src={Logo} alt="" /></Link>
+            <Link to='/'><img src={Logo} alt="" /></Link>
           </div>
           <div className={active ? "links" : "links hide"}>
             <button to='/' onClick={() => navigate('/')} className={pathname === '#/' ? 'active' : ''} >{t("header.link1")}</button>
@@ -51,15 +50,13 @@ const Navbar = () => {
             </div>
             <button onClick={() => {
               navigate('/company')
-              
             }
             } className={pathname === '/company' ? 'active' : ''} >{t("header.link3")}</button>
             <button onClick={() => {
               navigate('/consultation')
-              
             }
             } className={pathname === '/consultation' ? 'active' : ''}>{t("header.link4")}</button>
-            <a href='/#contact' className={window.location.hash === '/contact' ? 'active' : ''} >{t("header.link5")}</a>
+            <a href='#contact' className={window.location.hash === '#/contact' ? 'active' : ''} >{t("header.link5")}</a>
             <button onClick={() => {
               setLang("ru")
               changeLanguage('ru')
@@ -74,7 +71,7 @@ const Navbar = () => {
           <div className={active ? "links-hide" : "links-hide active"}>
             <Link onClick={() => {
               setActive(!active)
-              
+
             }
             } className='navbar-link' to='/'>{t("header.link1")}</Link>
             <button style={{
@@ -85,7 +82,7 @@ const Navbar = () => {
               borderBottom: !show ? "none" : "1px solid #628fd8"
             }} className='navbar-link active' onClick={() => {
               setActive(!active)
-              
+
             }
             } to='/yuridik'>{t("header.yur")}</Link>
             <Link style={{
@@ -93,17 +90,17 @@ const Navbar = () => {
               borderBottom: !show ? "none" : "1px solid #628fd8"
             }} className='navbar-link active' onClick={() => {
               setActive(!active)
-              
+
             }
             } to='/physical' >{t("header.fiz")}</Link>
             <Link className='navbar-link' onClick={() => {
               setActive(!active)
-              
+
             }
             } to='/company'>{t("header.link3")}</Link>
             <Link className='navbar-link' onClick={() => {
               setActive(!active)
-              
+
             }
             } to='/consultation'>{t("header.link4")}</Link>
             <a href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>{t("header.link5")}</a>
