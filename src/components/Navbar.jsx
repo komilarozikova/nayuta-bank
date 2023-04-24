@@ -39,12 +39,12 @@ const Navbar = () => {
             <Link to='/'><img src={Logo} alt="" /></Link>
           </div>
           <div className={active ? "links" : "links hide"}>
-            <button to='/' onClick={() => navigate('/')} className={pathname === '#/' ? 'active' : ''} >{t("header.link1")}</button>
+            <button to='/' onClick={() => navigate('/')} className={pathname === '/' ? 'active' : ''} >{t("header.link1")}</button>
             <div className='dropdown'>
-              <button className={pathname === '#/uslugi' ? 'uslugi-hover active' : 'uslugi-hover'} to='/uslugi'>{t("header.link2")}
+              <button className={pathname === '/uslugi' ? 'uslugi-hover active' : 'uslugi-hover'} to='/uslugi'>{t("header.link2")}
                 <div className='uslugi'>
-                  <button to='/physical' onClick={() => navigate('/physical')} className={pathname === '#/physical' ? 'uslugulink' : 'uslugulink'}>{t("header.fiz")}</button>
-                  <button to='/yuridik' onClick={() => navigate('/yuridik')} className={pathname === '#/yuridik' ? 'uslugulink' : 'uslugulink'}>{t("header.yur")}</button>
+                  <button to='/physical' onClick={() => navigate('/physical')} className={pathname === '/physical' ? 'uslugulink' : 'uslugulink'}>{t("header.fiz")}</button>
+                  <button to='/yuridik' onClick={() => navigate('/yuridik')} className={pathname === '/yuridik' ? 'uslugulink' : 'uslugulink'}>{t("header.yur")}</button>
                 </div>
               </button>
             </div>
@@ -56,15 +56,15 @@ const Navbar = () => {
               navigate('/consultation')
             }
             } className={pathname === '/consultation' ? 'active' : ''}>{t("header.link4")}</button>
-            <a href='#contact' className={window.location.hash === '#/contact' ? 'active' : ''} >{t("header.link5")}</a>
+            <a href='#contact' className={window.location.hash === '/contact' ? 'active' : ''} >{t("header.link5")}</a>
             <button onClick={() => {
-              setLang("ru")
               changeLanguage('ru')
+              setLang("ru")
             }
             } className={lang === 'ru' ? 'lang-btn active' : 'lang-btn'}>RU</button>
             <button onClick={() => {
-              setLang("uz")
               changeLanguage('uz')
+              setLang("uz")
             }
             } className={lang === 'uz' ? 'lang-btn active' : 'lang-btn'}>/ UZ</button>
           </div>
@@ -75,7 +75,8 @@ const Navbar = () => {
             }
             } className='navbar-link' to='/'>{t("header.link1")}</Link>
             <button style={{
-              borderBottom: show ? "none" : "1px solid #628fd8"
+              borderBottom: show ? "none" : "1px solid #628fd8",
+              paddingBottom: show ? "0" : "26px"
             }} onClick={() => setShow(!show)} className='navbar-link'>{t("header.link2")}</button>
             <Link style={{
               display: show ? "block" : "none",
@@ -95,15 +96,17 @@ const Navbar = () => {
             } to='/physical' >{t("header.fiz")}</Link>
             <Link className='navbar-link' onClick={() => {
               setActive(!active)
-
             }
             } to='/company'>{t("header.link3")}</Link>
             <Link className='navbar-link' onClick={() => {
               setActive(!active)
-
             }
             } to='/consultation'>{t("header.link4")}</Link>
-            <a href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>{t("header.link5")}</a>
+
+            <a style={{
+              borderBottom: "none",
+              paddingBottom: "0"
+            }} href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>{t("header.link5")}</a>
           </div>
           <div className="lang-container">
             <button onClick={() => {

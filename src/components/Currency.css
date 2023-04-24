@@ -20,7 +20,7 @@
     height: 60px;
     left: 0px;
     top: 106px;
-  
+
 }
 
 
@@ -31,6 +31,10 @@
 .flags {
     display: flex;
     margin-top: 3px;
+}
+
+.flags p {
+    /* margin-bottom: 0; */
 }
 
 .currencyContainer {

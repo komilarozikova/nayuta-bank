@@ -6,6 +6,7 @@ import { Button, Form, Modal } from "react-bootstrap";
 import { PostData } from '../hooks/request';
 import Pdf from "react-to-pdf";
 import Pechat from './Vector.svg'
+import { useTranslation } from 'react-i18next';
 const Calculator = () => {
   const ref = createRef();
 
@@ -30,7 +31,7 @@ const Calculator = () => {
       "down_payment_percentage": percentage,
       "loan_amount": amount,
       "interest_rate": interest,
-      "payment_schedule": schedule,
+      "payment_schedule": "annuity",
       "loan_period": parseInt(period)
     })
       .then(data => {
@@ -39,107 +40,35 @@ const Calculator = () => {
       })
       .catch(err => console.log(err))
   }
-  // useEffect(() => {
-  //   if (data) {
-  //     GetData(`/calculate-list/`, lang)
-  //       .then(data => {
-  //         setCalculateList(data)
-  //       })
-  //       .catch(err => console.log(err))
-  //   }
-  // }, [lang])
-  const options = {
-    orientation: 'landscape',
-    unit: 'in',
-    format: [6, 4]
-  };
-
+  const { t } = useTranslation()
   return (
     <div className="calc-wrapper">
-      {/* <form id="">
-        <h1>Кредитный калькулятор</h1>
-        <div className="form-credit"
-          style={{
-            backgroundImage: `url(${Imagebg})`
-          }}
-        >
-          <div className="holder">
-            <span>Рассчитайте кредит по своим параметрам</span>
-          </div>
-          <div className="inputs">
-            <div className="form-input">
-              <label htmlFor="">Тип кредита:</label>
-              <div className="range">
-                <select name="" id="">
-                  <option value="">Физическим лицам</option>
-                </select>
-              </div>
-            </div>
-            <div className="form-input">
-              <label htmlFor="">Сумма кредита:</label>
-              <div className="range">
-                <div className="value">{state.value}</div>
-                <InputRange
-                  maxValue={10}
-                  minValue={0}
-                  value={state.value}
-                  onChange={(value) => setState({ value })}
-                  onChangeComplete={(value) => console.log(value)}
-                />
-              </div>
-            </div>
-            <div className="form-input">
-              <label htmlFor="">Процентная ставка в год:</label>
-              <div className="range">
-                <input type="text" name="" id="" />
-              </div>
-            </div>
-            <div className="form-input">
-              <label htmlFor="">Срок</label>
-              <div className="range">
-                <div className="value">{state2.value}</div>
-                <InputRange
-                  maxValue={10}
-                  minValue={0}
-                  value={state2.value}
-                  onChange={(value) => setState2({ value })}
-                  onChangeComplete={(value) => console.log(value)}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="btns">
-            <Button onClick={handleShow}>Рассчитать</Button>
-          </div>
-        </div>
 
-      </form> */}
       <Form className='cal-form' onSubmit={Send}>
         <div className="cal-form-text">
-          <p>Рассчитайте кредит по своим параметрам</p>
+          <p>{t("calculator.calcheader")}</p>
         </div>
         <div className="type-credit">
           <Form.Group className="" controlId="formBasicPassword">
-            <Form.Label className='disabled'>Кому</Form.Label>
+            <Form.Label className='disabled'>{t("calculator.labels.kimga")}</Form.Label>
             <Form.Select onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
-              <option value="annuity">Физическим лицам</option>
-              <option value="3">Юредических лицам</option>
+              <option value="annuity">{t("calculator.inputs.jismoniy")}</option>
+              <option value="3">{t("calculator.inputs.yuridik")}</option>
             </Form.Select>
           </Form.Group>
-
         </div>
 
         <div className="first-child-form">
           <Form.Group className="" controlId="formBasicPassword">
-            <Form.Label>Стоимость автотранспорта</Form.Label>
+            <Form.Label>{t("calculator.labels.narx")}</Form.Label>
             <Form.Control value={price} onChange={(e) => setPrice(e.target.value)} type="text" placeholder="395312000" />
           </Form.Group>
           <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
-            <option value="annuity">сум</option>
+            <option value="annuity">{t("calculator.inputs.sum")}</option>
           </Form.Select>
           <Form.Group className="" controlId="formBasicPassword">
-            <Form.Label>Первоначальный взнос (%) </Form.Label>
-            <Form.Control value={percentage} onChange={(e) => setPercentage(e.target.value)} type="text" placeholder="30" />
+            <Form.Label>{t("calculator.labels.tolov")}</Form.Label>
+            <Form.Control value={percentage} onChange={(e) => setPercentage(e.target.value)} type="text" placeholder="" />
           </Form.Group>
           <Form.Group className="" controlId="formBasicPassword">
             <Form.Control onChange={(e) => setPercentage(e.target.value)} type="text" value={
@@ -150,60 +79,62 @@ const Calculator = () => {
 
         <div className="second-child-form">
           <Form.Group className="" controlId="formBasicPassword">
-            <Form.Label>Сумма кредита </Form.Label>
-            <Form.Control value={amount} onChange={(e) => setAmount(e.target.value)} type="text" placeholder="" />
+            <Form.Label>{t("calculator.labels.miqdor")}</Form.Label>
+            <Form.Control value={amount} onChange={(e) => setAmount(e.target.value)} type="text" placeholder="276718400" />
           </Form.Group>
           <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
-            <option value="annuity">сум</option>
+            <option value="annuity">{t("calculator.inputs.sum")}</option>
           </Form.Select>
 
           <Form.Group className="" controlId="formBasicPassword">
 
-            <Form.Label>Льготный период</Form.Label>
+            <Form.Label>{t("calculator.labels.imtiyoz")}</Form.Label>
             <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
               <option value="annuity">0</option>
-              <option value="Дифференцированный"></option>
             </Form.Select>
           </Form.Group>
 
           <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
-            <option value="Месяц">Месяц</option>
+            <option value="Месяц">{t("calculator.inputs.oy")}</option>
           </Form.Select>
 
         </div>
         <div className="thirt-child-form">
           <Form.Group className="" controlId="formBasicPassword">
-            <Form.Label>Процентная ставка </Form.Label>
-            <Form.Control value={interest} onChange={(e) => setInterest(e.target.value)} type="text" placeholder="" />
+            <Form.Label>{t("calculator.labels.stavka")}</Form.Label>
+            <Form.Control value={interest} onChange={(e) => setInterest(e.target.value)} type="text" placeholder="29" />
           </Form.Group>
           <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
-            <option value="Годовых">Годовых</option>
+            <option value="Годовых">{t("calculator.inputs.yiliga")}</option>
           </Form.Select>
-          <Form.Group className="w-100" controlId="formBasicPassword">
-            <Form.Label>Порядок погашения  </Form.Label>
+          <Form.Group className="w-100"
+            controlId="formBasicPassword">
+            <Form.Label>{t("calculator.labels.qaytarish")}</Form.Label>
             <Form.Select onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
-              <option value="annuity">annuity</option>
-              {/* <option value="3">Дифференцированный</option> */}
+              <option value="Аннуитетный">{t("calculator.annuity")}</option>
+              <option disabled value="Дифференцированный">{t("calculator.dif")}</option>
             </Form.Select>
           </Form.Group>
         </div>
         <div className="fourth-child-form">
           <Form.Group className="w-100" controlId="formBasicPassword">
-            <Form.Label>Период кредитования </Form.Label>
-            <Form.Control value={period} onChange={(e) => setPeriod(e.target.value)} type="text" placeholder="" />
+            <Form.Label>{t("calculator.labels.muddat")}</Form.Label>
+            <Form.Control value={period} onChange={(e) => setPeriod(e.target.value)} type="text" placeholder="36" />
           </Form.Group>
           <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
-            <option value="Месяц">Месяц</option>
+            <option value="Месяц">{t("calculator.inputs.oy")}</option>
           </Form.Select>
         </div>
         <Button onClick={handleShow} variant="outiled" type="submit">
-          Рассчитать
+          {t("calculator.inputs.hisoblash")}
         </Button>
       </Form>
       <p className="title">
-        *Расчёты являются предварительными. Чтобы уточнить детали,{" "}
-        <span>свяжитесь</span> с нами и получите бесплатную консультацию.
+        {t("calculator.inputs.subtitle")}{" "}
+        <span>{t("calculator.inputs.span")}</span> {t("calculator.inputs.subtitle2")}
       </p>
+
+
 
       <Modal className='table-modal' show={show} onHide={handleClose}>
         <Modal.Header>
@@ -211,42 +142,35 @@ const Calculator = () => {
         </Modal.Header>
         <div className="result">
           <div className="child">
-            <h1>Параметры кредита</h1>
-            <p>Стоимость автотранспорта <span>{data?.price?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' сум'}</span></p>
-            <p>Первоначальный взнос <span>{data?.down_payment_percentage}%</span></p>
-            <p>Сумма кредита <span>{data?.loan_amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' сум'}</span></p>
-            <p>Период кредитования <span>{data?.loan_period} месяцев</span></p>
-            <p>Процентная ставка <span>{data?.interest_rate}%</span></p>
-            <p>Порядок погашения <span>{data?.payment_schedule}</span></p>
+            <h1>{t("parametr.parametrkredit")}</h1>
+            <p>{t("parametr.narx")}<span>{data?.price?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' сум'}</span></p>
+            <p>{t("parametr.tolov")} <span>{data?.down_payment_percentage}%</span></p>
+            <p>{t("parametr.summa")}<span>{data?.loan_amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' сум'}</span></p>
+            <p>{t("parametr.muddat")} <span>{data?.loan_period} {t("calculator.inputs.oy")}</span></p>
+            <p>{t("parametr.foiz")}<span>{data?.interest_rate}%</span></p>
+            <p>{t("parametr.qaytarish")} <span>{data?.payment_schedule === "annuity" && t("calculator.annuity")}</span></p>
           </div>
           <div className="child">
-            <h1>Результаты расчета</h1>
-            <p>Всего выплат <span>{data?.total_payments.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' сум'}</span></p>
-            <p>Переплата <span>{data?.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' сум'}</span></p>
+            <h1>{t("parametr.rezultat")}</h1>
+            <p>{t("parametr.jami")} <span>{data?.total_payments.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' сум'}</span></p>
+            <p>{t("parametr.ortiqcha")} <span>{data?.overpayment.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' сум'}</span></p>
             <Pdf targetRef={ref} filename="code-example.pdf">
-              {({ toPdf }) => <div className='pechat' onClick={toPdf}><img src={Pechat} alt="" /> На печать</div>}
+              {({ toPdf }) => <div className='pechat' onClick={toPdf}><img src={Pechat} alt="" /> {t("parametr.pechat")}</div>}
             </Pdf>
           </div>
         </div>
-        <Modal.Body options={options} ref={ref}>
-          <Table striped bordered hover size="sm">
-            <thead>
+        <Modal.Body className='table-responsive text-nowrap' ref={ref}>
+          <Table striped bordered hover size="xxl">
+            <thead style={{
+              verticalAlign: "middle"
+            }}>
               <tr>
                 <th>№</th>
-                <th>Дата</th>
-                <th>Остаток по кредиту</th>
-                <th>Сумма погашения <span style={{
-                  display: "block",
-                  textAlign: "left"
-                }}>кредита</span></th>
-                <th>Сумма процентов по <span style={{
-                  display: "block",
-                  textAlign: "left"
-                }}>кредиту</span></th>
-                <th>Итого к <span style={{
-                  display: "block",
-                  textAlign: "left"
-                }}>погашению</span></th>
+                <th>{t("parametr.rows.data")}</th>
+                <th>{t("parametr.rows.qolgan")}</th>
+                <th>{t("parametr.rows.qaytarish")}</th>
+                <th>{t("parametr.rows.prosent")}</th>
+                <th>{t("parametr.rows.itog")}</th>
               </tr>
             </thead>
             <tbody>
@@ -257,10 +181,10 @@ const Calculator = () => {
                       width: "0%"
                     }}>{item?.payment_number}</td>
                     <td>{item?.payment_date}</td>
-                    <td>{item?.payment_amount}</td>
-                    <td>{item?.principal_amount}</td>
-                    <td>{item?.interest_amount}</td>
-                    <td>{item?.remaining_balance}</td>
+                    <td>{item?.remaining_balance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}</td>
+                    <td>{item?.principal_amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}</td>
+                    <td>{item?.interest_amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}</td>
+                    <td>{item?.payment_amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}</td>
                   </tr>
                 ))
               }

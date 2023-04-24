@@ -13,7 +13,7 @@ export const UserContextProvider = ({ children }) => {
     const [legalcredit, setLegalcredit] = useState()
     const [products, setProducts] = useState()
     const [whosecredit, setWhosecredit] = useState()
-    const [lang, setLang] = useState('uz');
+    const [lang, setLang] = useState('ru');
     const [active, setActive] = useState(true)
 
     useEffect(() => {

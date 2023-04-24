@@ -119,6 +119,9 @@
     padding: 20px;
     width: 100%;
     z-index: 1000000;
+    // height: 510px;
+    box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.2);
+    // overflow: scroll;
 
     .navbar-link {
       &.active {
@@ -126,9 +129,8 @@
         background-color: transparent;
         width: 100%;
         display: block;
-        margin-bottom: 27px;
         text-align: center;
-        padding: 26px 0;
+        padding: 24px 0;
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
@@ -142,7 +144,6 @@
       width: 100%;
       color: #1942df;
       display: block;
-      margin-bottom: 27px;
       text-align: center;
       border-bottom: 1px solid #628fd8;
       padding: 26px 0;

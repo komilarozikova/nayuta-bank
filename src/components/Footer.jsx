@@ -5,6 +5,7 @@ import logo from '../img/nayuta.svg';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+import Copyr from './cop.svg'
 
 
 function Footer() {
@@ -65,7 +66,7 @@ function Footer() {
       </div>
       <section className='social-media'>
         <div className='social-media-wrap'>
-          <small className='website-rights'>{t("prava.title")}</small>
+          <small className='website-rights'><img src={Copyr} alt="" /> {t("prava.title")}</small>
         </div>
       </section>
     </div>
