@@ -23,9 +23,12 @@ const Products = () => {
               </div>
               <a href={item?.link} className='btn-products'>{t("button.title")}</a>
             </div>
+
           ))
         }
+
       </div>
+      {/* <p className='producttext'>{t("products.text1")} <a href='https://xn--80affa3aj0al.xn--80asehdb/#@nayuta_mmt'>{t("products.a")}</a> {t("products.text2")}</p> */}
     </div>
   )
 }

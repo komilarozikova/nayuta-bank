@@ -10,6 +10,37 @@
   height: 100%;
 }
 
+.physicalbutton{
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #ff5a3a;
+  box-shadow: -3px 4px 8px rgba(255, 90, 58, 0.4);
+  border-radius: 50px;
+  padding: 15px 40px;
+  width: 270px;
+  margin-left: 20px;
+  @media screen and (max-width: 426px) {
+     margin: 0 auto;
+  }
+}
+.physicalbutton:hover{
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #ff5a3a;
+  box-shadow: -3px 4px 8px rgba(255, 90, 58, 0.4);
+  border-radius: 50px;
+  padding: 15px 40px;
+}
 .physical-container {
   display: flex;
   flex-direction: row;
@@ -24,6 +55,7 @@
   li {
     display: block;
   }
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,11 +77,13 @@
     width: 100%;
   }
 }
-.physical-left{
-  li{
-      display: flex;
-    }
+
+.physical-left {
+  li {
+    display: flex;
+  }
 }
+
 .physical-left h1 {
   font-style: normal;
   font-weight: 700;
@@ -63,9 +97,11 @@
 
 ul {
   list-style: none;
+
   /* Remove default bullets */
   @media screen and (max-width: 426px) {
     padding: 0 25px;
+
     li {
       font-size: 1p7x;
     }
@@ -159,14 +195,18 @@ ul li::before {
   border-radius: 15px;
   box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.2);
   background: linear-gradient(110.42deg, #fff 0%, #fff 100%);
+
   @media screen and (max-width: 426px) {
     width: 100%;
     margin-bottom: 50px;
   }
+
   margin-right: 15px;
+
   &:nth-child(3n) {
     width: 100%;
   }
+
   @media screen and (max-width: 426px) {
     margin-right: 0;
   }
@@ -184,6 +224,7 @@ ul li::before {
 }
 
 .box3 {
+
   //   transition: all ease 0.5s;
   &:hover {
     color: white;
@@ -198,6 +239,7 @@ ul li::before {
 }
 
 .box3 {
+
   //   transition: all ease 0.5s;
   &:hover {
     color: white;
@@ -206,6 +248,7 @@ ul li::before {
 }
 
 .box-container {
+
   //   transition: all ease 0.5s;
   &:hover {
     color: white;
@@ -343,4 +386,16 @@ h1.physicalh {
   /* identical to box height, or 29px */
 
   color: #231f20;
+}
+
+.producttextph {
+  width: 700px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .producttextph {
+    width: 300px;
+    margin-top: -30px;
+    margin-bottom: 40px;
+  }
 }

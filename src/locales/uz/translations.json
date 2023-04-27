@@ -27,35 +27,43 @@
         "title": "Bizga ishonishingiz mumkin",
         "text": "Biz O‘zbekiston Respublikasining amaldagi qonunchiligi asosida faoliyat yuritamiz. Biz “Ro‘yxatdan o‘tganlik to‘g‘risidagi guvohnoma”ga egamiz  va  O‘zbekiston Respublikasi Markaziy bankining mikromoliya tashkilotlari reestriga kiritilganmiz ",
         "link": "(97-sonli litsenziya bilan).",
-        "call": "Biz bepul konsultatsiya beramiz va siz uchun mos bo’lhan moliyaviy xizmatimizni taklif etamiz.",
+        "call": "Biz bilan bog’laning va xodimlarimiz savollarga javob berishadi.",
         "questions": "Savollaringiz bormi?",
-        "callus": "Qo'ng'iroq qilish"
+        "callus": "Bog'lanish"
     },
     "products": {
-        "title": "Bizning mahsulotlarimiz"
+        "title": "Bizning mahsulotlarimiz",
+        "text1": "Batafsil ma'lumot olish uchun biz bilan",
+        "text2": "va bepul konsultatsiya oling.",
+        "a": "bog'laning"
     },
     "footer": {
-        "left1": "Kompaniya haqida:",
-        "left2": "Xizmatlar:",
-        "left3": "Jismoniy shaxslar uchun:",
-        "left4": "Yuridik shaxslar uchun:",
+        "left1": "Kompaniya haqida",
+        "left2": "Xizmatlar",
+        "left3": "Jismoniy shaxslar uchun",
+        "left4": "Yuridik shaxslar uchun",
         "left5": "Konsultatsiya:",
         "left6": "Kontaktlar",
         "left7": "Ish vaqti:",
         "left8": "Manzil",
         "left9": " O‘zbekiston Respublikasi, Toshkent sh.,",
-        "left10": "Mirobod tumani, Nukus ko‘chasi, 29-uy, 100015:"
+        "left10": "Mirobod tumani, Nukus ko‘chasi, 29-uy, 10015",
+        "ishvaqti": "Ish vaqti:",
+        "duju": "Du-Ju: 9:00 – 18:00",
+        "sha": "Sha: 10:00 – 17:00",
+        "yak": "Yak – dam olish kuni"
     },
     "physical": {
-        "title": "Yuridiik shaxslar",
-        "text": "Iste'mol krediti - bu jismoniy shaxslarga yirik xaridlar, xizmatlar yoki sayohatlar uchun to'lovlar uchun beriladigan naqd pul krediti.",
+        "title": "Jismoniy shaxslar",
+        "text": "Turli maqsadlar — yagona yechim. \n Nayuta mijozlarga kafillarsiz kredit rasmiylashtirishni taklif etadi. Bizning mahsulotlarimiz orasidan o’zingizga to’g’ri keladiganini tanlash uchun quyidagilar bilan tanishib chiqishingiz mumkin.",
         "start": "dan",
         "end": "gacha",
-        "year": "yiliga"
+        "year": "yiliga",
+        "btn": "Online hisoblang"
     },
     "yuridik": {
         "title": "Yuridik shaxslar",
-        "text1": "Yuridik shaxslarning kreditlari biznesning moliyaviy ko'rsatkichlarini oshirish yoki uni barqaror moliyaviy ahvolda ushlab turish, biznesdagi naqd pul bo'shliqlarining oldini olish imkonini beradi.",
+        "text1": "Yuridik shaxslar uchun kreditlar biznesning moliyaviy ko’rsatkichlarini oshirish va to’lov qobiliyatini saqlab qolgan holda moliyaviy stabillashtirishga yordam beradi. Biznes uchun ko’proq takliflarimiz haqida quyidan bilib oling.",
         "text2": "Quyida bizning biznes takliflarimiz haqida ko'proq bilib oling.",
         "start": "dan",
         "end": "gacha",
@@ -124,7 +132,7 @@
     },
     "parametr": {
         "parametrkredit": "Kredit variantlari",
-        "narx": "Kredit narxi",
+        "narx": "Tovarlar/xizmatlar narxi",
         "tolov": "Dastlabki to'lov",
         "summa": "Kredit miqdori",
         "muddat": "Kredit muddati",

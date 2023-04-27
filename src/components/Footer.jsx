@@ -34,9 +34,13 @@ function Footer() {
               <i class="fa-solid fa-phone" id='icons'></i>
               +998 78 150 33 32
             </a>
+            <a href='https://xn--80affa3aj0al.xn--80asehdb/#@nayuta_mmt' target='_blank'>
+              <i class="fa-brands fa-telegram" id='icons'></i>
+              Telegram
+            </a>
             <Link to='https://instagram.com/nayuta.uz?igshid=MTIyMzRjYmRlZg==' target='_blank'>
               <i class="fab fa-instagram" id='icons' />
-              instagram
+              Instagram
             </Link>
             <Link to='javascript:void(0)'
               onClick={() => window.location = 'mailto: info@nayuta.uz'}>
@@ -48,9 +52,9 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div id='child3' className='footer-link-items'>
             <Link to='/'>{t("footer.left7")}</Link>
-            <Link to='/'>Пн-Пт: 9:00 – 18:00</Link>
-            <Link to='/'>Сб: 10:00 – 17:00</Link>
-            <Link to='/'>Вс – выходной</Link>
+            <Link to='/'>{t("footer.duju")}</Link>
+            <Link to='/'>{t("footer.sha")}</Link>
+            <Link to='/'>{t("footer.yak")}</Link>
           </div>
           <div className='footer-link-items'>
             <Link to='/' className='addresslink'>{t("footer.left8")}</Link>

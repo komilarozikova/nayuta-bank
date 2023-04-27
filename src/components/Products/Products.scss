@@ -19,7 +19,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
-  margin-bottom: 61px !important;
+  // margin-bottom: 61px !important;
 }
 
 .products {
@@ -82,6 +82,9 @@
   line-height: 17px;
   border: none;
 }
+.btn-products:hover {
+  color: #fff;
+}
 
 .products h4 {
   text-align: center;
@@ -125,4 +128,15 @@
 .img.factoring {
   width: 145px;
   height: 300px;
+}
+.producttext {
+  width: 700px;
+  margin-top: -126px;
+}
+@media screen and (max-width: 600px) {
+  .producttext {
+    width: 300px;
+    margin-top: -45px;
+    margin-bottom: 40px;
+  }
 }

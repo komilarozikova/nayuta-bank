@@ -4,18 +4,29 @@ import '../Physical/Physical.scss'
 import { useUserContext } from '.././context/home-context'
 import parse from 'html-react-parser';
 import { useTranslation } from 'react-i18next';
+import calImg from '../../pages/yuridik/Estimate.svg'
+import useScrollDirection from '../../pages/yuridik/scroll';
+import '../../pages/yuridik/yuridik.scss'
 
 const Physical = () => {
   const { individualcreditType, individualcredit, whosecredit } = useUserContext()
   const { t } = useTranslation()
+  const scrollDirection = useScrollDirection();
   return (
     <div className='physicalload-anim'>
+      <div className={`header2 ${scrollDirection === "down" ? "hide" : "show"}`}>
+        <a href='/#calculatorhref' className='yuridikbutton'> <img src={calImg} alt="" />{t("physical.btn")}</a>
+      </div>
+      <a href='/#calculatorhref' className='yuridikbutton-desktop'><img src={calImg} alt="" />{t("physical.btn")}</a>
       <div className="physical-container  ">
         <div className="physical-left container">
           <h1 className='physicalh'>{t('physical.title')}</h1>
-          <p className='physicalp' >
+          <p className='physicalp mb-5' >
             {t('physical.text')}
           </p>
+          {/* <button className='physicalbutton'>{t("physical.btn")}</button> */}
+
+          {/* <p className='physicalp'>{t("physical.text2")}</p> */}
           {
             whosecredit?.map((item, key) => (
               <div key={key}>
@@ -63,10 +74,10 @@ const Physical = () => {
                   </div>
                 </div>
               </div>
-
             </>
           ))
         }
+         <p className='producttextph'>{t("products.text1")} <a href='https://xn--80affa3aj0al.xn--80asehdb/#@nayuta_mmt'>{t("products.a")}</a> {t("products.text2")}</p>
       </div>
       {/* <div className="box3 container">
         <div className="box-container2">

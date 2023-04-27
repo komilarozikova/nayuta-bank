@@ -58,11 +58,11 @@ export const UserContextProvider = ({ children }) => {
         //     })
         //     .catch(err => console.log(err))
         if (lang) {
-            sessionStorage.setItem('lang', lang);
+            localStorage.setItem('lang', lang);
             setLang(lang);
         }
         else {
-            sessionStorage.removeItem('lang');
+            localStorage.removeItem('lang');
             setLang(lang);
         }
     }, [lang])

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import './assets/styles/main.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/styles/main.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer';
@@ -24,8 +24,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/consultation' element={<Consultaion />} />
-        <Route path='/physical' element={<Physical />} />
-        <Route path='/yuridik' element={<Yuridik />} />
+        <Route path='/uslugi/physical' element={<Physical />} />
+        <Route path='/uslugi/yuridik' element={<Yuridik />} />
         <Route path='/company' element={<Company />} />
         <Route path='/contact' element={<Footer />} />
       </Routes>

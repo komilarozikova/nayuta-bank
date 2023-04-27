@@ -18,7 +18,7 @@ const HomePage = () => {
   return (
     <>
       <Currency />
-      <div className="container load-anim">
+      <div id="calculatorhref" className="container load-anim">
         <Carousel interval={1000}>
           {
             carousels?.map((item, key) => (
@@ -29,7 +29,7 @@ const HomePage = () => {
                       <h1>{item?.title}</h1>
                       <h5>{item?.descriptions}</h5>
                       <div className='see-more'>
-                        <a href={item?.link}>{t("button.title")}</a>
+                        {/* <a href={item?.link}>{t("button.title")}</a> */}
                       </div>
                     </div>
                     <div className="hero-img">

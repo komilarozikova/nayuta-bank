@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next'
 const Navbar = () => {
 
   const [show, setShow] = useState(false)
-  const pathname = window.location.hash
+  const pathname = window.location.pathname
   const navigate = useNavigate()
   const { lang, setLang, active, setActive } = useUserContext()
   // useEffect(() => {
@@ -40,11 +40,11 @@ const Navbar = () => {
           </div>
           <div className={active ? "links" : "links hide"}>
             <button to='/' onClick={() => navigate('/')} className={pathname === '/' ? 'active' : ''} >{t("header.link1")}</button>
-            <div className='dropdown'>
+            <div className={pathname.includes("/uslugi") ? 'dropdown active' : 'dropdown'}>
               <button className={pathname === '/uslugi' ? 'uslugi-hover active' : 'uslugi-hover'} to='/uslugi'>{t("header.link2")}
                 <div className='uslugi'>
-                  <button to='/physical' onClick={() => navigate('/physical')} className={pathname === '/physical' ? 'uslugulink' : 'uslugulink'}>{t("header.fiz")}</button>
-                  <button to='/yuridik' onClick={() => navigate('/yuridik')} className={pathname === '/yuridik' ? 'uslugulink' : 'uslugulink'}>{t("header.yur")}</button>
+                  <button to='/physical' onClick={() => navigate('/uslugi/physical')} className={pathname === '/physical' ? 'uslugulink' : 'uslugulink'}>{t("header.fiz")}</button>
+                  <button to='/yuridik' onClick={() => navigate('/uslugi/yuridik')} className={pathname === '/yuridik' ? 'uslugulink' : 'uslugulink'}>{t("header.yur")}</button>
                 </div>
               </button>
             </div>
@@ -78,22 +78,22 @@ const Navbar = () => {
               borderBottom: show ? "none" : "1px solid #628fd8",
               paddingBottom: show ? "0" : "26px"
             }} onClick={() => setShow(!show)} className='navbar-link'>{t("header.link2")}</button>
+
             <Link style={{
               display: show ? "block" : "none",
               borderBottom: !show ? "none" : "1px solid #628fd8"
             }} className='navbar-link active' onClick={() => {
               setActive(!active)
-
             }
-            } to='/yuridik'>{t("header.yur")}</Link>
+            } to='/uslugi/physical' >{t("header.fiz")}</Link>
             <Link style={{
               display: show ? "block" : "none",
               borderBottom: !show ? "none" : "1px solid #628fd8"
             }} className='navbar-link active' onClick={() => {
               setActive(!active)
-
             }
-            } to='/physical' >{t("header.fiz")}</Link>
+            } to='/uslugi/yuridik'>{t("header.yur")}
+            </Link>
             <Link className='navbar-link' onClick={() => {
               setActive(!active)
             }
