@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import calImg from '../../pages/yuridik/Estimate.svg'
 import useScrollDirection from '../../pages/yuridik/scroll';
 import '../../pages/yuridik/yuridik.scss'
+import { HashLink } from 'react-router-hash-link';
 
 const Physical = () => {
   const { individualcreditType, individualcredit, whosecredit } = useUserContext()
@@ -14,10 +15,10 @@ const Physical = () => {
   const scrollDirection = useScrollDirection();
   return (
     <div className='physicalload-anim'>
-      <div className={`header2 ${scrollDirection === "down" ? "hide" : "show"}`}>
-        <a href='/#calculatorhref' className='yuridikbutton'> <img src={calImg} alt="" />{t("physical.btn")}</a>
-      </div>
-      <a href='/#calculatorhref' className='yuridikbutton-desktop'><img src={calImg} alt="" />{t("physical.btn")}</a>
+        <div className={`header2 ${scrollDirection === "down" ? "hide" : "show"}`}>
+            <HashLink smooth to="/#calculator" className='yuridikbutton'> <img src={calImg} alt="" />{t("physical.btn")}</HashLink>
+        </div>
+        <HashLink smooth to="/#calculator" className='yuridikbutton-desktop'><img src={calImg} alt="" />{t("physical.btn")}</HashLink>
       <div className="physical-container  ">
         <div className="physical-left container">
           <h1 className='physicalh'>{t('physical.title')}</h1>
@@ -66,18 +67,19 @@ const Physical = () => {
                   <h3>{item?.title}</h3>
                   <p>{item?.description}</p>
                   <div className="sale">
+                  <p>{t("physical.year")}</p>
+                  <img src={item?.first_image} alt="" />
                     <p>{t("physical.start")}</p>
-                    <img src={item?.first_image} alt="" />
-                    <p>{t("physical.end")}</p>
                     <img src={item?.second_image} alt="" />
-                    <p>{t("physical.year")}</p>
+                    <p>{t("physical.end")}</p>
+                  
                   </div>
                 </div>
               </div>
             </>
           ))
         }
-         <p className='producttextph'>{t("products.text1")} <a href='https://xn--80affa3aj0al.xn--80asehdb/#@nayuta_mmt'>{t("products.a")}</a> {t("products.text2")}</p>
+         <p className='producttextph'>{t("products.text1")} <a href='https://t.me/nayuta_mmt' target='_blank'>{t("products.a")}</a> {t("products.text2")}</p>
       </div>
       {/* <div className="box3 container">
         <div className="box-container2">

@@ -66,7 +66,7 @@
         },
         {
             "konsultatsiya": "Konsultatsiya",
-            "konsultatsiyaTitle": "Biz bepul konsultatsiya beramiz va siz uchun mos bo’lhan moliyaviy xizmatimizni taklif etamiz.",
+            "konsultatsiyaTitle": "Biz bepul konsultatsiya beramiz va siz uchun mos bo’lgan moliyaviy xizmatimizni taklif etamiz.",
             "konsultatsiyaText": "Quyidagi hollarda sizga konsultatsiyamiz kerak bo’ladi:",
             "konsultatsiyali1": "Moliyaviy muammoingiz uchun professional yechim izlasangiz;",
             "konsultatsiyali2": "Aynan qaysi xizmatimiz sizga kerakligiga ikkilanayotgan bo’lsangiz;",
@@ -193,8 +193,8 @@
             "pdf2": "2. Ro'yxatdan o'tganlik to’g’risidagi guvohnomasi",
 
             "maqsadimiz": "Maqsadimiz",
-            "maqsadText1": "Nayuta yapon tilida bu cheksiz sonni bildiradi. Bu bizning kompaniya sifatida nimaga intilayotganimizni aniq aks ettiradi, ya’ni – mijozlarimizning kapitali va ishonchini cheksiz darajada oshirish",
-            "maqsadText2": "Biz halollik bilan natijaga va birinchi navbatda – insonga e'tibor qaratamiz."
+            "maqsadText1": "Nayuta yapon tilida bu cheksiz sonni bildiradi. Bu bizning kompaniya sifatida nimaga intilayotganimizni aniq aks ettiradi, ya’ni mijozlarimizning kapitali va ishonchini cheksiz darajada oshirish.",
+            "maqsadText2": "Biz halollik bilan natijaga va, birinchi navbatda, insonga e'tibor qaratamiz."
         },
 
 

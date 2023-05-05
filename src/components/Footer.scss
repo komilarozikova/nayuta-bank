@@ -76,6 +76,10 @@
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
+  width: 315px;
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
 }
 
 .footer-link-items a:hover {
@@ -100,6 +104,7 @@
 .social-media {
   max-width: 1000px;
   width: 100%;
+  margin-top: -75px;
 }
 
 .social-media-wrap {

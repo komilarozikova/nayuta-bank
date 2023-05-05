@@ -15,8 +15,10 @@ export const UserContextProvider = ({ children }) => {
     const [whosecredit, setWhosecredit] = useState()
     const [lang, setLang] = useState('ru');
     const [active, setActive] = useState(true)
+    const [loading, setLoading] = useState(false)
 
     useEffect(() => {
+        setLoading(true)
         GetData(`/exchange-rates/`, lang)
             .then(data => {
                 setRates(data)
@@ -30,6 +32,7 @@ export const UserContextProvider = ({ children }) => {
         GetData(`/carousels/`, lang)
             .then(data => {
                 setCarousels(data)
+                setLoading(false)
             })
             .catch(err => console.log(err))
         GetData(`/individual-credit-type/`, lang)
@@ -78,6 +81,7 @@ export const UserContextProvider = ({ children }) => {
         products, setProducts,
         whosecredit, setWhosecredit,
         lang, setLang,
+        loading, setLoading,
         active, setActive
     }
 

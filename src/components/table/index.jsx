@@ -14,7 +14,7 @@ const TableHome = () => {
 
                 <div className="tables-section-titles">
                     <p>{t("table.desc")}</p>
-                    <button>{t("button.title")}</button>
+                    <a href='/company'>{t("button.title")}</a>
                 </div>
                 <div className='tables'>
                     <table>

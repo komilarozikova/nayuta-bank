@@ -2,17 +2,12 @@ import './yuridik.scss'
 import React, { useState } from 'react'
 import YuridikImg from '../../assets/images/yuridik.svg'
 import { Accordion } from 'react-bootstrap'
-// import { Link } from 'react-router-dom'
-// import twentytwo from '../../components/Physical/twentytwo.svg'
-// import thirtyeight from '../../components/Physical/thirtyeight.svg'
 import parse from 'html-react-parser';
 import { useUserContext } from '../../components/context/home-context'
 import { useTranslation } from 'react-i18next'
-import Parser from 'html-parser-react';
-import useScrollDirection from './scroll';
 import calImg from './Estimate.svg'
-import { Link, useNavigate } from 'react-router-dom';
-
+import { HashLink } from 'react-router-hash-link';
+import useScrollDirection from "./scroll";
 
 
 
@@ -21,12 +16,13 @@ const Yuridik = () => {
     const { legalcredit } = useUserContext()
     const { t } = useTranslation()
     const scrollDirection = useScrollDirection();
+
     return (
         <>
-            <a href='/#calculatorhref' className='yuridikbutton-desktop'><img src={calImg} alt="" />{t("physical.btn")}</a>
+            <HashLink smooth to="/#calculator" className='yuridikbutton-desktop'><img src={calImg} alt="" />{t("physical.btn")}</HashLink>
             <div className='container yuridik load-anim'>
                 <div className={`header2 ${scrollDirection === "down" ? "hide" : "show"}`}>
-                    <a href='/#calculatorhref' className='yuridikbutton'> <img src={calImg} alt="" />{t("physical.btn")}</a>
+                    <HashLink smooth to="/#calculator" className='yuridikbutton'> <img src={calImg} alt="" />{t("physical.btn")}</HashLink>
                 </div>
 
                 <div className="yuridik-banner">
@@ -70,11 +66,11 @@ const Yuridik = () => {
                                                     )
                                                 }
                                                 <div className="sale">
-                                                    <p><p>{t("yuridik.start")}</p></p>
+                                                    <p>{t("physical.year")}</p>
                                                     <img src={item.first_image} alt="" />
+                                                     <p><p>{t("yuridik.start")}</p></p>
+                                                     <img src={item.second_image} alt="" />
                                                     <p><p>{t("yuridik.end")}</p></p>
-                                                    <img src={item.second_image} alt="" />
-                                                    <p><p>{t("yuridik.year")}</p></p>
                                                 </div>
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -117,7 +113,7 @@ const Yuridik = () => {
                     </Accordion>
 
                 </div>
-                <p className='producttextyur'>{t("products.text1")} <a href='https://xn--80affa3aj0al.xn--80asehdb/#@nayuta_mmt'>{t("products.a")}</a> {t("products.text2")}</p>
+                <p className='producttextyur'>{t("products.text1")} <a href='https://t.me/nayuta_mmt'>{t("products.a")}</a> {t("products.text2")}</p>
             </div>
         </>
     )

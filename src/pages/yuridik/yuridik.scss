@@ -6,7 +6,16 @@
 .yuridik-accordion {
   margin-top: -60px;
 }
-
+.sale {
+  img {
+    width: 157px;
+    height: 164px;
+    @media screen and (max-width: 426px) {
+      width: 85px;
+      object-fit: contain;
+    }
+  }
+}
 .yuridik {
   margin-top: 70px;
   .accordion-body {
@@ -20,6 +29,7 @@
       font-weight: 500;
       font-size: 19px;
       line-height: 23px;
+      margin-top: 12px;
       // color: #231f20;
     }
   }
@@ -118,10 +128,6 @@
     font-size: 17px;
     line-height: 155.9%;
   }
-  .accordion-body p {
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
 
   .accordion-body h4 {
     font-size: 19px;
@@ -217,7 +223,7 @@
           }
 
           display: block;
-          height: 157px;
+          height: 180px;
 
           h2 {
             font-style: normal;
@@ -321,7 +327,7 @@
 
 // .accordion-button::after {
 //   flex-shrink: 0;
-//   
+//
 //   background-repeat: no-repeat;
 // }
 
@@ -353,10 +359,10 @@
     margin-left: 40px;
   }
 }
-.yuridikbutton-desktop:hover{
+.yuridikbutton-desktop:hover {
   color: #fff;
 }
-.yuridikbutton:hover{
+.yuridikbutton:hover {
   color: #fff;
 }
 .header2 {
@@ -414,7 +420,7 @@
 .producttextyur {
   width: 700px;
   margin: 0 auto;
-  
+
   padding-bottom: 30px;
 }
 @media screen and (max-width: 600px) {

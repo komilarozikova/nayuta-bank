@@ -39,13 +39,13 @@
     },
     "footer": {
         "left1": "Kompaniya haqida",
-        "left2": "Xizmatlar",
+        "left2": "Xizmatlar:",
         "left3": "Jismoniy shaxslar uchun",
         "left4": "Yuridik shaxslar uchun",
-        "left5": "Konsultatsiya:",
-        "left6": "Kontaktlar",
+        "left5": "Konsultatsiya",
+        "left6": "Kontaktlar:",
         "left7": "Ish vaqti:",
-        "left8": "Manzil",
+        "left8": "Manzil:",
         "left9": " O‘zbekiston Respublikasi, Toshkent sh.,",
         "left10": "Mirobod tumani, Nukus ko‘chasi, 29-uy, 10015",
         "ishvaqti": "Ish vaqti:",
@@ -58,7 +58,7 @@
         "text": "Turli maqsadlar — yagona yechim. \n Nayuta mijozlarga kafillarsiz kredit rasmiylashtirishni taklif etadi. Bizning mahsulotlarimiz orasidan o’zingizga to’g’ri keladiganini tanlash uchun quyidagilar bilan tanishib chiqishingiz mumkin.",
         "start": "dan",
         "end": "gacha",
-        "year": "yiliga",
+        "year": "Yillik",
         "btn": "Online hisoblang"
     },
     "yuridik": {
@@ -71,23 +71,23 @@
     },
     "company": {
         "title": "Kompaniya haqida",
-        "text1": "Nayuta mikromoliya tashkiloti o'z faoliyatida yapon modeliga amal qiladi va Yaponiyadagi xodimlarning tajribasi ularga mijozlar bilan tajriba almashish imkonini beradi.",
-        "text2": "Biz moliyaviy muammolaringizga professional yechim topishni maqsad qilganmiz. Yaponiyada biznes shunday quriladi, bu erda mijoz va uning ehtiyojlari birinchi o'rinda turadi.",
-        "text3": "Nayuta MFIda ushbu yondashuvni qo'llash orqali biz turli moliyaviy vaziyatlarda bo'lgan odamlarning hayotini osonlashtiramiz va biznesni rivojlantirishni qo'llab-quvvatlaymiz.",
+        "text1": "Nayuta Mikromoliya Tashkiloti o'z faoliyatida yapon modeliga amal qiladi va xodimlarning Yaponiyada orttirgan tajribasi ularga mijozlar bilan professional darajada ishlashda qo’l keladi.",
+        "text2": "Biz moliyaviy muammolaringizga professional yechim topishni maqsad qilganmiz. Yaponiyada biznes shunday quriladi, ya’ni u yerda mijoz va uning ehtiyojlari birinchi o'rinda turadi.",
+        "text3": "Ushbu yondashuvni “Nayuta”da qo'llash orqali biz turli moliyaviy vaziyatlarda bo'lgan odamlarning hayotini osonlashtiramiz va biznesni rivojlantirishni qo'llab-quvvatlaymiz.",
         "title2": "Kompaniya hujjatlari",
         "btn1": "Markaziy bankdan kompaniya faoliyati uchun ruxsatnoma",
         "btn2": "Ro'yxatdan o'tish guvohnomasi",
         "mission": "Missiya",
-        "misson1": "Nayuta yapon tilida cheksiz son degan ma'noni anglatadi. Bu bizning kompaniya sifatida nimaga intilayotganimizni aniq aks ettiradi - mijozlarimizning kapitali va ishonchini oshirish.",
-        "misson2": "Biz halollikni boshqaramiz, biz natijaga va birinchi navbatda, insonga e'tibor qaratamiz."
+        "misson1": "Nayuta yapon tilida bu cheksiz sonni bildiradi. Bu bizning kompaniya sifatida nimaga intilayotganimizni aniq aks ettiradi, ya’ni mijozlarimizning kapitali va ishonchini cheksiz darajada oshirish.",
+        "misson2": "Biz halollik bilan natijaga va, birinchi navbatda, insonga e'tibor qaratamiz."
     },
     "consul": {
-        "title": "Biz siz uchun eng qulay mikromoliya xizmatini bepul maslahat beramiz va tanlaymiz",
-        "ul": "Sizga maslahat kerak, agar:",
-        "li1": "Professional yechim izlayapsizmi? moliyaviy masalalaringiz;",
-        "li2": "Qaysi birini hal qila olmaysiz muayyan xizmat yoki mahsulot  sizga kerak;",
-        "li3": "Kimga murojaat qilishni bilmayapsizmi?.",
-        "text": "Mutaxassislarimizdan bepul maslahat oling"
+        "title": "Biz bepul konsultatsiya beramiz va siz uchun mos bo’lgan moliyaviy xizmatimizni taklif etamiz.",
+        "ul": "Quyidagi hollarda sizga konsultatsiyamiz kerak bo’ladi: ",
+        "li1": "Moliyaviy muammoingiz uchun professional yechim izlasangiz;",
+        "li2": "Aynan qaysi xizmatimiz sizga kerakligiga ikkilanayotgan bo’lsangiz;",
+        "li3": "Kimga murojaat qilishni bilmayotgan bo’lsangiz.",
+        "text": "Xodimlarimizdan bepul konsultatsiya oling"
     },
     "prava": {
         "title": "Barcha huquqlar himoyalangan 2023"
@@ -103,18 +103,18 @@
     },
     "calculator": {
         "calcheader": "O'zingizning parametrlaringiz bo'yicha kreditni hisoblang",
-        "annuity": "annuitet usuli",
+        "annuity": "Annuitet usuli",
         "dif": "Differensiyalashgan",
         "labels": {
             "kimga": "Kimga",
             "tur": "Kredit turi",
-            "narx": "Kredit narxi",
+            "narx": "Mahsulotlar / xizmatlar narxi",
             "tolov": "Boshlang'ich to'lov (%)",
             "miqdor": "Kredit miqdori",
             "imtiyoz": "Imtiyozli davr",
             "stavka": "Stavka foizi",
             "qaytarish": "To'lovni qaytarish tartibi",
-            "muddat": "Kredit muddatiy"
+            "muddat": "Kredit muddati"
         },
         "inputs": {
             "jismoniy": "Jismoniy shaxslar uchun",
@@ -132,7 +132,7 @@
     },
     "parametr": {
         "parametrkredit": "Kredit variantlari",
-        "narx": "Tovarlar/xizmatlar narxi",
+        "narx": "Mahsulotlar / xizmatlar narxi",
         "tolov": "Dastlabki to'lov",
         "summa": "Kredit miqdori",
         "muddat": "Kredit muddati",
@@ -143,7 +143,7 @@
         "ortiqcha": "Ortiqcha to'lov",
         "pechat": "Chop etish",
         "rows": {
-            "data": "sana",
+            "data": "Sana",
             "qolgan": "Kredit balansi",
             "qaytarish": "Kreditni to'lash",
             "kredit": "miqdori",

@@ -3,7 +3,7 @@ import usa from '../img/flagusa.svg'
 import europe from '../img/flageurope.svg'
 import russia from '../img/flagrussia.svg'
 import japan from '../img/flagjapan.svg'
-import './Currency.css';
+import './Currency.scss';
 import { useUserContext } from './context/home-context';
 
 function Navbar() {

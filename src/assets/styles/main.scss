@@ -117,13 +117,15 @@ input {
 }
 
 .accordion-body p {
-  font-family: "Montserrat";
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 23px;
-
-  color: #231f20;
+  
+  color: #231F20;
 }
 
 .accordion-item:first-of-type {

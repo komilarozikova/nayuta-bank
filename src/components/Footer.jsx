@@ -4,7 +4,6 @@ import logo from '../img/nayuta.svg';
 // import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-
 import Copyr from './cop.svg'
 
 
@@ -21,10 +20,11 @@ function Footer() {
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <Link to='/'>{t("footer.left1")}</Link>
+            <Link to='/company'>{t("footer.left1")}</Link>
             <Link to='/'>{t("footer.left2")}</Link>
-            <Link to='/physical' className='greylink'>{t("footer.left3")}</Link>
-            <Link to='/yuridik' className='greylink'>{t("footer.left4")}</Link>
+            <Link to='/uslugi/physical' className='greylink'>{t("footer.left3")}</Link>
+            <Link to='/uslugi/yuridik' className='greylink'>{t("footer.left4")}</Link>
+            <Link to='/consultation'>{t("footer.left5")}</Link>
           </div>
           <div id='child2' className='footer-link-items'>
             <Link to='/'>
@@ -34,14 +34,14 @@ function Footer() {
               <i class="fa-solid fa-phone" id='icons'></i>
               +998 78 150 33 32
             </a>
-            <a href='https://xn--80affa3aj0al.xn--80asehdb/#@nayuta_mmt' target='_blank'>
+            <a href='https://t.me/nayuta_mmt' target='_blank'>
               <i class="fa-brands fa-telegram" id='icons'></i>
               Telegram
             </a>
-            <Link to='https://instagram.com/nayuta.uz?igshid=MTIyMzRjYmRlZg==' target='_blank'>
+            <a href='https://www.instagram.com/nayuta.uz/?igshid=MTIyMzRjYmRlZg%3D%3D' target='_blank'>
               <i class="fab fa-instagram" id='icons' />
               Instagram
-            </Link>
+            </a>
             <Link to='javascript:void(0)'
               onClick={() => window.location = 'mailto: info@nayuta.uz'}>
               <i class="fa-regular fa-envelope" id='icons'></i>

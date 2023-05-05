@@ -11,15 +11,20 @@ import Trust from '../../components/Trust/Trust';
 import AccordionHome from '../../components/accordion/accordion-home';
 import { useUserContext } from '../../components/context/home-context';
 import { useTranslation } from 'react-i18next';
+import Spinner from '../../components/loading/loading';
 
 const HomePage = () => {
-  const { carousels } = useUserContext()
+  const { carousels, loading } = useUserContext()
   const { t } = useTranslation();
   return (
     <>
       <Currency />
-      <div id="calculatorhref" className="container load-anim">
-        <Carousel interval={1000}>
+      {
+        loading &&
+        <Spinner stroke={"#000"} position={"static"} height={720} bgc={"#fff"} />
+      }
+      <div id="calculatorhref" className="container load-anim mb-5">
+        <Carousel indicators={false  } interval={1000}>
           {
             carousels?.map((item, key) => (
               <Carousel.Item>
@@ -33,7 +38,12 @@ const HomePage = () => {
                       </div>
                     </div>
                     <div className="hero-img">
-                      <img src={item?.image} alt='' />
+                      {
+                        loading ?
+                          <Spinner stroke={"#000"} position={"static"} height={720} bgc={"#fff"} />
+                          :
+                          <img src={item?.image} alt='' />
+                      }
                     </div>
 
                   </div>
