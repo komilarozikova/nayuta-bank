@@ -5,12 +5,22 @@ import logo from '../img/nayuta.svg';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Copyr from './cop.svg'
+import { Helmet } from 'react-helmet';
 
 
 function Footer() {
   const { t } = useTranslation();
   return (
     <div id='contact' className='footer-container'>
+      <Helmet>
+      <title>Nayuta</title>
+          <meta
+        name='description'
+        content='Get Contact info about Nayuta Credit Bank '
+        />
+           <meta 
+        name='keywords' content='Bank, Contacts, Nayuta, Credit'/>
+      </Helmet>
       <section className='footer-subscription'>
         <img className='footer-subscription-heading'
           src={logo}
