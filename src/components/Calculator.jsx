@@ -20,21 +20,21 @@ const Calculator = () => {
   const [schedule, setSchedule] = useState('annuity')
   const [period, setPeriod] = useState(24)
   const [data, setData] = useState()
-  console.log(data,  'data');
+  console.log(data, 'data');
   const [amount, setAmount] = useState()
   const [loading, setLoading] = useState(false)
-  console.log(loading,  'loading');
+  console.log(loading, 'loading');
   console.log(amount, 'amount');
   const [show, setShow] = useState(false);
-  
 
- 
+
+
   // const [calculateList, setCalculateList] = useState()
   // const { lang } = useUserContext()
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  
+
   function Send(e) {
 
 
@@ -60,14 +60,14 @@ const Calculator = () => {
 
   // const handelChange = (value) =>{
   //   setNum(value)
-  
+
   // }
-  
+
   // const changer = new Intl.NumberFormat('en-US').format(num)
   // console.log(changer)
   return (
     <section id='calculator'>
-    
+
       <div className="calc-wrapper mt-5">
         <Form className='cal-form' onSubmit={Send}>
           <div className="cal-form-text">
@@ -84,18 +84,18 @@ const Calculator = () => {
           </div>
 
           <div className="first-child-form">
-            
+
             <Form.Group className="" controlId="formBasicPassword">
               <Form.Label>{t("calculator.labels.narx")}</Form.Label>
               <CurrencyInput
-             id="input-example"
-             name='input-name'
-             placeholder='500000'
-             defaultValue={0}
-             decimalsLimit={7}
-             onValueChange={(value) => setPrice(value)}
-       />
-            {/* <Form.Control 
+                id="input-example"
+                name='input-name'
+                placeholder='500000'
+                defaultValue={0}
+                decimalsLimit={7}
+                onValueChange={(value) => setPrice(value)}
+              />
+              {/* <Form.Control 
            
             value={price} type="text" placeholder="50000" /> */}
             </Form.Group>
@@ -117,15 +117,15 @@ const Calculator = () => {
             <Form.Group className="" controlId="formBasicPassword">
               <Form.Label>{t("calculator.labels.miqdor")}</Form.Label>
               <CurrencyInput
-             id="input-example"
-             name='input-name'
-             placeholder='500000'
-             defaultValue={(price - ((percentage / 100) * price))}
-             decimalsLimit={7}
-             onValueChange={(value) => setPrice(value)}
-             value={(price - ((percentage / 100) * price))}
-             onChange={(e) => setAmount(e.target.value)}
-       />
+                id="input-example"
+                name='input-name'
+                placeholder='500000'
+                defaultValue={(price - ((percentage / 100) * price))}
+                decimalsLimit={7}
+                onValueChange={(value) => setPrice(value)}
+                value={(price - ((percentage / 100) * price))}
+                onChange={(e) => setAmount(e.target.value)}
+              />
               {/* <Form.Control value={
                 (price - ((percentage / 100) * price))
               }
@@ -193,9 +193,7 @@ const Calculator = () => {
                     <h1>{t("parametr.rezultat")}</h1>
                     <p>{t("parametr.jami")} <span>{data?.total_payments.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' сум'}</span></p>
                     <p>{t("parametr.ortiqcha")} <span>{data?.overpayment.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' сум'}</span></p>
-                    <Pdf targetRef={ref} filename="code-example.pdf">
-                      {({ toPdf }) => <div className='pechat' onClick={toPdf}><img src={Pechat} alt="" /> {t("parametr.pechat")}</div>}
-                    </Pdf>
+                    <a href={data?.pdf} className='pechat'><img src={Pechat} alt="" /> {t("parametr.pechat")}</a>
                   </div>
                 </div>
                 <Modal.Body className='table-responsive text-nowrap' ref={ref}>
